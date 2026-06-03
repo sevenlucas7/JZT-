@@ -1,0 +1,1316 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>京准通数据看板 · JZT Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* =====================================================================
+     PAINTER · 京准通数据看板 (JZT Dashboard) · 流派 A 高级极简 + C 蓝调阴影
+     设计 DNA：
+     - 暖白底 Notion 风（#fafaf8 + 暖灰文字）
+     - Notion 蓝 #0075de 单一品牌色；状态色绿/红/橙/紫按账户分配
+     - Inter 主字 + JetBrains Mono 数字 + Noto Sans SC 中文
+     - 蓝调多层阴影：rgba(50,50,93,0.10) 暖深蓝
+     - whisper border 1px rgba(0,0,0,0.08)
+     - 数据完整性 100% 保留 · 22 SKU + 5 账户 + HT + 4 KPI + 圆环 + heatmap + 3 洞察
+  ===================================================================== */
+  :root {
+    --bg: #fafaf8;          /* 暖白底，Notion 风 */
+    --bg-card: #ffffff;     /* 卡片白 */
+    --bg-soft: #f5f5f3;     /* 暖灰分隔 */
+    --ink-1: #1f1f1e;       /* 主文字（暖近黑，不用纯黑） */
+    --ink-2: #5a5a58;       /* 副文字 */
+    --ink-3: #8a8a86;       /* 弱化 */
+    --ink-4: #b8b8b4;       /* whisper */
+    --rule: rgba(0,0,0,0.08);          /* whisper border */
+    --rule-soft: rgba(0,0,0,0.04);
+    --brand: #0075de;       /* Notion 蓝 */
+    --brand-soft: rgba(0,117,222,0.10);
+    --shadow-blue: rgba(50,50,93,0.10);
+    --shadow-blue-2: rgba(0,0,0,0.04);
+    /* 5 个账户色（克制用，每个账户一个主色） */
+    --c-tidel:   #2a6df4;  /* Tide-L blue */
+    --c-ariell:  #2e9a6a;  /* Ariel-L green */
+    --c-tide:    #8b5cf6;  /* Tide purple */
+    --c-ariel:   #e07a2c;  /* Ariel orange */
+    --c-downy:   #d24a4a;  /* Downy red */
+    /* 状态色（用 chip 表达） */
+    --ok:    #1aae39;
+    --warn:  #dd5b00;
+    --bad:   #c13515;
+    --neutral: #6a6a68;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    font-family: 'Inter', -apple-system, 'SF Pro Display', 'Helvetica Neue',
+                 'Noto Sans SC', system-ui, sans-serif;
+    color: var(--ink-1);
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01", "cv11", "tnum";
+    padding: 32px 36px 80px;
+    min-width: 1280px;
+  }
+
+  /* —— HEADER —— */
+  .header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .logo-mark {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0075de 0%, #00c7be 100%);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset, 0 4px 12px var(--shadow-blue);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 14px; letter-spacing: -0.02em;
+    font-family: 'Inter', sans-serif;
+  }
+  .header h1 {
+    font-size: 22px; font-weight: 600; letter-spacing: -0.025em;
+    color: var(--ink-1); margin-bottom: 2px;
+  }
+  .header-sub {
+    font-size: 12px; color: var(--ink-2); font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+  .live-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 10px 5px 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 9999px;
+    font-size: 11px; color: var(--ink-2); font-weight: 500;
+    box-shadow: 0 1px 2px var(--shadow-blue-2);
+  }
+  .live-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--ok);
+    box-shadow: 0 0 0 0 rgba(26,174,57,0.5);
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(26,174,57,0.5); }
+    70% { box-shadow: 0 0 0 6px rgba(26,174,57,0); }
+    100% { box-shadow: 0 0 0 0 rgba(26,174,57,0); }
+  }
+
+  /* —— META BAR —— */
+  .meta-bar {
+    display: flex; align-items: center; flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 10px 18px;
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    box-shadow: 0 1px 2px var(--shadow-blue-2);
+  }
+  .meta-item {
+    display: flex; align-items: center; gap: 6px;
+    padding: 0 18px;
+    font-size: 11.5px; color: var(--ink-2); font-weight: 500;
+    border-right: 1px solid var(--rule-soft);
+  }
+  .meta-item:first-child { padding-left: 0; }
+  .meta-item:last-child { border-right: none; }
+  .meta-item .ic { color: var(--ink-3); font-size: 12px; }
+  .meta-item .v { font-weight: 600; color: var(--ink-1); font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 11px; letter-spacing: -0.01em; }
+  .meta-item.warn .v { color: var(--warn); }
+
+  /* —— 4 KPI CARDS (top strip) —— */
+  .kpi-strip {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    margin-bottom: 28px;
+  }
+  .kpi-card {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 20px 16px;
+    box-shadow:
+      0 1px 2px var(--shadow-blue-2),
+      0 4px 16px -8px var(--shadow-blue);
+    position: relative; overflow: hidden;
+  }
+  .kpi-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--accent, var(--brand)); opacity: 0.85;
+  }
+  .kpi-card .label {
+    font-size: 11px; color: var(--ink-2); font-weight: 500;
+    text-transform: none; letter-spacing: 0.02em;
+    margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
+  }
+  .kpi-card .value {
+    font-size: 30px; font-weight: 600; letter-spacing: -0.035em;
+    color: var(--ink-1); line-height: 1.05;
+    font-feature-settings: "tnum", "ss01";
+    font-family: 'Inter', sans-serif;
+  }
+  .kpi-card .value .unit {
+    font-size: 18px; font-weight: 500; color: var(--ink-2);
+    margin-right: 2px;
+  }
+  .kpi-card .sub {
+    margin-top: 6px;
+    font-size: 11.5px; color: var(--ink-3); font-weight: 500;
+  }
+  .kpi-card .sub .delta {
+    color: var(--ok); font-weight: 600;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    margin-right: 4px;
+  }
+  .kpi-card.b-blue   { --accent: #0075de; }
+  .kpi-card.b-green  { --accent: #1aae39; }
+  .kpi-card.b-purple { --accent: #8b5cf6; }
+  .kpi-card.b-red    { --accent: #d24a4a; }
+
+  /* —— ACCOUNTS GRID (5 cards) —— */
+  .accounts-grid {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;
+    margin-bottom: 32px;
+  }
+  .acct-card {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 2px var(--shadow-blue-2);
+    display: flex; flex-direction: column;
+  }
+  .acct-card .bar {
+    height: 3px; background: var(--accent); width: 100%;
+  }
+  .acct-card .body { padding: 14px 16px 16px; }
+  .acct-card .name {
+    font-size: 13px; font-weight: 600; letter-spacing: -0.01em;
+    color: var(--ink-1); margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .acct-card .name .dot {
+    width: 8px; height: 8px; border-radius: 2px;
+    background: var(--accent);
+  }
+  .acct-card .name .id {
+    margin-left: auto; font-size: 10.5px; color: var(--ink-3);
+    font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .acct-card .kpi-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    margin-bottom: 12px;
+  }
+  .acct-card .kpi-cell {
+    background: var(--bg-soft);
+    border-radius: 8px; padding: 9px 10px;
+  }
+  .acct-card .kpi-cell .v {
+    font-size: 17px; font-weight: 600; letter-spacing: -0.025em;
+    color: var(--ink-1); line-height: 1.1;
+    font-feature-settings: "tnum";
+  }
+  .acct-card .kpi-cell .l {
+    font-size: 10.5px; color: var(--ink-2); font-weight: 500;
+    margin-top: 2px;
+  }
+  .spend-bar {
+    height: 4px; background: var(--bg-soft); border-radius: 9999px;
+    overflow: hidden; margin-bottom: 8px;
+  }
+  .spend-bar > span {
+    display: block; height: 100%;
+    background: var(--accent); border-radius: 9999px;
+  }
+  .roas-chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 8px 3px 6px;
+    border-radius: 9999px; font-size: 10.5px; font-weight: 500;
+    background: var(--bg-soft); color: var(--ink-2);
+    border: 1px solid var(--rule-soft);
+  }
+  .roas-chip .dot {
+    width: 5px; height: 5px; border-radius: 50%; background: var(--ink-3);
+  }
+  .roas-chip.ok   { background: rgba(26,174,57,0.10); color: var(--ok); border-color: rgba(26,174,57,0.18); }
+  .roas-chip.ok .dot   { background: var(--ok); }
+  .roas-chip.warn { background: rgba(221,91,0,0.10); color: var(--warn); border-color: rgba(221,91,0,0.18); }
+  .roas-chip.warn .dot { background: var(--warn); }
+  .roas-chip.bad  { background: rgba(193,53,21,0.10); color: var(--bad); border-color: rgba(193,53,21,0.18); }
+  .roas-chip.bad .dot  { background: var(--bad); }
+  .acct-card .divider {
+    height: 1px; background: var(--rule-soft); margin: 10px 0;
+  }
+  .acct-card .ht-row {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 11px; color: var(--ink-2); font-weight: 500;
+  }
+  .acct-card .ht-row .badge {
+    padding: 1px 6px; border-radius: 4px; font-size: 9.5px;
+    background: linear-gradient(135deg, #ff7a45, #d24a4a);
+    color: #fff; font-weight: 700; letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .acct-card .ht-row .sep { color: var(--ink-4); margin: 0 2px; }
+  .acct-card .ht-row .v {
+    color: var(--ink-1); font-weight: 600;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  }
+  .acct-card.tidel   { --accent: var(--c-tidel); }
+  .acct-card.ariell  { --accent: var(--c-ariell); }
+  .acct-card.tide    { --accent: var(--c-tide); }
+  .acct-card.ariel   { --accent: var(--c-ariel); }
+  .acct-card.downy   { --accent: var(--c-downy); }
+
+  /* —— SECTION TITLE —— */
+  .section-title {
+    display: flex; align-items: center; gap: 12px;
+    margin: 32px 0 14px;
+    font-size: 16px; font-weight: 600; letter-spacing: -0.02em;
+    color: var(--ink-1);
+  }
+  .section-title .meta {
+    font-size: 12px; color: var(--ink-2); font-weight: 500;
+  }
+  .section-title .badge-count {
+    margin-left: auto;
+    padding: 3px 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 9999px;
+    font-size: 11px; color: var(--ink-2); font-weight: 600;
+    font-family: 'JetBrains Mono', monospace; letter-spacing: 0.02em;
+  }
+
+  /* —— DASHBOARD LAYOUT: main col + side col —— */
+  .dashboard-layout {
+    display: grid; grid-template-columns: 1fr 320px; gap: 16px;
+  }
+  .main-col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  .side-col { display: flex; flex-direction: column; gap: 16px; }
+
+  /* —— ACCOUNT DETAIL CARD —— */
+  .account-detail-card {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px var(--shadow-blue-2);
+  }
+  .account-detail-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 14px 18px;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--rule);
+  }
+  .account-detail-header h3 {
+    font-size: 14px; font-weight: 600; letter-spacing: -0.015em;
+    color: var(--ink-1);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .account-detail-header h3 .dot {
+    width: 8px; height: 8px; border-radius: 2px;
+  }
+  .account-badge {
+    padding: 3px 8px; border-radius: 6px;
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.02em;
+    color: #fff;
+  }
+  .account-badge.tidel   { background: var(--c-tidel); }
+  .account-badge.ariell  { background: var(--c-ariell); }
+  .account-badge.tide    { background: var(--c-tide); }
+  .account-badge.ariel   { background: var(--c-ariel); }
+  .account-badge.downy   { background: var(--c-downy); }
+
+  /* —— SKU TABLE —— */
+  .sku-table-wrap { overflow-x: auto; }
+  .sku-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 12.5px;
+  }
+  .sku-table thead th {
+    text-align: right;
+    padding: 10px 12px;
+    font-size: 10.5px; font-weight: 600;
+    color: var(--ink-3); text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: #fcfcfb;
+    border-bottom: 1px solid var(--rule);
+    position: sticky; top: 0;
+  }
+  .sku-table thead th:first-child { text-align: left; }
+  .sku-table tbody tr {
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .sku-table tbody tr:nth-child(even) { background: #fbfbf9; }
+  .sku-table tbody tr:hover { background: #f4f7fb; }
+  .sku-table tbody tr.ht-row {
+    background: linear-gradient(0deg, rgba(255,122,69,0.04), rgba(255,122,69,0.04));
+  }
+  .sku-table tbody tr.ht-row:hover { background: rgba(255,122,69,0.08); }
+  .sku-table tbody tr.ht-row td {
+    border-top: 1px dashed rgba(255,122,69,0.25);
+    font-weight: 500;
+  }
+  .sku-table td {
+    padding: 10px 12px;
+    text-align: right;
+    color: var(--ink-1);
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-feature-settings: "tnum";
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .sku-table td.num { letter-spacing: -0.01em; }
+  .sku-table td:first-child { text-align: left; font-family: inherit; }
+  .sku-name {
+    font-weight: 600; color: var(--ink-1);
+    letter-spacing: -0.005em;
+    font-size: 12.5px;
+  }
+  .sku-id {
+    margin-top: 2px;
+    font-size: 10.5px; color: var(--ink-3);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.005em;
+  }
+  .sku-table td .ht-label {
+    display: inline-block; margin-right: 6px;
+    padding: 1px 6px; border-radius: 4px;
+    background: linear-gradient(135deg, #ff7a45, #d24a4a);
+    color: #fff; font-size: 9.5px; font-weight: 700;
+    letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .sku-table td em-dash { color: var(--ink-4); }
+
+  /* ROI 状态色（颜色 + 形状 双编码：色盲友好） */
+  .roi-chip {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 2px 7px 2px 5px;
+    border-radius: 4px; font-size: 11.5px; font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.01em; min-width: 42px; text-align: center;
+  }
+  .roi-chip::before {
+    font-family: 'Inter', sans-serif; font-size: 8.5px; line-height: 1;
+    flex-shrink: 0;
+  }
+  .roi-chip.ok::before      { content: "▲"; }
+  .roi-chip.neutral::before { content: "●"; }
+  .roi-chip.warn::before    { content: "◆"; }
+  .roi-chip.bad::before     { content: "▼"; }
+  .roi-chip.ok      { background: rgba(26,174,57,0.12); color: var(--ok); }
+  .roi-chip.warn    { background: rgba(221,91,0,0.12); color: var(--warn); }
+  .roi-chip.bad     { background: rgba(193,53,21,0.12); color: var(--bad); }
+  .roi-chip.neutral { background: rgba(0,0,0,0.05); color: var(--ink-2); }
+
+  /* —— JST vs SEM STACKED BAR —— */
+  .stack-bar {
+    position: relative; height: 18px;
+    background: var(--bg-soft); border-radius: 4px;
+    overflow: hidden; display: flex;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04) inset;
+  }
+  .stack-bar .seg {
+    height: 100%; display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 9.5px; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace; letter-spacing: -0.01em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    overflow: hidden; white-space: nowrap;
+    transition: filter 0.15s;
+    min-width: 0;
+  }
+  .stack-bar .seg.jst { background: linear-gradient(180deg, #0075de 0%, #005fb0 100%); }
+  .stack-bar .seg.sem { background: linear-gradient(180deg, #e07a2c 0%, #b95a18 100%); }
+  .stack-bar:hover .seg { filter: brightness(1.08); }
+  .stack-legend {
+    display: flex; align-items: center; gap: 10px;
+    margin-top: 6px; font-size: 10px; color: var(--ink-3); font-weight: 500;
+  }
+  .stack-legend .l {
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .stack-legend .sq {
+    width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0;
+  }
+  .stack-legend .sq.jst { background: #0075de; }
+  .stack-legend .sq.sem { background: #e07a2c; }
+
+  /* —— SIDE PANELS —— */
+  .side-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 2px var(--shadow-blue-2);
+  }
+  .side-title {
+    font-size: 12px; font-weight: 600; color: var(--ink-2);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    margin-bottom: 14px;
+  }
+  .kpi-mini {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .kpi-mini:last-child { border-bottom: none; padding-bottom: 0; }
+  .kpi-mini:first-of-type { padding-top: 0; }
+  .kpi-mini .ic {
+    width: 28px; height: 28px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; flex-shrink: 0;
+  }
+  .kpi-mini .ic.b { background: rgba(0,117,222,0.10); color: var(--brand); }
+  .kpi-mini .ic.g { background: rgba(26,174,57,0.10); color: var(--ok); }
+  .kpi-mini .ic.p { background: rgba(139,92,246,0.10); color: #8b5cf6; }
+  .kpi-mini .ic.r { background: rgba(193,53,21,0.10); color: var(--bad); }
+  .kpi-mini .body { flex: 1; min-width: 0; }
+  .kpi-mini .v {
+    font-size: 20px; font-weight: 600; letter-spacing: -0.025em;
+    color: var(--ink-1); line-height: 1.1;
+    font-family: 'Inter', sans-serif;
+  }
+  .kpi-mini .l {
+    margin-top: 3px; font-size: 11px; color: var(--ink-2); font-weight: 500;
+  }
+
+  /* Donut */
+  .donut-wrap { display: flex; align-items: center; gap: 16px; }
+  .donut-svg { position: relative; flex-shrink: 0; }
+  .donut-center {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .donut-center .v {
+    font-size: 17px; font-weight: 600; letter-spacing: -0.025em;
+    color: var(--ink-1); line-height: 1.05;
+  }
+  .donut-center .l {
+    font-size: 10.5px; color: var(--ink-3); font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px;
+  }
+  .donut-legend { flex: 1; min-width: 0; }
+  .donut-legend .row {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 0; font-size: 12px;
+  }
+  .donut-legend .dot {
+    width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0;
+  }
+  .donut-legend .name { color: var(--ink-2); font-weight: 500; flex: 1; }
+  .donut-legend .pct {
+    color: var(--ink-1); font-weight: 600;
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+  }
+
+  /* Heatmap (ROI status) */
+  .heat-row {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .heat-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .heat-row:first-of-type { padding-top: 0; }
+  .heat-row .l {
+    display: flex; align-items: center; gap: 6px;
+    flex: 1; min-width: 0; font-size: 12px;
+  }
+  .heat-row .l .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .heat-row .l .name { color: var(--ink-1); font-weight: 500; }
+  .heat-row .badge {
+    padding: 2px 8px; border-radius: 9999px;
+    font-size: 10.5px; font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -0.01em;
+  }
+  .heat-row .badge.ok   { background: rgba(26,174,57,0.12); color: var(--ok); }
+  .heat-row .badge.warn { background: rgba(221,91,0,0.12); color: var(--warn); }
+  .heat-row .badge.bad  { background: rgba(193,53,21,0.12); color: var(--bad); }
+  .heat-row .dot.ok   { background: var(--ok); }
+  .heat-row .dot.warn { background: var(--warn); }
+  .heat-row .dot.bad  { background: var(--bad); }
+
+  /* —— INSIGHTS —— */
+  .insights-section {
+    margin-top: 24px;
+    background: linear-gradient(180deg, var(--bg-card) 0%, #fbfaf6 100%);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 20px 22px;
+    box-shadow: 0 4px 16px -8px var(--shadow-blue);
+  }
+  .insights-section .section-title {
+    margin-top: 0; margin-bottom: 12px;
+    font-size: 15px;
+  }
+  .insight-list { display: flex; flex-direction: column; gap: 10px; }
+  .insight-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 12px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--rule-soft);
+    border-radius: 10px;
+    font-size: 12.5px; line-height: 1.55;
+    color: var(--ink-2);
+  }
+  .insight-item .ic {
+    flex-shrink: 0; width: 24px; height: 24px;
+    border-radius: 7px; display: flex; align-items: center; justify-content: center;
+    font-size: 12px; margin-top: 1px;
+  }
+  .insight-item .ic.amber { background: rgba(221,91,0,0.10); color: var(--warn); }
+  .insight-item .ic.blue  { background: var(--brand-soft); color: var(--brand); }
+  .insight-item .ic.red   { background: rgba(193,53,21,0.10); color: var(--bad); }
+  .insight-item .ic.green { background: rgba(26,174,57,0.10); color: var(--ok); }
+  .insight-item strong {
+    color: var(--ink-1); font-weight: 600;
+  }
+  .insight-item code {
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    background: var(--bg-soft); padding: 1px 5px; border-radius: 3px;
+    color: var(--ink-1); font-weight: 500;
+  }
+
+  /* —— FOOTER —— */
+  .footer {
+    margin-top: 32px; padding-top: 18px;
+    border-top: 1px solid var(--rule-soft);
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 11px; color: var(--ink-3); font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .footer .brand-mark {
+    display: inline-flex; align-items: center; gap: 5px;
+    color: var(--ink-2); font-weight: 600;
+  }
+  .footer .brand-mark .ico {
+    width: 12px; height: 12px; border-radius: 3px;
+    background: linear-gradient(135deg, #0075de, #00c7be);
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="logo-mark">JZT</div>
+    <div>
+      <h1>京准通数据看板</h1>
+      <div class="header-sub">JD Marketing Intelligence · Real-time Performance Dashboard</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="live-pill"><span class="live-dot"></span>Live · 2026-06-01 23:57</span>
+  </div>
+</div>
+
+<div class="meta-bar">
+  <div class="meta-item"><span class="ic">⏱</span><span>生成时间</span><span class="v">2026-06-01 23:57</span></div>
+  <div class="meta-item"><span class="ic">📁</span><span>数据文件</span><span class="v">GMEC-Downy_全品牌数据Raw-当天_20260601_20260601.csv</span></div>
+  <div class="meta-item"><span class="ic">📅</span><span>数据时间</span><span class="v">2026-06-01 21:56:38</span></div>
+  <div class="meta-item"><span class="ic">🎯</span><span>口径</span><span class="v">排除 Paid BI · JST+SEM+HT</span></div>
+  <div class="meta-item warn"><span class="ic">⚠️</span><span>最新有效基线</span></div>
+</div>
+
+<!-- 4 KPI TOP STRIP -->
+<div class="kpi-strip">
+  <div class="kpi-card b-blue">
+    <div class="label">💰 总花费</div>
+    <div class="value"><span class="unit">¥</span>61,280</div>
+    <div class="sub"><span class="delta">JST+SEM+HT</span>跨 5 账户</div>
+  </div>
+  <div class="kpi-card b-green">
+    <div class="label">📈 加权平均 ROI</div>
+    <div class="value">3.52</div>
+    <div class="sub"><span class="delta">全目标达成</span>0 账户未达标</div>
+  </div>
+  <div class="kpi-card b-purple">
+    <div class="label">🎯 分账户 ROI 目标</div>
+    <div class="value" style="font-size:22px">1.5 / 2.5 / 3.0</div>
+    <div class="sub">Tide/Ariel / L 系列 / Downy 阶梯</div>
+  </div>
+  <div class="kpi-card b-red">
+    <div class="label">⚠️ 低于目标账户</div>
+    <div class="value">0</div>
+    <div class="sub">2 条 SKU 级预警 → 详见洞察</div>
+  </div>
+</div>
+
+<!-- 5 ACCOUNTS SUMMARY -->
+<div class="accounts-grid">
+
+  <div class="acct-card tidel">
+    <div class="bar"></div>
+    <div class="body">
+      <div class="name"><span class="dot"></span>GMEC-Tide-L <span class="id">#01</span></div>
+      <div class="kpi-row">
+        <div class="kpi-cell">
+          <div class="v">¥16,048</div><div class="l">综合花费</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="v">3.06</div><div class="l">综合 ROI</div>
+        </div>
+      </div>
+      <div class="spend-bar"><span style="width:93%"></span></div>
+      <div><span class="roas-chip ok"><span class="dot"></span>ROI 3.06 ≥ 2.5 OK</span></div>
+      <div class="stack-bar" title="JST ¥521 (5.2%) · SEM ¥9,520 (94.8%)">
+        <div class="seg jst" style="width:5.2%"></div>
+        <div class="seg sem" style="width:94.8%">95%</div>
+      </div>
+      <div class="stack-legend">
+        <span class="l"><span class="sq jst"></span>JST <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥521</span> <span style="color:var(--ink-3);">· 5%</span></span>
+        <span class="l"><span class="sq sem"></span>SEM <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥9,520</span></span>
+      </div>
+      <div class="divider"></div>
+      <div class="ht-row">
+        <span class="badge">HT</span>
+        <span class="v">¥6,006</span>
+        <span class="sep">·</span>
+        <span class="v">ROI 3.17</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="acct-card ariell">
+    <div class="bar"></div>
+    <div class="body">
+      <div class="name"><span class="dot"></span>GMEC-Ariel-L <span class="id">#02</span></div>
+      <div class="kpi-row">
+        <div class="kpi-cell">
+          <div class="v">¥17,182</div><div class="l">综合花费</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="v">4.85</div><div class="l">综合 ROI</div>
+        </div>
+      </div>
+      <div class="spend-bar"><span style="width:100%"></span></div>
+      <div><span class="roas-chip ok"><span class="dot"></span>ROI 4.85 ≥ 2.5 OK</span></div>
+      <div class="stack-bar" title="JST ¥560 (4.7%) · SEM ¥11,314 (95.3%)">
+        <div class="seg jst" style="width:4.7%"></div>
+        <div class="seg sem" style="width:95.3%">95%</div>
+      </div>
+      <div class="stack-legend">
+        <span class="l"><span class="sq jst"></span>JST <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥560</span> <span style="color:var(--ink-3);">· 5%</span></span>
+        <span class="l"><span class="sq sem"></span>SEM <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥11,314</span></span>
+      </div>
+      <div class="divider"></div>
+      <div class="ht-row">
+        <span class="badge">HT</span>
+        <span class="v">¥5,307</span>
+        <span class="sep">·</span>
+        <span class="v">ROI 8.71</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="acct-card tide">
+    <div class="bar"></div>
+    <div class="body">
+      <div class="name"><span class="dot"></span>GMEC-Tide <span class="id">#03</span></div>
+      <div class="kpi-row">
+        <div class="kpi-cell">
+          <div class="v">¥8,852</div><div class="l">综合花费</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="v">2.25</div><div class="l">综合 ROI</div>
+        </div>
+      </div>
+      <div class="spend-bar"><span style="width:52%"></span></div>
+      <div><span class="roas-chip ok"><span class="dot"></span>ROI 2.25 ≥ 1.5 OK</span></div>
+      <div class="stack-bar" title="JST ¥1,052 (13.2%) · SEM ¥6,906 (86.8%)">
+        <div class="seg jst" style="width:13.2%">13%</div>
+        <div class="seg sem" style="width:86.8%">87%</div>
+      </div>
+      <div class="stack-legend">
+        <span class="l"><span class="sq jst"></span>JST <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥1,052</span></span>
+        <span class="l"><span class="sq sem"></span>SEM <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥6,906</span></span>
+      </div>
+      <div class="divider"></div>
+      <div class="ht-row">
+        <span class="badge">HT</span>
+        <span class="v">¥895</span>
+        <span class="sep">·</span>
+        <span class="v">ROI 5.31</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="acct-card ariel">
+    <div class="bar"></div>
+    <div class="body">
+      <div class="name"><span class="dot"></span>GMEC-Ariel <span class="id">#04</span></div>
+      <div class="kpi-row">
+        <div class="kpi-cell">
+          <div class="v">¥9,393</div><div class="l">综合花费</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="v">2.32</div><div class="l">综合 ROI</div>
+        </div>
+      </div>
+      <div class="spend-bar"><span style="width:55%"></span></div>
+      <div><span class="roas-chip ok"><span class="dot"></span>ROI 2.32 ≥ 1.5 OK</span></div>
+      <div class="stack-bar" title="JST ¥737 (8.7%) · SEM ¥7,711 (91.3%)">
+        <div class="seg jst" style="width:8.7%">9%</div>
+        <div class="seg sem" style="width:91.3%">91%</div>
+      </div>
+      <div class="stack-legend">
+        <span class="l"><span class="sq jst"></span>JST <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥737</span></span>
+        <span class="l"><span class="sq sem"></span>SEM <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥7,711</span></span>
+      </div>
+      <div class="divider"></div>
+      <div class="ht-row">
+        <span class="badge">HT</span>
+        <span class="v">¥945</span>
+        <span class="sep">·</span>
+        <span class="v">ROI 6.46</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="acct-card downy">
+    <div class="bar"></div>
+    <div class="body">
+      <div class="name"><span class="dot"></span>GMEC-Downy <span class="id">#05</span></div>
+      <div class="kpi-row">
+        <div class="kpi-cell">
+          <div class="v">¥9,805</div><div class="l">综合花费</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="v">4.24</div><div class="l">综合 ROI</div>
+        </div>
+      </div>
+      <div class="spend-bar"><span style="width:57%"></span></div>
+      <div><span class="roas-chip ok"><span class="dot"></span>ROI 4.24 ≥ 3.0 OK</span></div>
+      <div class="stack-bar" title="JST ¥2,272 (37.2%) · SEM ¥3,840 (62.8%)">
+        <div class="seg jst" style="width:37.2%">37%</div>
+        <div class="seg sem" style="width:62.8%">63%</div>
+      </div>
+      <div class="stack-legend">
+        <span class="l"><span class="sq jst"></span>JST <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥2,272</span></span>
+        <span class="l"><span class="sq sem"></span>SEM <span style="color:var(--ink-1);font-weight:600;font-family:'JetBrains Mono',monospace;">¥3,840</span></span>
+      </div>
+      <div class="divider"></div>
+      <div class="ht-row">
+        <span class="badge">HT</span>
+        <span class="v">¥3,693</span>
+        <span class="sep">·</span>
+        <span class="v">ROI 4.87</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">
+  SKU 明细 · JST + SEM 分拆数据
+  <span class="meta">（口径：排除 Paid BI · JST+SEM+HT）</span>
+  <span class="badge-count">22 SKUs</span>
+</div>
+
+<div class="dashboard-layout">
+
+  <div class="main-col">
+
+    <!-- GMEC-Tide-L -->
+    <div class="account-detail-card">
+      <div class="account-detail-header">
+        <h3><span class="dot" style="background:var(--c-tidel)"></span>GMEC-Tide-L</h3>
+        <span class="account-badge tidel">Tide · 5 SKUs</span>
+      </div>
+      <div class="sku-table-wrap">
+        <table class="sku-table">
+          <thead><tr>
+            <th>SKU 名称 (跟单SKU ID)</th>
+            <th>综合花费</th>
+            <th>综合 ROI</th>
+            <th>JST 花费</th>
+            <th>JST ROI</th>
+            <th>SEM 花费</th>
+            <th>SEM ROI</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="sku-name">汰渍百合 24 斤</div><div class="sku-id">2646498</div></td>
+              <td class="num">¥4,258</td>
+              <td class="num"><span class="roi-chip neutral">2.54</span></td>
+              <td class="num">¥54</td>
+              <td class="num"><span class="roi-chip ok">3.41</span></td>
+              <td class="num">¥4,204</td>
+              <td class="num"><span class="roi-chip neutral">2.53</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">汰渍百合 16 斤</div><div class="sku-id">100008794192</div></td>
+              <td class="num">¥2,073</td>
+              <td class="num"><span class="roi-chip bad">2.22</span></td>
+              <td class="num">¥54</td>
+              <td class="num"><span class="roi-chip ok">5.99</span></td>
+              <td class="num">¥2,019</td>
+              <td class="num"><span class="roi-chip bad">2.12</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">汰渍 SAK 5.5kg</div><div class="sku-id">100063120723</div></td>
+              <td class="num">¥1,876</td>
+              <td class="num"><span class="roi-chip ok">5.08</span></td>
+              <td class="num">¥211</td>
+              <td class="num"><span class="roi-chip ok">5.46</span></td>
+              <td class="num">¥1,664</td>
+              <td class="num"><span class="roi-chip ok">5.04</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">汰渍 LAV 5.5kg</div><div class="sku-id">100063120717</div></td>
+              <td class="num">¥924</td>
+              <td class="num"><span class="roi-chip ok">3.27</span></td>
+              <td class="num">¥140</td>
+              <td class="num"><span class="roi-chip ok">9.95</span></td>
+              <td class="num">¥784</td>
+              <td class="num"><span class="roi-chip bad">2.07</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">汰渍 9kg</div><div class="sku-id">2795972</div></td>
+              <td class="num">¥912</td>
+              <td class="num"><span class="roi-chip neutral">2.37</span></td>
+              <td class="num">¥62</td>
+              <td class="num"><span class="roi-chip ok">5.34</span></td>
+              <td class="num">¥849</td>
+              <td class="num"><span class="roi-chip bad">2.15</span></td>
+            </tr>
+            <tr class="ht-row">
+              <td><span class="ht-label">HT</span>黑盒整体</td>
+              <td class="num">¥6,006</td>
+              <td class="num"><span class="roi-chip warn">3.17</span></td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GMEC-Ariel-L -->
+    <div class="account-detail-card">
+      <div class="account-detail-header">
+        <h3><span class="dot" style="background:var(--c-ariell)"></span>GMEC-Ariel-L</h3>
+        <span class="account-badge ariell">Ariel · 6 SKUs</span>
+      </div>
+      <div class="sku-table-wrap">
+        <table class="sku-table">
+          <thead><tr>
+            <th>SKU 名称 (跟单SKU ID)</th>
+            <th>综合花费</th>
+            <th>综合 ROI</th>
+            <th>JST 花费</th>
+            <th>JST ROI</th>
+            <th>SEM 花费</th>
+            <th>SEM ROI</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="sku-name">碧浪 Matic 6.8kg</div><div class="sku-id">4713934</div></td>
+              <td class="num">¥5,268</td>
+              <td class="num"><span class="roi-chip ok">3.27</span></td>
+              <td class="num">¥108</td>
+              <td class="num"><span class="roi-chip ok">10.61</span></td>
+              <td class="num">¥5,160</td>
+              <td class="num"><span class="roi-chip ok">3.12</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">碧浪 Jasmine 6kg</div><div class="sku-id">100008766160</div></td>
+              <td class="num">¥2,036</td>
+              <td class="num"><span class="roi-chip neutral">2.51</span></td>
+              <td class="num">¥105</td>
+              <td class="num"><span class="roi-chip bad">0.67</span></td>
+              <td class="num">¥1,931</td>
+              <td class="num"><span class="roi-chip neutral">2.61</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">碧浪日晒清新 6 斤</div><div class="sku-id">1978117</div></td>
+              <td class="num">¥2,034</td>
+              <td class="num"><span class="roi-chip ok">2.78</span></td>
+              <td class="num">¥123</td>
+              <td class="num"><span class="roi-chip ok">11.30</span></td>
+              <td class="num">¥1,911</td>
+              <td class="num"><span class="roi-chip bad">2.23</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">碧浪 Matic 9kg</div><div class="sku-id">100039735595</div></td>
+              <td class="num">¥1,476</td>
+              <td class="num"><span class="roi-chip ok">3.98</span></td>
+              <td class="num">¥53</td>
+              <td class="num"><span class="roi-chip ok">6.67</span></td>
+              <td class="num">¥1,423</td>
+              <td class="num"><span class="roi-chip ok">3.88</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">碧浪自然清香 16 斤</div><div class="sku-id">100006804447</div></td>
+              <td class="num">¥789</td>
+              <td class="num"><span class="roi-chip ok">3.26</span></td>
+              <td class="num">¥118</td>
+              <td class="num"><span class="roi-chip ok">9.34</span></td>
+              <td class="num">¥670</td>
+              <td class="num"><span class="roi-chip bad">2.19</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">碧浪 NF 10kg</div><div class="sku-id">100036714440</div></td>
+              <td class="num">¥272</td>
+              <td class="num"><span class="roi-chip neutral">2.55</span></td>
+              <td class="num">¥53</td>
+              <td class="num"><span class="roi-chip ok">4.39</span></td>
+              <td class="num">¥219</td>
+              <td class="num"><span class="roi-chip bad">2.11</span></td>
+            </tr>
+            <tr class="ht-row">
+              <td><span class="ht-label">HT</span>黑盒整体</td>
+              <td class="num">¥5,307</td>
+              <td class="num"><span class="roi-chip warn">8.71</span></td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GMEC-Tide -->
+    <div class="account-detail-card">
+      <div class="account-detail-header">
+        <h3><span class="dot" style="background:var(--c-tide)"></span>GMEC-Tide</h3>
+        <span class="account-badge tide">Tide · 2 SKUs</span>
+      </div>
+      <div class="sku-table-wrap">
+        <table class="sku-table">
+          <thead><tr>
+            <th>SKU 名称 (跟单SKU ID)</th>
+            <th>综合花费</th>
+            <th>综合 ROI</th>
+            <th>JST 花费</th>
+            <th>JST ROI</th>
+            <th>SEM 花费</th>
+            <th>SEM ROI</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="sku-name">汰渍山茶花 3.4kg</div><div class="sku-id">100161974102</div></td>
+              <td class="num">¥7,364</td>
+              <td class="num"><span class="roi-chip ok">1.88</span></td>
+              <td class="num">¥532</td>
+              <td class="num"><span class="roi-chip ok">2.67</span></td>
+              <td class="num">¥6,833</td>
+              <td class="num"><span class="roi-chip ok">1.82</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">汰渍薰衣草 3.4kg</div><div class="sku-id">100131766577</div></td>
+              <td class="num">¥593</td>
+              <td class="num"><span class="roi-chip ok">2.28</span></td>
+              <td class="num">¥520</td>
+              <td class="num"><span class="roi-chip ok">2.31</span></td>
+              <td class="num">¥73</td>
+              <td class="num"><span class="roi-chip ok">2.04</span></td>
+            </tr>
+            <tr class="ht-row">
+              <td><span class="ht-label">HT</span>黑盒整体</td>
+              <td class="num">¥895</td>
+              <td class="num"><span class="roi-chip warn">5.31</span></td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GMEC-Ariel -->
+    <div class="account-detail-card">
+      <div class="account-detail-header">
+        <h3><span class="dot" style="background:var(--c-ariel)"></span>GMEC-Ariel</h3>
+        <span class="account-badge ariel">Ariel · 2 SKUs</span>
+      </div>
+      <div class="sku-table-wrap">
+        <table class="sku-table">
+          <thead><tr>
+            <th>SKU 名称 (跟单SKU ID)</th>
+            <th>综合花费</th>
+            <th>综合 ROI</th>
+            <th>JST 花费</th>
+            <th>JST ROI</th>
+            <th>SEM 花费</th>
+            <th>SEM ROI</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="sku-name">碧浪免搓粉 3.1kg</div><div class="sku-id">100161952438</div></td>
+              <td class="num">¥4,738</td>
+              <td class="num"><span class="roi-chip ok">1.84</span></td>
+              <td class="num">¥368</td>
+              <td class="num"><span class="roi-chip ok">3.25</span></td>
+              <td class="num">¥4,370</td>
+              <td class="num"><span class="roi-chip ok">1.72</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">碧浪薰衣草免搓粉 3.1kg</div><div class="sku-id">100162871390</div></td>
+              <td class="num">¥3,710</td>
+              <td class="num"><span class="roi-chip ok">1.87</span></td>
+              <td class="num">¥369</td>
+              <td class="num"><span class="roi-chip ok">2.88</span></td>
+              <td class="num">¥3,341</td>
+              <td class="num"><span class="roi-chip ok">1.76</span></td>
+            </tr>
+            <tr class="ht-row">
+              <td><span class="ht-label">HT</span>黑盒整体</td>
+              <td class="num">¥945</td>
+              <td class="num"><span class="roi-chip warn">6.46</span></td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GMEC-Downy -->
+    <div class="account-detail-card">
+      <div class="account-detail-header">
+        <h3><span class="dot" style="background:var(--c-downy)"></span>GMEC-Downy</h3>
+        <span class="account-badge downy">Downy · 7 SKUs</span>
+      </div>
+      <div class="sku-table-wrap">
+        <table class="sku-table">
+          <thead><tr>
+            <th>SKU 名称 (跟单SKU ID)</th>
+            <th>综合花费</th>
+            <th>综合 ROI</th>
+            <th>JST 花费</th>
+            <th>JST ROI</th>
+            <th>SEM 花费</th>
+            <th>SEM ROI</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="sku-name">当妮 950g 自由之森</div><div class="sku-id">100301903542</div></td>
+              <td class="num">¥2,515</td>
+              <td class="num"><span class="roi-chip ok">4.00</span></td>
+              <td class="num">¥895</td>
+              <td class="num"><span class="roi-chip ok">6.15</span></td>
+              <td class="num">¥1,621</td>
+              <td class="num"><span class="roi-chip neutral">2.81</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">当妮留香珠 200g*3</div><div class="sku-id">100111047759</div></td>
+              <td class="num">¥864</td>
+              <td class="num"><span class="roi-chip neutral">2.93</span></td>
+              <td class="num">¥369</td>
+              <td class="num"><span class="roi-chip bad">1.88</span></td>
+              <td class="num">¥495</td>
+              <td class="num"><span class="roi-chip ok">3.71</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">当妮 450g 清晨橘光</div><div class="sku-id">100268112394</div></td>
+              <td class="num">¥780</td>
+              <td class="num"><span class="roi-chip ok">4.61</span></td>
+              <td class="num">¥343</td>
+              <td class="num"><span class="roi-chip ok">6.63</span></td>
+              <td class="num">¥437</td>
+              <td class="num"><span class="roi-chip neutral">3.03</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">当妮 450g 自由之森</div><div class="sku-id">100053319577</div></td>
+              <td class="num">¥720</td>
+              <td class="num"><span class="roi-chip neutral">3.05</span></td>
+              <td class="num">¥124</td>
+              <td class="num"><span class="roi-chip bad">0.98</span></td>
+              <td class="num">¥596</td>
+              <td class="num"><span class="roi-chip ok">3.49</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">当妮 950g 清晨橘光</div><div class="sku-id">100233530169</div></td>
+              <td class="num">¥683</td>
+              <td class="num"><span class="roi-chip ok">4.45</span></td>
+              <td class="num">¥541</td>
+              <td class="num"><span class="roi-chip ok">5.11</span></td>
+              <td class="num">¥142</td>
+              <td class="num"><span class="roi-chip bad">1.93</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">当妮 450g 玫瑰之巅</div><div class="sku-id">100044243858</div></td>
+              <td class="num">¥534</td>
+              <td class="num"><span class="roi-chip ok">3.92</span></td>
+              <td class="num">¥0</td>
+              <td class="num"><span class="roi-chip bad">0.00</span></td>
+              <td class="num">¥534</td>
+              <td class="num"><span class="roi-chip ok">3.75</span></td>
+            </tr>
+            <tr>
+              <td><div class="sku-name">当妮 450g 清雨山茶</div><div class="sku-id">100094637928</div></td>
+              <td class="num">¥15</td>
+              <td class="num"><span class="roi-chip bad">2.33</span></td>
+              <td class="num">¥0</td>
+              <td class="num"><span class="roi-chip bad">0.00</span></td>
+              <td class="num">¥15</td>
+              <td class="num"><span class="roi-chip bad">0.00</span></td>
+            </tr>
+            <tr class="ht-row">
+              <td><span class="ht-label">HT</span>黑盒整体</td>
+              <td class="num">¥3,693</td>
+              <td class="num"><span class="roi-chip warn">4.87</span></td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+              <td class="num em-dash">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIDE COLUMN -->
+  <div class="side-col">
+
+    <div class="side-panel">
+      <div class="side-title">HT 渠道效率排行</div>
+      <div class="kpi-mini" style="padding:7px 0;">
+        <div class="ic" style="background:rgba(26,174,57,0.10);color:var(--ok);font-family:'JetBrains Mono',monospace;font-size:11px;">1</div>
+        <div class="body">
+          <div class="v" style="font-size:13px;letter-spacing:-0.01em;">GMEC-Ariel-L</div>
+          <div class="l" style="font-family:'JetBrains Mono',monospace;font-size:10.5px;">HT ¥5,307 <span style="color:var(--ok);font-weight:600;">HT·8.71</span></div>
+        </div>
+      </div>
+      <div class="kpi-mini" style="padding:7px 0;">
+        <div class="ic" style="background:rgba(26,174,57,0.10);color:var(--ok);font-family:'JetBrains Mono',monospace;font-size:11px;">2</div>
+        <div class="body">
+          <div class="v" style="font-size:13px;letter-spacing:-0.01em;">GMEC-Ariel</div>
+          <div class="l" style="font-family:'JetBrains Mono',monospace;font-size:10.5px;">HT ¥945 <span style="color:var(--ok);font-weight:600;">HT·6.46</span></div>
+        </div>
+      </div>
+      <div class="kpi-mini" style="padding:7px 0;">
+        <div class="ic" style="background:rgba(0,0,0,0.06);color:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;">3</div>
+        <div class="body">
+          <div class="v" style="font-size:13px;letter-spacing:-0.01em;">GMEC-Tide</div>
+          <div class="l" style="font-family:'JetBrains Mono',monospace;font-size:10.5px;">HT ¥895 <span style="color:var(--ok);font-weight:600;">HT·5.31</span></div>
+        </div>
+      </div>
+      <div class="kpi-mini" style="padding:7px 0;">
+        <div class="ic" style="background:rgba(0,0,0,0.06);color:var(--ink-2);font-family:'JetBrains Mono',monospace;font-size:11px;">4</div>
+        <div class="body">
+          <div class="v" style="font-size:13px;letter-spacing:-0.01em;">GMEC-Downy</div>
+          <div class="l" style="font-family:'JetBrains Mono',monospace;font-size:10.5px;">HT ¥3,693 <span style="color:var(--warn);font-weight:600;">HT·4.87</span></div>
+        </div>
+      </div>
+      <div class="kpi-mini" style="padding:7px 0;border-bottom:none;">
+        <div class="ic" style="background:rgba(221,91,0,0.10);color:var(--warn);font-family:'JetBrains Mono',monospace;font-size:11px;">5</div>
+        <div class="body">
+          <div class="v" style="font-size:13px;letter-spacing:-0.01em;">GMEC-Tide-L</div>
+          <div class="l" style="font-family:'JetBrains Mono',monospace;font-size:10.5px;">HT ¥6,006 <span style="color:var(--warn);font-weight:600;">HT·3.17</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-panel">
+      <div class="side-title">JST vs SEM 花费构成</div>
+      <div class="donut-wrap">
+        <div class="donut-svg">
+          <svg width="110" height="110" viewBox="0 0 110 110">
+            <circle cx="55" cy="55" r="44" fill="none" stroke="#f0f0ec" stroke-width="16"/>
+            <circle cx="55" cy="55" r="44" fill="none" stroke="#0075de" stroke-width="16"
+                    stroke-dasharray="34.0 283" stroke-dashoffset="-69" stroke-linecap="round"/>
+            <circle cx="55" cy="55" r="44" fill="none" stroke="#e07a2c" stroke-width="16"
+                    stroke-dasharray="249.0 283" stroke-dashoffset="-103.0" stroke-linecap="round"/>
+          </svg>
+          <div class="donut-center">
+            <div class="v">¥44.4K</div>
+            <div class="l">JST+SEM</div>
+          </div>
+        </div>
+        <div class="donut-legend">
+          <div class="row">
+            <span class="dot" style="background:#0075de"></span>
+            <span class="name">JST</span>
+            <span class="pct">12%</span>
+          </div>
+          <div class="row">
+            <span class="dot" style="background:#e07a2c"></span>
+            <span class="name">SEM</span>
+            <span class="pct">88%</span>
+          </div>
+          <div class="row">
+            <span class="dot" style="background:#d24a4a"></span>
+            <span class="name">HT</span>
+            <span class="pct">¥16,845</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-panel">
+      <div class="side-title">各账户综合 ROI 状态</div>
+      <div class="heat-row">
+        <div class="l"><span class="dot ok"></span><span class="name">GMEC-Tide-L</span></div>
+        <span class="badge ok">3.06 OK</span>
+      </div>
+      <div class="heat-row">
+        <div class="l"><span class="dot ok"></span><span class="name">GMEC-Ariel-L</span></div>
+        <span class="badge ok">4.85 OK</span>
+      </div>
+      <div class="heat-row">
+        <div class="l"><span class="dot ok"></span><span class="name">GMEC-Tide</span></div>
+        <span class="badge ok">2.25 OK</span>
+      </div>
+      <div class="heat-row">
+        <div class="l"><span class="dot ok"></span><span class="name">GMEC-Ariel</span></div>
+        <span class="badge ok">2.32 OK</span>
+      </div>
+      <div class="heat-row">
+        <div class="l"><span class="dot ok"></span><span class="name">GMEC-Downy</span></div>
+        <span class="badge ok">4.24 OK</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="insights-section">
+  <div class="section-title">📊 建议与洞察</div>
+  <div class="insight-list">
+    <div class="insight-item">
+      <div class="ic amber">⚠️</div>
+      <div><strong>GMEC-Tide-L</strong> · <code>汰渍百合 16 斤</code> 综合 ROI 2.22 未达目标 2.5，SEM 花费占比偏高，建议检视 SEM 出价与人群定向</div>
+    </div>
+    <div class="insight-item">
+      <div class="ic amber">⚠️</div>
+      <div><strong>GMEC-Downy</strong> · <code>当妮 450g 清雨山茶</code> 综合 ROI 2.33 未达目标 3.0，SEM ROI 为 0，建议暂停投放并复核</div>
+    </div>
+    <div class="insight-item">
+      <div class="ic blue">🔍</div>
+      <div><strong>GMEC-Downy</strong> · <code>当妮留香珠 200g*3</code> JST ROI 1.88 偏低（花费 ¥369），建议检查人群定向；同 SKU 的 SEM ROI 3.71 健康</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <span>数据来源：Fabric CSV · 口径：排除 Paid BI · JST+SEM+HT</span>
+  <span class="brand-mark"><span class="ico"></span>Hermes Atelier</span>
+</div>
+
+</body>
+</html>
