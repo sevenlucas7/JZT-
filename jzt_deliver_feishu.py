@@ -212,7 +212,10 @@ def build_html_dashboard(skus: list[dict], report_date: str, slot: str, split_da
     from jzt_dashboard_renderer import build_html_dashboard as render_painter_dashboard
 
     suggestions = generate_suggestions(skus)
-    return render_painter_dashboard(skus, report_date, slot, split_data, meta, suggestions)
+    # The painter renderer signature is (skus, split_data, meta, suggestions).
+    # The Feishu pipeline still calls us with the legacy (skus, report_date, slot,
+    # split_data, meta) shape; adapt accordingly.
+    return render_painter_dashboard(skus, split_data, meta, suggestions)
 
 
 def screenshot_html(html: str, output_path: Path) -> Path:

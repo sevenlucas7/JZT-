@@ -28,8 +28,10 @@ TARGETS = {
     "GMEC-Downy": 3.0,
 }
 
-LEGACY_ACCOUNTS = {"GMEC-Tide", "GMEC-Ariel"}
-PWD_ACCOUNTS = {"GMEC-Tide-L", "GMEC-Ariel-L"}
+# Legacy = L 系列（旧包装，洗衣液）: GMEC-Tide-L + GMEC-Ariel-L
+# PWD = PWD 粉洗（洗衣粉）: GMEC-Tide + GMEC-Ariel
+LEGACY_ACCOUNTS = {"GMEC-Tide-L", "GMEC-Ariel-L"}
+PWD_ACCOUNTS = {"GMEC-Tide", "GMEC-Ariel"}
 
 GENERIC_PLAN_SUFFIXES = {
     "洗衣液", "洗衣粉", "留香珠", "柔顺剂", "洗衣凝珠", "凝珠",

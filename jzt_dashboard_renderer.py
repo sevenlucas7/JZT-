@@ -23,8 +23,10 @@ TARGETS = {
     "GMEC-Ariel-L": 2.5,
     "GMEC-Downy": 3.0,
 }
-LEGACY_ACCOUNTS = {"GMEC-Tide", "GMEC-Ariel"}
-PWD_ACCOUNTS = {"GMEC-Tide-L", "GMEC-Ariel-L"}
+# Legacy = L 系列（旧包装，洗衣液）: GMEC-Tide-L + GMEC-Ariel-L
+# PWD = PWD 粉洗（洗衣粉）: GMEC-Tide + GMEC-Ariel
+LEGACY_ACCOUNTS = {"GMEC-Tide-L", "GMEC-Ariel-L"}
+PWD_ACCOUNTS = {"GMEC-Tide", "GMEC-Ariel"}
 ACCOUNT_ORDER = ["GMEC-Tide-L", "GMEC-Ariel-L", "GMEC-Tide", "GMEC-Ariel", "GMEC-Downy"]
 TEMPLATE_PATH = Path(__file__).with_name("jzt_dashboard_redesign_template.html")
 
@@ -112,6 +114,22 @@ def delta_badge_small(diff: float, pct: float, direction: str) -> str:
     cls = "up" if direction == "up" else "down" if direction == "down" else "neutral"
     pct_sign = "+" if pct > 0 else ""
     return f'<span class="delta-inline {cls}">{icon} {pct_sign}{pct:.1f}%</span>'
+
+
+def sku_delta_chip(diff: float, pct: float, direction: str) -> str:
+    """SKU-level vs-2h-ago chip.
+
+    Always emits *something* so it's visually clear that the column carries a
+    per-SKU comparison slot. When no historical data is available (direction is
+    ``neutral`` and diff/pct are both 0) we still render an em-dash placeholder
+    wrapped in ``sku-delta-slot`` so the column header alignment is preserved.
+    """
+    if direction == "neutral" or (diff == 0 and pct == 0):
+        return '<span class="sku-delta-slot" title="vs 2h ago">—</span>'
+    icon = "↑" if direction == "up" else "↓" if direction == "down" else ""
+    cls = "up" if direction == "up" else "down" if direction == "down" else "neutral"
+    pct_sign = "+" if pct > 0 else ""
+    return f'<span class="delta-inline {cls} sku-delta-slot" title="vs 2h ago">{icon} {pct_sign}{pct:.1f}%</span>'
 
 
 def get_account_deltas(split_data: dict | None, account: str) -> tuple[dict, dict]:
@@ -247,6 +265,32 @@ def load_painter_head() -> str:
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+  /* —— SKU-LEVEL vs 2H DELTA SLOT —— */
+  .sku-delta-slot {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 9.5px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ink-4);
+    vertical-align: 1px;
+  }
+  .sku-delta-slot.delta-inline.up   { color: var(--ok); }
+  .sku-delta-slot.delta-inline.down { color: var(--bad); }
+  .sku-table thead th .th-suffix {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 5px;
+    border-radius: 9999px;
+    background: rgba(0,117,222,0.10);
+    color: #0075de;
+    font-size: 8.5px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+    vertical-align: 1px;
+  }
   .kpi-strip .kpi-card { animation: fadeInUp 0.4s ease both; }
   .kpi-strip .kpi-card:nth-child(1) { animation-delay: 0.05s; }
   .kpi-strip .kpi-card:nth-child(2) { animation-delay: 0.10s; }
@@ -312,12 +356,18 @@ def build_account_stats(skus: list[dict], split_data: dict | None) -> list[dict]
 
 def build_html_dashboard(
     skus: list[dict],
-    report_date: str,
-    slot: str,
     split_data: dict | None = None,
     meta: dict | None = None,
     suggestions: list[str] | None = None,
 ) -> str:
+    """Build the painter redesign HTML dashboard.
+
+    Args:
+        skus: List of SKU dicts (the ``skus`` array of split.json).
+        split_data: Full split.json dict (must contain ``ht``, ``deltas``, etc.).
+        meta: Report meta info (source file name, modified time, etc.).
+        suggestions: Optional list of insight strings.
+    """
     account_visuals = {
         "GMEC-Tide-L": {"class": "tidel", "badge": "tidel", "brand": "Tide", "color": "var(--c-tidel)", "id": "#01"},
         "GMEC-Ariel-L": {"class": "ariell", "badge": "ariell", "brand": "Ariel", "color": "var(--c-ariell)", "id": "#02"},
@@ -368,9 +418,19 @@ def build_html_dashboard(
             series_deltas_spend_yd.append(sd.get("vs_yesterday", {}))
             series_deltas_roi_2h.append(rd.get("vs_2h", {}))
             series_deltas_roi_yd.append(rd.get("vs_yesterday", {}))
-        # Aggregate spend deltas (weighted by spend)
-        total_prev_spend_2h = sum(d.get("diff", 0) + (total_spend - d.get("diff", 0)) for d in series_deltas_spend_2h if d)
-        total_prev_spend_yd = sum(d.get("diff", 0) + (total_spend - d.get("diff", 0)) for d in series_deltas_spend_yd if d)
+        # Aggregate account-level deltas using the same JST+SEM+HT account total
+        #口径 as the visible series total. Each account delta is current - previous,
+        # so previous = current_account_total - diff.
+        total_prev_spend_2h = sum(
+            a["total_spend"] - safe_float(d.get("diff", 0))
+            for a, d in zip(stats, series_deltas_spend_2h)
+            if d
+        )
+        total_prev_spend_yd = sum(
+            a["total_spend"] - safe_float(d.get("diff", 0))
+            for a, d in zip(stats, series_deltas_spend_yd)
+            if d
+        )
         agg_spend_2h = compute_series_delta(total_spend, total_prev_spend_2h)
         agg_spend_yd = compute_series_delta(total_spend, total_prev_spend_yd)
         badge_2h = delta_badge(agg_spend_2h["diff"], agg_spend_2h["pct"], agg_spend_2h["direction"])
@@ -462,12 +522,12 @@ def build_html_dashboard(
             sku_spend_yd = sku_spend_d.get("vs_yesterday", {})
             sku_roi_2h = sku_roi_d.get("vs_2h", {})
             sku_roi_yd = sku_roi_d.get("vs_yesterday", {})
-            sku_spend_badge = delta_badge_small(sku_spend_2h.get("diff", 0), sku_spend_2h.get("pct", 0), sku_spend_2h.get("direction", "neutral"))
-            sku_roi_badge = delta_badge_small(sku_roi_2h.get("diff", 0), sku_roi_2h.get("pct", 0), sku_roi_2h.get("direction", "neutral"))
+            sku_spend_badge = sku_delta_chip(sku_spend_2h.get("diff", 0), sku_spend_2h.get("pct", 0), sku_spend_2h.get("direction", "neutral"))
+            sku_roi_badge = sku_delta_chip(sku_roi_2h.get("diff", 0), sku_roi_2h.get("pct", 0), sku_roi_2h.get("direction", "neutral"))
             rows.append(f'''<tr><td><div class="sku-name">{sn}</div><div class="sku-id">{sid}</div></td><td class="num">{money(comb_s)} {sku_spend_badge}</td><td class="num">{roi_chip(comb_r, a['target'])} {sku_roi_badge}</td><td class="num">{money(jst_s)}</td><td class="num">{roi_chip(jst_r, a['target'], jst_s)}</td><td class="num">{money(sem_s)}</td><td class="num">{roi_chip(sem_r, a['target'], sem_s)}</td></tr>''')
         rows.append(f'''<tr class="ht-row"><td><span class="ht-label">HT</span>黑盒整体</td><td class="num">{money(a['ht_spend'])}</td><td class="num">{roi_chip(a['ht_roi'], a['target'], a['ht_spend'])}</td><td class="num em-dash">—</td><td class="num em-dash">—</td><td class="num em-dash">—</td><td class="num em-dash">—</td></tr>''')
         detail_cards.append(f'''
-    <div class="account-detail-card"><div class="account-detail-header"><h3><span class="dot" style="background:{v['color']}"></span>{esc(account)}</h3><span class="account-badge {v['badge']}">{esc(v['brand'])} · {len(a['skus'])} SKUs</span></div><div class="sku-table-wrap"><table class="sku-table"><thead><tr><th>SKU 名称 (跟单SKU ID)</th><th>综合花费</th><th>综合 ROI</th><th>JST 花费</th><th>JST ROI</th><th>SEM 花费</th><th>SEM ROI</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></div>''')
+    <div class="account-detail-card"><div class="account-detail-header"><h3><span class="dot" style="background:{v['color']}"></span>{esc(account)}</h3><span class="account-badge {v['badge']}">{esc(v['brand'])} · {len(a['skus'])} SKUs</span></div><div class="sku-table-wrap"><table class="sku-table"><thead><tr><th>SKU 名称 (跟单SKU ID)</th><th>综合花费<span class="th-suffix">vs 2h</span></th><th>综合 ROI<span class="th-suffix">vs 2h</span></th><th>JST 花费</th><th>JST ROI</th><th>SEM 花费</th><th>SEM ROI</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></div>''')
         heat_rows.append(f'<div class="heat-row"><div class="l"><span class="dot {st}"></span><span class="name">{esc(account)}</span></div><span class="badge {st}">{roi_txt(a["avg_roi"])} {ok_text}</span></div>')
 
     ht_rank_rows = []
