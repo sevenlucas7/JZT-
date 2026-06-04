@@ -116,3 +116,65 @@ curl -L 'https://sevenlucas7.github.io/JZT-/?v=<commit>'
 - Sync helper：`~/.hermes/scripts/jingzhuntong/jzt_sync_github_pages.py`
 - Runtime artifacts：`~/.openclaw/runtime/jzt_reports/<date>/`
 - Skill reference：`jzt-report-pipeline/references/github-pages-online-dashboard.md`
+
+---
+
+## 2026-06-04 — 在线版建议数据修复
+
+### 背景
+
+Boss 指出「JZT 看板在线版」展示数据可能不对，需要对照 cron job 文字报数和本地 JZT 看板。经核对，账户总花费、ROI、SKU 明细与 cron 文字报数一致；真正不一致的是在线版「建议与洞察」区域。
+
+### 根因
+
+`~/.hermes/scripts/jingzhuntong/jzt_sync_github_pages.py` 调用 repo renderer 时传入了空建议列表：
+
+```python
+html = build_html_dashboard(data.get("skus", []), data, meta, [])
+```
+
+导致在线版显示：
+
+```text
+低于目标账户 1
+0 条 SKU 级预警
+暂无明显异常，当前账户整体 ROI 表现稳定。
+```
+
+但同一 slot 的 cron 文字报数和本地看板实际有 5 条建议。
+
+### 已完成修改
+
+- `~/.hermes/scripts/jingzhuntong/jzt_sync_github_pages.py`
+  - 从 repo `jzt_deliver_feishu.py` import `generate_suggestions`
+  - 在线版 sync 时按同一套建议引擎生成 suggestions
+  - 再传入 `build_html_dashboard(...)`
+- `~/JZT报数/jzt_dashboard_renderer.py`
+  - 修复 Legacy / PWD series card 的 ROI 环比 badge：不能复用总览 ROI 环比，需按 series 内账户加权重算
+
+### 验证结果
+
+slot：`2026-06-04 1802`
+
+账户汇总对照 cron 文字报数：
+
+| 账户 | cron 总花费 / ROI | online split 总花费 / ROI | 结果 |
+|---|---:|---:|---|
+| GMEC-Ariel | 5532.17 / 2.8 | 5532.17 / 2.8 | OK |
+| GMEC-Ariel-L | 11791.80 / 3.4 | 11791.76 / 3.4 | OK |
+| GMEC-Downy | 12774.90 / 2.9 | 12774.92 / 2.9 | OK |
+| GMEC-Tide | 3731.10 / 2.3 | 3731.10 / 2.3 | OK |
+| GMEC-Tide-L | 10913.80 / 3.5 | 10913.82 / 3.5 | OK |
+
+线上已验证：
+
+- `slot_label = 1802`
+- `source_file_modified_at = 2026-06-04 17:56:38`
+- 顶部 KPI 显示 `低于目标账户 1 / 5 条 SKU 级预警`
+- 「建议与洞察」显示 5 条建议
+- 不再显示 `暂无明显异常`
+
+相关 commits：
+
+- `4d12754 Auto-update JZT dashboard 2026-06-04 1802`
+- `1c6ea09 Fix JZT online dashboard suggestion data`
