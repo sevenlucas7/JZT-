@@ -87,49 +87,30 @@ def roi_chip(value: float, target: float, spend: float | None = None) -> str:
 
 
 def delta_badge(diff: float, pct: float, direction: str) -> str:
-    """Build a delta badge HTML element.
-
-    Args:
-        diff: Absolute difference value
-        pct: Percentage change
-        direction: "up", "down", or "neutral"
-
-    Returns:
-        HTML string for the delta badge
-    """
-    if direction == "neutral" or (diff == 0 and pct == 0):
+    """Build an index badge: current / previous * 100."""
+    if pct == 0:
         return '<span class="delta-badge neutral">—</span>'
-    icon = "↑" if direction == "up" else "↓" if direction == "down" else "—"
     cls = "up" if direction == "up" else "down" if direction == "down" else "neutral"
-    sign = "+" if diff > 0 else ""
-    pct_sign = "+" if pct > 0 else ""
-    return f'<span class="delta-badge {cls}">{icon} {sign}{diff:,.0f} ({pct_sign}{pct:.1f}%)</span>'
+    return f'<span class="delta-badge {cls}" title="新数据 / 旧数据 × 100">{pct:.0f}%</span>'
 
 
 def delta_badge_small(diff: float, pct: float, direction: str) -> str:
-    """Build a small inline delta badge (for table cells)."""
-    if direction == "neutral" or (diff == 0 and pct == 0):
+    """Build a small inline index badge: current / previous * 100."""
+    if pct == 0:
         return ""
-    icon = "↑" if direction == "up" else "↓" if direction == "down" else ""
     cls = "up" if direction == "up" else "down" if direction == "down" else "neutral"
-    pct_sign = "+" if pct > 0 else ""
-    return f'<span class="delta-inline {cls}">{icon} {pct_sign}{pct:.1f}%</span>'
+    return f'<span class="delta-inline {cls}" title="新数据 / 旧数据 × 100">{pct:.0f}%</span>'
 
 
 def sku_delta_chip(diff: float, pct: float, direction: str) -> str:
-    """SKU-level vs-2h-ago chip.
+    """SKU-level latest-vs-previous index chip.
 
-    Always emits *something* so it's visually clear that the column carries a
-    per-SKU comparison slot. When no historical data is available (direction is
-    ``neutral`` and diff/pct are both 0) we still render an em-dash placeholder
-    wrapped in ``sku-delta-slot`` so the column header alignment is preserved.
+    Shows Boss' requested formula: current / previous * 100.
     """
-    if direction == "neutral" or (diff == 0 and pct == 0):
-        return '<span class="sku-delta-slot" title="vs 2h ago">—</span>'
-    icon = "↑" if direction == "up" else "↓" if direction == "down" else ""
+    if pct == 0:
+        return '<span class="sku-delta-slot" title="新数据 / 旧数据 × 100">—</span>'
     cls = "up" if direction == "up" else "down" if direction == "down" else "neutral"
-    pct_sign = "+" if pct > 0 else ""
-    return f'<span class="delta-inline {cls} sku-delta-slot" title="vs 2h ago">{icon} {pct_sign}{pct:.1f}%</span>'
+    return f'<span class="delta-inline {cls} sku-delta-slot" title="新数据 / 旧数据 × 100">{pct:.0f}%</span>'
 
 
 def get_account_deltas(split_data: dict | None, account: str) -> tuple[dict, dict]:
@@ -152,12 +133,38 @@ def get_sku_deltas(split_data: dict | None, account: str, sku_id: str) -> tuple[
     return {}, {}
 
 
+def get_sku_metric_delta(split_data: dict | None, account: str, sku_id: str, metric: str) -> dict:
+    """Get a named SKU metric delta dict, e.g. JST花费 / JST ROI / SEM花费 / SEM ROI."""
+    if not split_data or "deltas" not in split_data:
+        return {}
+    for sd in split_data.get("deltas", {}).get("skus", []):
+        if sd.get("账户") == account and sd.get("SKU ID") == sku_id:
+            return sd.get(metric, {})
+    return {}
+
+
 def get_overall_deltas(split_data: dict | None) -> tuple[dict, dict]:
     """Get overall total_spend and total_roi deltas."""
     if not split_data or "deltas" not in split_data:
         return {}, {}
     deltas = split_data.get("deltas", {})
     return deltas.get("total_spend", {}), deltas.get("total_roi", {})
+
+
+def get_format_deltas(split_data: dict | None, format_name: str) -> tuple[dict, dict]:
+    """Get spend and ROI index deltas for JST / SEM / HT."""
+    if not split_data or "deltas" not in split_data:
+        return {}, {}
+    fd = split_data.get("deltas", {}).get("formats", {}).get(format_name, {})
+    return fd.get("花费", {}), fd.get("ROI", {})
+
+
+def get_ht_deltas(split_data: dict | None, account: str) -> tuple[dict, dict]:
+    """Get account-level HT spend and ROI deltas."""
+    if not split_data or "deltas" not in split_data:
+        return {}, {}
+    hd = split_data.get("deltas", {}).get("ht", {}).get(account, {})
+    return hd.get("HT花费", {}), hd.get("HT ROI", {})
 
 
 def pct_value(part: float, total: float) -> float:
@@ -243,6 +250,25 @@ def load_painter_head() -> str:
     font-size: 10.5px; color: var(--ink-2);
   }
   .series-deltas .delta-badge { margin-left: 0; }
+
+  /* —— FORMAT CARDS (JST / SEM / HT latest-vs-previous index) —— */
+  .format-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+    margin: -12px 0 24px;
+  }
+  .format-card {
+    background: var(--bg-card); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 14px 16px;
+    box-shadow: 0 1px 2px var(--shadow-blue-2);
+    border-top: 3px solid var(--fmt-color);
+  }
+  .fmt-top { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+  .fmt-dot { width:8px; height:8px; border-radius:99px; background:var(--fmt-color); }
+  .fmt-name { font-size:14px; font-weight:700; color:var(--ink-1); }
+  .fmt-tag { margin-left:auto; font-size:10px; color:var(--ink-3); font-family:'JetBrains Mono', monospace; }
+  .fmt-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .fmt-value { font-size:18px; font-weight:650; color:var(--ink-1); font-family:'JetBrains Mono', monospace; }
+  .fmt-label { margin-top:3px; font-size:10.5px; color:var(--ink-2); }
 
   /* —— ACCOUNT CARD DELTA ADJUSTMENTS —— */
   .acct-card .kpi-cell .delta-row { font-size: 9.5px; }
@@ -433,10 +459,10 @@ def build_html_dashboard(
         )
         agg_spend_2h = compute_series_delta(total_spend, total_prev_spend_2h)
         agg_spend_yd = compute_series_delta(total_spend, total_prev_spend_yd)
-        badge_2h = delta_badge(agg_spend_2h["diff"], agg_spend_2h["pct"], agg_spend_2h["direction"])
-        badge_yd = delta_badge(agg_spend_yd["diff"], agg_spend_yd["pct"], agg_spend_yd["direction"])
-        badge_2h_roi = delta_badge_small(roi_2h.get("diff", 0), roi_2h.get("pct", 0), roi_2h.get("direction", "neutral"))
-        badge_yd_roi = delta_badge_small(roi_yd.get("diff", 0), roi_yd.get("pct", 0), roi_yd.get("direction", "neutral"))
+        badge_2h = delta_badge(agg_spend_2h["diff"], agg_spend_2h["index_pct"], agg_spend_2h["direction"])
+        badge_yd = delta_badge(agg_spend_yd["diff"], agg_spend_yd["index_pct"], agg_spend_yd["direction"])
+        badge_2h_roi = delta_badge_small(roi_2h.get("diff", 0), roi_2h.get("index_pct", 0), roi_2h.get("direction", "neutral"))
+        badge_yd_roi = delta_badge_small(roi_yd.get("diff", 0), roi_yd.get("index_pct", 0), roi_yd.get("direction", "neutral"))
         return f'''
   <div class="series-card" style="--series-color:{color}">
     <div class="series-bar"></div>
@@ -455,11 +481,12 @@ def build_html_dashboard(
 
     def compute_series_delta(current: float, previous: float) -> dict:
         if not previous or previous == 0:
-            return {"diff": 0, "pct": 0, "direction": "neutral"}
+            return {"diff": 0, "pct": 0, "index_pct": 0, "direction": "neutral"}
         diff = current - previous
         pct = (diff / abs(previous)) * 100 if previous != 0 else 0
+        index_pct = (current / previous) * 100 if previous != 0 else 0
         direction = "up" if diff > 0 else "down" if diff < 0 else "neutral"
-        return {"diff": round(diff, 2), "pct": round(pct, 2), "direction": direction}
+        return {"diff": round(diff, 2), "pct": round(pct, 2), "index_pct": round(index_pct, 2), "direction": direction}
 
     account_cards: list[str] = []
     detail_cards: list[str] = []
@@ -484,10 +511,10 @@ def build_html_dashboard(
         spend_yd = spend_d.get("vs_yesterday", {})
         roi_2h = roi_d.get("vs_2h", {})
         roi_yd = roi_d.get("vs_yesterday", {})
-        spend_badge_2h = delta_badge_small(spend_2h.get("diff", 0), spend_2h.get("pct", 0), spend_2h.get("direction", "neutral"))
-        spend_badge_yd = delta_badge_small(spend_yd.get("diff", 0), spend_yd.get("pct", 0), spend_yd.get("direction", "neutral"))
-        roi_badge_2h = delta_badge_small(roi_2h.get("diff", 0), roi_2h.get("pct", 0), roi_2h.get("direction", "neutral"))
-        roi_badge_yd = delta_badge_small(roi_yd.get("diff", 0), roi_yd.get("pct", 0), roi_yd.get("direction", "neutral"))
+        spend_badge_2h = delta_badge_small(spend_2h.get("diff", 0), spend_2h.get("index_pct", 0), spend_2h.get("direction", "neutral"))
+        spend_badge_yd = delta_badge_small(spend_yd.get("diff", 0), spend_yd.get("index_pct", 0), spend_yd.get("direction", "neutral"))
+        roi_badge_2h = delta_badge_small(roi_2h.get("diff", 0), roi_2h.get("index_pct", 0), roi_2h.get("direction", "neutral"))
+        roi_badge_yd = delta_badge_small(roi_yd.get("diff", 0), roi_yd.get("index_pct", 0), roi_yd.get("direction", "neutral"))
 
         account_cards.append(f'''
   <div class="acct-card {v['class']}">
@@ -522,12 +549,25 @@ def build_html_dashboard(
             sku_spend_yd = sku_spend_d.get("vs_yesterday", {})
             sku_roi_2h = sku_roi_d.get("vs_2h", {})
             sku_roi_yd = sku_roi_d.get("vs_yesterday", {})
-            sku_spend_badge = sku_delta_chip(sku_spend_2h.get("diff", 0), sku_spend_2h.get("pct", 0), sku_spend_2h.get("direction", "neutral"))
-            sku_roi_badge = sku_delta_chip(sku_roi_2h.get("diff", 0), sku_roi_2h.get("pct", 0), sku_roi_2h.get("direction", "neutral"))
-            rows.append(f'''<tr><td><div class="sku-name">{sn}</div><div class="sku-id">{sid}</div></td><td class="num">{money(comb_s)} {sku_spend_badge}</td><td class="num">{roi_chip(comb_r, a['target'])} {sku_roi_badge}</td><td class="num">{money(jst_s)}</td><td class="num">{roi_chip(jst_r, a['target'], jst_s)}</td><td class="num">{money(sem_s)}</td><td class="num">{roi_chip(sem_r, a['target'], sem_s)}</td></tr>''')
-        rows.append(f'''<tr class="ht-row"><td><span class="ht-label">HT</span>黑盒整体</td><td class="num">{money(a['ht_spend'])}</td><td class="num">{roi_chip(a['ht_roi'], a['target'], a['ht_spend'])}</td><td class="num em-dash">—</td><td class="num em-dash">—</td><td class="num em-dash">—</td><td class="num em-dash">—</td></tr>''')
+            sku_spend_badge = sku_delta_chip(sku_spend_2h.get("diff", 0), sku_spend_2h.get("index_pct", 0), sku_spend_2h.get("direction", "neutral"))
+            sku_roi_badge = sku_delta_chip(sku_roi_2h.get("diff", 0), sku_roi_2h.get("index_pct", 0), sku_roi_2h.get("direction", "neutral"))
+            jst_spend_2h = get_sku_metric_delta(split_data, account, s.get("SKU ID", ""), "JST花费").get("vs_2h", {})
+            jst_roi_2h = get_sku_metric_delta(split_data, account, s.get("SKU ID", ""), "JST ROI").get("vs_2h", {})
+            sem_spend_2h = get_sku_metric_delta(split_data, account, s.get("SKU ID", ""), "SEM花费").get("vs_2h", {})
+            sem_roi_2h = get_sku_metric_delta(split_data, account, s.get("SKU ID", ""), "SEM ROI").get("vs_2h", {})
+            jst_spend_badge = sku_delta_chip(jst_spend_2h.get("diff", 0), jst_spend_2h.get("index_pct", 0), jst_spend_2h.get("direction", "neutral"))
+            jst_roi_badge = sku_delta_chip(jst_roi_2h.get("diff", 0), jst_roi_2h.get("index_pct", 0), jst_roi_2h.get("direction", "neutral"))
+            sem_spend_badge = sku_delta_chip(sem_spend_2h.get("diff", 0), sem_spend_2h.get("index_pct", 0), sem_spend_2h.get("direction", "neutral"))
+            sem_roi_badge = sku_delta_chip(sem_roi_2h.get("diff", 0), sem_roi_2h.get("index_pct", 0), sem_roi_2h.get("direction", "neutral"))
+            rows.append(f'''<tr><td><div class="sku-name">{sn}</div><div class="sku-id">{sid}</div></td><td class="num">{money(comb_s)} {sku_spend_badge}</td><td class="num">{roi_chip(comb_r, a['target'])} {sku_roi_badge}</td><td class="num">{money(jst_s)} {jst_spend_badge}</td><td class="num">{roi_chip(jst_r, a['target'], jst_s)} {jst_roi_badge}</td><td class="num">{money(sem_s)} {sem_spend_badge}</td><td class="num">{roi_chip(sem_r, a['target'], sem_s)} {sem_roi_badge}</td></tr>''')
+        ht_spend_d, ht_roi_d = get_ht_deltas(split_data, account)
+        ht_spend_2h = ht_spend_d.get("vs_2h", {})
+        ht_roi_2h = ht_roi_d.get("vs_2h", {})
+        ht_spend_badge = sku_delta_chip(ht_spend_2h.get("diff", 0), ht_spend_2h.get("index_pct", 0), ht_spend_2h.get("direction", "neutral"))
+        ht_roi_badge = sku_delta_chip(ht_roi_2h.get("diff", 0), ht_roi_2h.get("index_pct", 0), ht_roi_2h.get("direction", "neutral"))
+        rows.append(f'''<tr class="ht-row"><td><span class="ht-label">HT</span>黑盒整体</td><td class="num">{money(a['ht_spend'])} {ht_spend_badge}</td><td class="num">{roi_chip(a['ht_roi'], a['target'], a['ht_spend'])} {ht_roi_badge}</td><td class="num em-dash">—</td><td class="num em-dash">—</td><td class="num em-dash">—</td><td class="num em-dash">—</td></tr>''')
         detail_cards.append(f'''
-    <div class="account-detail-card"><div class="account-detail-header"><h3><span class="dot" style="background:{v['color']}"></span>{esc(account)}</h3><span class="account-badge {v['badge']}">{esc(v['brand'])} · {len(a['skus'])} SKUs</span></div><div class="sku-table-wrap"><table class="sku-table"><thead><tr><th>SKU 名称 (跟单SKU ID)</th><th>综合花费<span class="th-suffix">vs 2h</span></th><th>综合 ROI<span class="th-suffix">vs 2h</span></th><th>JST 花费</th><th>JST ROI</th><th>SEM 花费</th><th>SEM ROI</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></div>''')
+    <div class="account-detail-card"><div class="account-detail-header"><h3><span class="dot" style="background:{v['color']}"></span>{esc(account)}</h3><span class="account-badge {v['badge']}">{esc(v['brand'])} · {len(a['skus'])} SKUs</span></div><div class="sku-table-wrap"><table class="sku-table"><thead><tr><th>SKU 名称 (跟单SKU ID)</th><th>综合花费<span class="th-suffix">新/旧</span></th><th>综合 ROI<span class="th-suffix">新/旧</span></th><th>JST 花费<span class="th-suffix">新/旧</span></th><th>JST ROI<span class="th-suffix">新/旧</span></th><th>SEM 花费<span class="th-suffix">新/旧</span></th><th>SEM ROI<span class="th-suffix">新/旧</span></th></tr></thead><tbody>{''.join(rows)}</tbody></table></div></div>''')
         heat_rows.append(f'<div class="heat-row"><div class="l"><span class="dot {st}"></span><span class="name">{esc(account)}</span></div><span class="badge {st}">{roi_txt(a["avg_roi"])} {ok_text}</span></div>')
 
     ht_rank_rows = []
@@ -555,10 +595,27 @@ def build_html_dashboard(
     else:
         insight_rows.append('<div class="insight-item"><div class="ic green">✅</div><div>暂无明显异常，当前账户整体 ROI 表现稳定。</div></div>')
 
-    spend_badge_2h = delta_badge(spend_2h.get("diff", 0), spend_2h.get("pct", 0), spend_2h.get("direction", "neutral"))
-    spend_badge_yd = delta_badge(spend_yd.get("diff", 0), spend_yd.get("pct", 0), spend_yd.get("direction", "neutral"))
-    roi_badge_2h = delta_badge(roi_2h.get("diff", 0), roi_2h.get("pct", 0), roi_2h.get("direction", "neutral"))
-    roi_badge_yd = delta_badge(roi_yd.get("diff", 0), roi_yd.get("pct", 0), roi_yd.get("direction", "neutral"))
+    spend_badge_2h = delta_badge(spend_2h.get("diff", 0), spend_2h.get("index_pct", 0), spend_2h.get("direction", "neutral"))
+    spend_badge_yd = delta_badge(spend_yd.get("diff", 0), spend_yd.get("index_pct", 0), spend_yd.get("direction", "neutral"))
+    roi_badge_2h = delta_badge(roi_2h.get("diff", 0), roi_2h.get("index_pct", 0), roi_2h.get("direction", "neutral"))
+    roi_badge_yd = delta_badge(roi_yd.get("diff", 0), roi_yd.get("index_pct", 0), roi_yd.get("direction", "neutral"))
+
+    def format_card(name: str, spend: float, roi: float, color: str) -> str:
+        fd_spend, fd_roi = get_format_deltas(split_data, name)
+        s2 = fd_spend.get("vs_2h", {})
+        r2 = fd_roi.get("vs_2h", {})
+        spend_badge = delta_badge_small(s2.get("diff", 0), s2.get("index_pct", 0), s2.get("direction", "neutral"))
+        roi_badge = delta_badge_small(r2.get("diff", 0), r2.get("index_pct", 0), r2.get("direction", "neutral"))
+        return f'''<div class="format-card" style="--fmt-color:{color}"><div class="fmt-top"><span class="fmt-dot"></span><span class="fmt-name">{name}</span><span class="fmt-tag">新/旧</span></div><div class="fmt-grid"><div><div class="fmt-value">{money(spend)} {spend_badge}</div><div class="fmt-label">花费指数</div></div><div><div class="fmt-value">{roi_txt(roi)} {roi_badge}</div><div class="fmt-label">ROI 指数</div></div></div></div>'''
+
+    total_jst_rev = sum(safe_float(s.get("JST花费(SPD)", 0)) * safe_float(s.get("JST ROI", 0)) for s in skus)
+    total_sem_rev = sum(safe_float(s.get("SEM花费(SPD)", 0)) * safe_float(s.get("SEM ROI", 0)) for s in skus)
+    total_ht_rev = sum(a["ht_spend"] * a["ht_roi"] for a in account_stats)
+    format_cards_html = '<div class="format-grid">' + ''.join([
+        format_card("JST", total_jst, total_jst_rev / total_jst if total_jst else 0, "#0075de"),
+        format_card("SEM", total_sem, total_sem_rev / total_sem if total_sem else 0, "#e07a2c"),
+        format_card("HT", total_ht, total_ht_rev / total_ht if total_ht else 0, "#d24a4a"),
+    ]) + '</div>'
 
     # Build series cards
     legacy_card = series_card("Legacy", legacy_stats, "var(--c-tide)")
@@ -572,6 +629,7 @@ def build_html_dashboard(
 <div class="meta-bar"><div class="meta-item"><span class="ic">⏱</span><span>生成时间</span><span class="v">{generated_at}</span></div><div class="meta-item"><span class="ic">📁</span><span>数据文件</span><span class="v">{esc(source_name)}</span></div><div class="meta-item"><span class="ic">📅</span><span>数据时间</span><span class="v">{esc(source_time)}</span></div><div class="meta-item"><span class="ic">🎯</span><span>口径</span><span class="v">排除 Paid BI · JST+SEM+HT</span></div><div class="meta-item warn"><span class="ic">⚠️</span><span>最新有效基线</span></div></div>
 <div class="kpi-strip"><div class="kpi-card b-blue"><div class="label">💰 总花费</div><div class="value"><span class="unit">¥</span>{fmt_num(total_all_spend)}</div><div class="sub"><span class="delta">JST+SEM+HT</span>跨 {len(account_stats)} 账户</div><div class="kpi-deltas">{spend_badge_2h} {spend_badge_yd}</div></div><div class="kpi-card b-green"><div class="label">📈 加权平均 ROI</div><div class="value">{roi_txt(weighted_roi)}</div><div class="sub"><span class="delta">{'全目标达成' if low_accounts == 0 else '存在异常'}</span>{low_accounts} 账户未达标</div><div class="kpi-deltas">{roi_badge_2h} {roi_badge_yd}</div></div><div class="kpi-card b-purple"><div class="label">🎯 分账户 ROI 目标</div><div class="value" style="font-size:22px">1.5 / 2.5 / 3.0</div><div class="sub">Tide/Ariel / L 系列 / Downy 阶梯</div></div><div class="kpi-card b-red"><div class="label">⚠️ 低于目标账户</div><div class="value">{low_accounts}</div><div class="sub">{len(suggestions)} 条 SKU 级预警 → 详见洞察</div></div></div>
 {series_cards_html}
+{format_cards_html}
 <div class="accounts-grid">{''.join(account_cards)}</div>
 <div class="section-title">SKU 明细 · JST + SEM 分拆数据 <span class="meta">（口径：排除 Paid BI · JST+SEM+HT）</span><span class="badge-count">{sku_count} SKUs</span></div>
 <div class="dashboard-layout"><div class="main-col">{''.join(detail_cards)}</div><div class="side-col"><div class="side-panel"><div class="side-title">HT 渠道效率排行</div>{''.join(ht_rank_rows)}</div><div class="side-panel"><div class="side-title">JST vs SEM 花费构成</div><div class="donut-wrap"><div class="donut-svg"><svg width="110" height="110" viewBox="0 0 110 110"><circle cx="55" cy="55" r="44" fill="none" stroke="#f0f0ec" stroke-width="16"/><circle cx="55" cy="55" r="44" fill="none" stroke="#0075de" stroke-width="16" stroke-dasharray="{jst_dash:.1f} {circ:.0f}" stroke-dashoffset="-69" stroke-linecap="round"/><circle cx="55" cy="55" r="44" fill="none" stroke="#e07a2c" stroke-width="16" stroke-dasharray="{sem_dash:.1f} {circ:.0f}" stroke-dashoffset="{sem_offset:.1f}" stroke-linecap="round"/></svg><div class="donut-center"><div class="v">{short_money(jst_sem_total)}</div><div class="l">JST+SEM</div></div></div><div class="donut-legend"><div class="row"><span class="dot" style="background:#0075de"></span><span class="name">JST</span><span class="pct">{jst_pct_i}%</span></div><div class="row"><span class="dot" style="background:#e07a2c"></span><span class="name">SEM</span><span class="pct">{sem_pct_i}%</span></div><div class="row"><span class="dot" style="background:#d24a4a"></span><span class="name">HT</span><span class="pct">{money(total_ht)}</span></div></div></div></div><div class="side-panel"><div class="side-title">各账户综合 ROI 状态</div>{''.join(heat_rows)}</div></div></div>
