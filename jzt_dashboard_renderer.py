@@ -447,7 +447,10 @@ def build_html_dashboard(
         total_spend = sum(a["total_spend"] for a in stats)
         total_rev = sum(a["total_rev"] for a in stats)
         roi = total_rev / total_spend if total_spend else 0
-        # Get combined deltas for this series
+        # Get combined deltas for this series.
+        # Spend can be aggregated by summing account spend deltas. ROI must be
+        # recomputed as weighted revenue / spend, not copied from the overall
+        # dashboard ROI; otherwise Legacy and PWD show the same ROI badge.
         series_deltas_spend_2h = []
         series_deltas_roi_2h = []
         for a in stats:
@@ -464,7 +467,16 @@ def build_html_dashboard(
         )
         agg_spend_2h = compute_series_delta(total_spend, total_prev_spend_2h)
         badge_2h = delta_badge(agg_spend_2h["diff"], agg_spend_2h["index_pct"], agg_spend_2h["direction"])
-        badge_2h_roi = delta_badge_small(roi_2h.get("diff", 0), roi_2h.get("index_pct", 0), roi_2h.get("direction", "neutral"))
+        total_prev_rev_2h = 0.0
+        for a, spend_d, roi_d in zip(stats, series_deltas_spend_2h, series_deltas_roi_2h):
+            if not spend_d or not roi_d:
+                continue
+            prev_spend = a["total_spend"] - safe_float(spend_d.get("diff", 0))
+            prev_roi = a["avg_roi"] - safe_float(roi_d.get("diff", 0))
+            total_prev_rev_2h += prev_spend * prev_roi
+        prev_series_roi_2h = total_prev_rev_2h / total_prev_spend_2h if total_prev_spend_2h else 0
+        agg_roi_2h = compute_series_delta(roi, prev_series_roi_2h)
+        badge_2h_roi = delta_badge_small(agg_roi_2h.get("diff", 0), agg_roi_2h.get("index_pct", 0), agg_roi_2h.get("direction", "neutral"))
         return f'''
   <div class="series-card" style="--series-color:{color}">
     <div class="series-bar"></div>
