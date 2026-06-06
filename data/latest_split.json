@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06 10:00:21",
+  "generated_at": "2026-06-06 10:44:55",
   "source_file": "GMEC-Downy_全品牌数据Raw-当天_20260606_20260606.csv",
   "slot_label": "1002",
   "report_date": "2026-06-06",
@@ -10,76 +10,76 @@
       "SKU名称": "碧浪洗衣免搓粉 纯净清香6.2斤装 洗衣粉非爆炸盐皂粉  99%杀菌除螨",
       "SKU简称": "碧浪免搓粉3.1kg",
       "SKU ID": "100161952438",
-      "综合ROI(含JST+SEM)": 2.05,
-      "综合花费(SPD)": 1265.62,
-      "综合CPC": 6.77,
-      "综合CTR": 0.0774,
-      "综合CVR": 0.246,
+      "综合ROI(含JST+SEM)": 2.1,
+      "综合花费(SPD)": 1731.9,
+      "综合CPC": 6.66,
+      "综合CTR": 0.0864,
+      "综合CVR": 0.25,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 412.17,
-      "JST ROI": 2.18,
-      "JST CPC": 5.8052,
-      "SEM花费(SPD)": 853.45,
-      "SEM ROI": 1.99,
-      "SEM CPC": 7.3573
+      "JST花费(SPD)": 483.86,
+      "JST ROI": 2.23,
+      "JST CPC": 5.8296,
+      "SEM花费(SPD)": 1248.04,
+      "SEM ROI": 2.05,
+      "SEM CPC": 7.0511
     },
     {
       "账户": "GMEC-Ariel",
       "SKU名称": "碧浪洗衣免搓粉 阳光薰衣草6.2斤装 洗衣粉非爆炸盐皂粉  99%杀菌除螨",
       "SKU简称": "碧浪薰衣草免搓粉3.1kg",
       "SKU ID": "100162871390",
-      "综合ROI(含JST+SEM)": 1.79,
-      "综合花费(SPD)": 645.09,
-      "综合CPC": 7.96,
-      "综合CTR": 0.0653,
-      "综合CVR": 0.2469,
+      "综合ROI(含JST+SEM)": 1.71,
+      "综合花费(SPD)": 708.5,
+      "综合CPC": 7.38,
+      "综合CTR": 0.068,
+      "综合CVR": 0.2188,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
       "JST花费(SPD)": 527.51,
       "JST ROI": 1.67,
       "JST CPC": 7.6451,
-      "SEM花费(SPD)": 117.58,
-      "SEM ROI": 2.34,
-      "SEM CPC": 9.7983
+      "SEM花费(SPD)": 180.99,
+      "SEM ROI": 1.83,
+      "SEM CPC": 6.7033
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液20斤装(3kg*3瓶自然清新+200g*5袋草本清新)家庭装",
       "SKU简称": "碧浪NF10kg",
       "SKU ID": "100036714440",
-      "综合ROI(含JST+SEM)": 2.5,
-      "综合花费(SPD)": 355.79,
-      "综合CPC": 4.56,
-      "综合CTR": 0.0676,
-      "综合CVR": 0.0897,
+      "综合ROI(含JST+SEM)": 2.52,
+      "综合花费(SPD)": 398.35,
+      "综合CPC": 4.58,
+      "综合CTR": 0.0639,
+      "综合CVR": 0.092,
       "状态": "正常",
       "ROI目标": 2.5,
       "JST花费(SPD)": 54.24,
       "JST ROI": 5.92,
       "JST CPC": 1.9371,
-      "SEM花费(SPD)": 301.55,
-      "SEM ROI": 1.89,
-      "SEM CPC": 6.031
+      "SEM花费(SPD)": 344.11,
+      "SEM ROI": 1.99,
+      "SEM CPC": 5.8324
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液日晒般清新13.6斤装(3kg*2瓶+200g*4袋)家庭装",
       "SKU简称": "碧浪Matic 6.8kg",
       "SKU ID": "4713934",
-      "综合ROI(含JST+SEM)": 4.79,
-      "综合花费(SPD)": 432.2,
-      "综合CPC": 3.86,
-      "综合CTR": 0.0794,
-      "综合CVR": 0.2232,
+      "综合ROI(含JST+SEM)": 4.78,
+      "综合花费(SPD)": 515.06,
+      "综合CPC": 3.93,
+      "综合CTR": 0.0755,
+      "综合CVR": 0.229,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
       "JST花费(SPD)": 131.37,
-      "JST ROI": 7.84,
+      "JST ROI": 8.98,
       "JST CPC": 2.4787,
-      "SEM花费(SPD)": 300.83,
-      "SEM ROI": 3.47,
-      "SEM CPC": 5.0988
+      "SEM花费(SPD)": 383.69,
+      "SEM ROI": 3.34,
+      "SEM CPC": 4.9191
     },
     {
       "账户": "GMEC-Ariel-L",
@@ -87,91 +87,91 @@
       "SKU简称": "碧浪Matic9kg",
       "SKU ID": "100039735595",
       "综合ROI(含JST+SEM)": 3.08,
-      "综合花费(SPD)": 107.73,
-      "综合CPC": 4.68,
-      "综合CTR": 0.0464,
-      "综合CVR": 0.1304,
+      "综合花费(SPD)": 107.89,
+      "综合CPC": 4.5,
+      "综合CTR": 0.04,
+      "综合CVR": 0.125,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
       "JST花费(SPD)": 54.84,
       "JST ROI": 2.0,
       "JST CPC": 4.9855,
-      "SEM花费(SPD)": 52.89,
-      "SEM ROI": 4.21,
-      "SEM CPC": 4.4075
+      "SEM花费(SPD)": 53.05,
+      "SEM ROI": 4.19,
+      "SEM CPC": 4.0808
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液日晒般清新6斤瓶装 杀菌除螨 根源消臭去黄 支持快洗",
       "SKU简称": "碧浪日晒清新6斤",
       "SKU ID": "1978117",
-      "综合ROI(含JST+SEM)": 4.5,
-      "综合花费(SPD)": 455.79,
-      "综合CPC": 3.08,
-      "综合CTR": 0.0459,
-      "综合CVR": 0.277,
+      "综合ROI(含JST+SEM)": 3.88,
+      "综合花费(SPD)": 625.29,
+      "综合CPC": 3.49,
+      "综合CTR": 0.0453,
+      "综合CVR": 0.2793,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 111.2,
-      "JST ROI": 9.76,
-      "JST CPC": 1.5662,
-      "SEM花费(SPD)": 344.59,
-      "SEM ROI": 2.81,
-      "SEM CPC": 4.4752
+      "JST花费(SPD)": 122.34,
+      "JST ROI": 10.22,
+      "JST CPC": 1.6312,
+      "SEM花费(SPD)": 502.95,
+      "SEM ROI": 2.34,
+      "SEM CPC": 4.8361
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液清雅茉莉12斤瓶装(3kg*2) 杀菌除螨 根源消臭去黄",
       "SKU简称": "碧浪Jasmine6kg",
       "SKU ID": "100008766160",
-      "综合ROI(含JST+SEM)": 2.43,
-      "综合花费(SPD)": 1053.0,
-      "综合CPC": 6.62,
-      "综合CTR": 0.0564,
-      "综合CVR": 0.2075,
+      "综合ROI(含JST+SEM)": 2.51,
+      "综合花费(SPD)": 1268.1,
+      "综合CPC": 6.57,
+      "综合CTR": 0.0555,
+      "综合CVR": 0.2176,
       "状态": "正常",
       "ROI目标": 2.5,
       "JST花费(SPD)": 55.0,
       "JST ROI": 1.27,
       "JST CPC": 4.5833,
-      "SEM花费(SPD)": 998.0,
-      "SEM ROI": 2.49,
-      "SEM CPC": 6.7891
+      "SEM花费(SPD)": 1213.1,
+      "SEM ROI": 2.57,
+      "SEM CPC": 6.7022
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液自然清新16斤瓶装(2kg*4) 杀菌除螨 根源消臭去黄",
       "SKU简称": "碧浪自然清香16斤",
       "SKU ID": "100006804447",
-      "综合ROI(含JST+SEM)": 4.58,
-      "综合花费(SPD)": 95.56,
-      "综合CPC": 5.03,
-      "综合CTR": 0.0233,
-      "综合CVR": 0.2632,
+      "综合ROI(含JST+SEM)": 3.49,
+      "综合花费(SPD)": 125.43,
+      "综合CPC": 5.02,
+      "综合CTR": 0.0236,
+      "综合CVR": 0.2,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 93.31,
-      "JST ROI": 2.5,
-      "JST CPC": 5.4888,
-      "SEM花费(SPD)": 2.25,
-      "SEM ROI": 90.58,
-      "SEM CPC": 1.125
+      "JST花费(SPD)": 121.0,
+      "JST ROI": 1.93,
+      "JST CPC": 5.5,
+      "SEM花费(SPD)": 4.43,
+      "SEM ROI": 46.0,
+      "SEM CPC": 1.4767
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠清晨橘光450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g清晨橘光",
       "SKU ID": "100268112394",
-      "综合ROI(含JST+SEM)": 1.16,
-      "综合花费(SPD)": 60.28,
-      "综合CPC": 3.55,
-      "综合CTR": 0.0651,
-      "综合CVR": 0.0588,
+      "综合ROI(含JST+SEM)": 1.05,
+      "综合花费(SPD)": 66.34,
+      "综合CPC": 3.32,
+      "综合CTR": 0.0673,
+      "综合CVR": 0.05,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 60.28,
-      "JST ROI": 1.16,
-      "JST CPC": 3.5459,
+      "JST花费(SPD)": 66.34,
+      "JST ROI": 1.05,
+      "JST CPC": 3.317,
       "SEM花费(SPD)": 0.0,
       "SEM ROI": 0.0,
       "SEM CPC": 0.0
@@ -181,152 +181,152 @@
       "SKU名称": "当妮护衣留香珠清晨橘光950g 12周持久留香 防异味 99%除菌除螨家庭装",
       "SKU简称": "当妮950g清晨橘光",
       "SKU ID": "100233530169",
-      "综合ROI(含JST+SEM)": 0.62,
-      "综合花费(SPD)": 211.11,
-      "综合CPC": 7.04,
-      "综合CTR": 0.0475,
-      "综合CVR": 0.0333,
+      "综合ROI(含JST+SEM)": 0.92,
+      "综合花费(SPD)": 269.65,
+      "综合CPC": 7.1,
+      "综合CTR": 0.0517,
+      "综合CVR": 0.0526,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 111.03,
+      "JST花费(SPD)": 160.12,
       "JST ROI": 0.0,
-      "JST CPC": 6.5312,
-      "SEM花费(SPD)": 100.08,
-      "SEM ROI": 1.3,
-      "SEM CPC": 7.6985
+      "JST CPC": 6.6717,
+      "SEM花费(SPD)": 109.53,
+      "SEM ROI": 2.26,
+      "SEM CPC": 7.8236
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠清雨山茶450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g清雨山茶",
       "SKU ID": "100094637928",
-      "综合ROI(含JST+SEM)": 1.32,
-      "综合花费(SPD)": 381.36,
-      "综合CPC": 6.58,
-      "综合CTR": 0.0379,
-      "综合CVR": 0.1207,
+      "综合ROI(含JST+SEM)": 1.92,
+      "综合花费(SPD)": 432.54,
+      "综合CPC": 6.55,
+      "综合CTR": 0.0394,
+      "综合CVR": 0.2121,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 179.93,
-      "JST ROI": 0.85,
-      "JST CPC": 4.735,
-      "SEM花费(SPD)": 201.43,
-      "SEM ROI": 1.74,
-      "SEM CPC": 10.0715
+      "JST花费(SPD)": 202.4,
+      "JST ROI": 1.69,
+      "JST CPC": 4.6,
+      "SEM花费(SPD)": 230.14,
+      "SEM ROI": 2.13,
+      "SEM CPC": 10.4609
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠玫瑰之巅450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g玫瑰之巅",
       "SKU ID": "100044243858",
-      "综合ROI(含JST+SEM)": 1.52,
-      "综合花费(SPD)": 468.23,
-      "综合CPC": 4.98,
-      "综合CTR": 0.082,
-      "综合CVR": 0.117,
+      "综合ROI(含JST+SEM)": 1.9,
+      "综合花费(SPD)": 627.96,
+      "综合CPC": 5.41,
+      "综合CTR": 0.0837,
+      "综合CVR": 0.1552,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 153.56,
-      "JST ROI": 1.37,
-      "JST CPC": 3.3383,
-      "SEM花费(SPD)": 314.67,
-      "SEM ROI": 1.6,
-      "SEM CPC": 6.5556
+      "JST花费(SPD)": 193.5,
+      "JST ROI": 1.87,
+      "JST CPC": 3.6509,
+      "SEM花费(SPD)": 434.46,
+      "SEM ROI": 1.91,
+      "SEM CPC": 6.8962
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠组套200g*3瓶(自由之森+玫瑰之巅+清雨山茶)",
       "SKU简称": "当妮留香珠200g*3",
       "SKU ID": "100111047759",
-      "综合ROI(含JST+SEM)": 1.93,
-      "综合花费(SPD)": 340.91,
-      "综合CPC": 6.43,
-      "综合CTR": 0.0801,
-      "综合CVR": 0.1698,
+      "综合ROI(含JST+SEM)": 1.89,
+      "综合花费(SPD)": 414.99,
+      "综合CPC": 6.19,
+      "综合CTR": 0.0845,
+      "综合CVR": 0.1642,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 333.61,
-      "JST ROI": 1.97,
-      "JST CPC": 6.6722,
-      "SEM花费(SPD)": 7.3,
+      "JST花费(SPD)": 363.98,
+      "JST ROI": 2.16,
+      "JST CPC": 6.1692,
+      "SEM花费(SPD)": 51.01,
       "SEM ROI": 0.0,
-      "SEM CPC": 2.4333
+      "SEM CPC": 6.3762
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠自由之森450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g自由之森",
       "SKU ID": "100053319577",
-      "综合ROI(含JST+SEM)": 2.0,
-      "综合花费(SPD)": 420.74,
-      "综合CPC": 4.84,
-      "综合CTR": 0.0933,
-      "综合CVR": 0.1379,
+      "综合ROI(含JST+SEM)": 1.94,
+      "综合花费(SPD)": 434.06,
+      "综合CPC": 4.82,
+      "综合CTR": 0.0926,
+      "综合CVR": 0.1333,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 107.94,
-      "JST ROI": 3.15,
-      "JST CPC": 3.3731,
-      "SEM花费(SPD)": 312.8,
-      "SEM ROI": 1.61,
-      "SEM CPC": 5.6873
+      "JST花费(SPD)": 119.26,
+      "JST ROI": 2.85,
+      "JST CPC": 3.5076,
+      "SEM花费(SPD)": 314.8,
+      "SEM ROI": 1.6,
+      "SEM CPC": 5.6214
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠自由之森950g 12周持久留香 防异味 99%除菌除螨家庭装",
       "SKU简称": "当妮950g自由之森",
       "SKU ID": "100301903542",
-      "综合ROI(含JST+SEM)": 1.18,
-      "综合花费(SPD)": 359.76,
-      "综合CPC": 6.66,
-      "综合CTR": 0.0173,
-      "综合CVR": 0.1296,
+      "综合ROI(含JST+SEM)": 0.97,
+      "综合花费(SPD)": 507.17,
+      "综合CPC": 7.57,
+      "综合CTR": 0.019,
+      "综合CVR": 0.1194,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 168.4,
-      "JST ROI": 0.77,
-      "JST CPC": 6.736,
-      "SEM花费(SPD)": 191.36,
-      "SEM ROI": 1.54,
-      "SEM CPC": 6.5986
+      "JST花费(SPD)": 220.07,
+      "JST ROI": 0.59,
+      "JST CPC": 7.099,
+      "SEM花费(SPD)": 287.1,
+      "SEM ROI": 1.27,
+      "SEM CPC": 7.975
     },
     {
       "账户": "GMEC-Tide",
       "SKU名称": "汰渍洗衣免搓粉 清雅山茶花6.8斤装 洗衣粉非爆炸盐皂粉 持久留香30天",
       "SKU简称": "汰渍山茶花3.4kg",
       "SKU ID": "100161974102",
-      "综合ROI(含JST+SEM)": 2.26,
-      "综合花费(SPD)": 433.45,
-      "综合CPC": 6.37,
-      "综合CTR": 0.0235,
-      "综合CVR": 0.2647,
+      "综合ROI(含JST+SEM)": 2.45,
+      "综合花费(SPD)": 780.32,
+      "综合CPC": 6.67,
+      "综合CTR": 0.0325,
+      "综合CVR": 0.3077,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 54.22,
-      "JST ROI": 2.76,
-      "JST CPC": 3.1894,
-      "SEM花费(SPD)": 379.23,
-      "SEM ROI": 2.18,
-      "SEM CPC": 7.4359
+      "JST花费(SPD)": 92.93,
+      "JST ROI": 3.27,
+      "JST CPC": 3.4419,
+      "SEM花费(SPD)": 687.39,
+      "SEM ROI": 2.34,
+      "SEM CPC": 7.6377
     },
     {
       "账户": "GMEC-Tide",
       "SKU名称": "汰渍洗衣免搓粉 阳光薰衣草6.8斤装 洗衣粉非爆炸盐皂粉 持久留香30天",
       "SKU简称": "汰渍薰衣草3.4kg",
       "SKU ID": "100131766577",
-      "综合ROI(含JST+SEM)": 1.39,
-      "综合花费(SPD)": 366.83,
-      "综合CPC": 8.15,
-      "综合CTR": 0.0788,
-      "综合CVR": 0.2,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 1.21,
+      "综合花费(SPD)": 420.52,
+      "综合CPC": 7.79,
+      "综合CTR": 0.0731,
+      "综合CVR": 0.1667,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 39.82,
-      "JST ROI": 2.51,
-      "JST CPC": 2.8443,
-      "SEM花费(SPD)": 327.01,
-      "SEM ROI": 1.25,
-      "SEM CPC": 10.5487
+      "JST花费(SPD)": 60.28,
+      "JST ROI": 1.66,
+      "JST CPC": 3.014,
+      "SEM花费(SPD)": 360.24,
+      "SEM ROI": 1.14,
+      "SEM CPC": 10.5953
     },
     {
       "账户": "GMEC-Tide-L",
@@ -336,7 +336,7 @@
       "综合ROI(含JST+SEM)": 9.66,
       "综合花费(SPD)": 56.66,
       "综合CPC": 2.98,
-      "综合CTR": 0.0496,
+      "综合CTR": 0.0491,
       "综合CVR": 0.2105,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
@@ -352,131 +352,131 @@
       "SKU名称": "汰渍去渍洗衣液洁雅百合18斤装(3kg*2瓶+500g*6袋)家庭装 无惧混洗",
       "SKU简称": "汰渍9kg",
       "SKU ID": "2795972",
-      "综合ROI(含JST+SEM)": 1.78,
-      "综合花费(SPD)": 59.07,
-      "综合CPC": 4.22,
-      "综合CTR": 0.0339,
-      "综合CVR": 0.0714,
+      "综合ROI(含JST+SEM)": 1.09,
+      "综合花费(SPD)": 96.12,
+      "综合CPC": 4.81,
+      "综合CTR": 0.04,
+      "综合CVR": 0.05,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 25.34,
-      "JST ROI": 4.14,
-      "JST CPC": 2.534,
-      "SEM花费(SPD)": 33.73,
+      "JST花费(SPD)": 29.31,
+      "JST ROI": 3.58,
+      "JST CPC": 2.4425,
+      "SEM花费(SPD)": 66.81,
       "SEM ROI": 0.0,
-      "SEM CPC": 8.4325
+      "SEM CPC": 8.3513
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液洁雅百合24斤瓶装(3kg*4)家庭装 无惧混洗  支持快洗",
       "SKU简称": "汰渍百合24斤",
       "SKU ID": "2646498",
-      "综合ROI(含JST+SEM)": 2.83,
-      "综合花费(SPD)": 987.87,
-      "综合CPC": 8.98,
-      "综合CTR": 0.0426,
-      "综合CVR": 0.1909,
-      "状态": "🔺 高于目标10%以上",
+      "综合ROI(含JST+SEM)": 2.6,
+      "综合花费(SPD)": 1448.77,
+      "综合CPC": 10.42,
+      "综合CTR": 0.0423,
+      "综合CVR": 0.2014,
+      "状态": "正常",
       "ROI目标": 2.5,
       "JST花费(SPD)": 52.11,
       "JST ROI": 0.0,
       "JST CPC": 4.0085,
-      "SEM花费(SPD)": 935.76,
-      "SEM ROI": 2.98,
-      "SEM CPC": 9.647
+      "SEM花费(SPD)": 1396.66,
+      "SEM ROI": 2.7,
+      "SEM CPC": 11.0846
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液淡雅樱花11斤瓶装(2.75kg×2)家庭装 无惧混洗",
       "SKU简称": "汰渍SAK5.5kg",
       "SKU ID": "100063120723",
-      "综合ROI(含JST+SEM)": 3.71,
-      "综合花费(SPD)": 681.55,
-      "综合CPC": 7.93,
-      "综合CTR": 0.0535,
-      "综合CVR": 0.3256,
+      "综合ROI(含JST+SEM)": 3.35,
+      "综合花费(SPD)": 884.71,
+      "综合CPC": 8.67,
+      "综合CTR": 0.0494,
+      "综合CVR": 0.3235,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 51.35,
-      "JST ROI": 13.97,
-      "JST CPC": 3.4233,
-      "SEM花费(SPD)": 630.2,
-      "SEM ROI": 2.87,
-      "SEM CPC": 8.8761
+      "JST花费(SPD)": 57.89,
+      "JST ROI": 12.51,
+      "JST CPC": 3.6181,
+      "SEM花费(SPD)": 826.82,
+      "SEM ROI": 2.71,
+      "SEM CPC": 9.6142
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液淡雅薰香11斤装(2kg*2瓶+500g*3袋)家庭装 无惧混洗",
       "SKU简称": "汰渍LAV5.5kg",
       "SKU ID": "100063120717",
-      "综合ROI(含JST+SEM)": 1.83,
-      "综合花费(SPD)": 150.94,
-      "综合CPC": 5.03,
-      "综合CTR": 0.053,
-      "综合CVR": 0.1333,
-      "状态": "🔻 低于目标10%以上",
+      "综合ROI(含JST+SEM)": 2.88,
+      "综合花费(SPD)": 169.08,
+      "综合CPC": 4.7,
+      "综合CTR": 0.0526,
+      "综合CVR": 0.1667,
+      "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 50.36,
-      "JST ROI": 0.0,
-      "JST CPC": 3.3573,
-      "SEM花费(SPD)": 100.58,
-      "SEM ROI": 2.74,
-      "SEM CPC": 6.7053
+      "JST花费(SPD)": 59.61,
+      "JST ROI": 3.55,
+      "JST CPC": 2.9805,
+      "SEM花费(SPD)": 109.47,
+      "SEM ROI": 2.52,
+      "SEM CPC": 6.8419
     }
   ],
   "ht": [
     {
       "账户": "GMEC-Ariel",
-      "HT花费(SPD)": 710.62,
-      "HT ROI": 2.75
+      "HT花费(SPD)": 779.59,
+      "HT ROI": 2.79
     },
     {
       "账户": "GMEC-Ariel-L",
-      "HT花费(SPD)": 2039.28,
-      "HT ROI": 1.74
+      "HT花费(SPD)": 2336.45,
+      "HT ROI": 2.05
     },
     {
       "账户": "GMEC-Downy",
-      "HT花费(SPD)": 1493.79,
-      "HT ROI": 1.89
+      "HT花费(SPD)": 1932.28,
+      "HT ROI": 1.9
     },
     {
       "账户": "GMEC-Tide",
-      "HT花费(SPD)": 655.93,
-      "HT ROI": 1.99
+      "HT花费(SPD)": 698.74,
+      "HT ROI": 2.32
     },
     {
       "账户": "GMEC-Tide-L",
-      "HT花费(SPD)": 1684.63,
-      "HT ROI": 1.85
+      "HT花费(SPD)": 2068.71,
+      "HT ROI": 1.77
     }
   ],
   "deltas": {
     "total_spend": {
       "vs_2h": {
-        "diff": 11886.36,
-        "pct": 290.8,
-        "index_pct": 390.8,
+        "diff": 15817.75,
+        "pct": 386.99,
+        "index_pct": 486.99,
         "direction": "up"
       },
       "vs_yesterday": {
-        "diff": -3542.43,
-        "pct": -18.15,
-        "index_pct": 81.85,
-        "direction": "down"
+        "diff": 388.96,
+        "pct": 1.99,
+        "index_pct": 101.99,
+        "direction": "up"
       }
     },
     "total_roi": {
       "vs_2h": {
-        "diff": 0.08,
-        "pct": 3.77,
-        "index_pct": 103.77,
+        "diff": 0.11,
+        "pct": 5.17,
+        "index_pct": 105.17,
         "direction": "up"
       },
       "vs_yesterday": {
-        "diff": -0.86,
-        "pct": -27.55,
-        "index_pct": 72.45,
+        "diff": -0.82,
+        "pct": -26.57,
+        "index_pct": 73.43,
         "direction": "down"
       }
     },
@@ -484,29 +484,29 @@
       "GMEC-Ariel": {
         "综合花费": {
           "vs_2h": {
-            "diff": 2013.52,
-            "pct": 331.27,
-            "index_pct": 431.27,
+            "diff": 2612.18,
+            "pct": 429.77,
+            "index_pct": 529.77,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 459.8,
-            "pct": 21.27,
-            "index_pct": 121.27,
+            "diff": 1058.46,
+            "pct": 48.97,
+            "index_pct": 148.97,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
             "diff": -0.04,
-            "pct": -2.0,
-            "index_pct": 98.0,
+            "pct": -1.76,
+            "index_pct": 98.24,
             "direction": "down"
           },
           "vs_yesterday": {
             "diff": -0.61,
-            "pct": -21.94,
-            "index_pct": 78.06,
+            "pct": -21.75,
+            "index_pct": 78.25,
             "direction": "down"
           }
         }
@@ -514,29 +514,29 @@
       "GMEC-Ariel-L": {
         "综合花费": {
           "vs_2h": {
-            "diff": 3225.93,
-            "pct": 245.61,
-            "index_pct": 345.61,
+            "diff": 4063.15,
+            "pct": 309.36,
+            "index_pct": 409.36,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -967.46,
-            "pct": -17.57,
-            "index_pct": 82.43,
+            "diff": -130.24,
+            "pct": -2.37,
+            "index_pct": 97.63,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.22,
-            "pct": 9.32,
-            "index_pct": 109.32,
+            "diff": 0.33,
+            "pct": 13.63,
+            "index_pct": 113.63,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.55,
-            "pct": -17.41,
-            "index_pct": 82.59,
+            "diff": -0.45,
+            "pct": -14.16,
+            "index_pct": 85.84,
             "direction": "down"
           }
         }
@@ -544,29 +544,29 @@
       "GMEC-Downy": {
         "综合花费": {
           "vs_2h": {
-            "diff": 2633.3,
-            "pct": 238.77,
-            "index_pct": 338.77,
+            "diff": 3582.11,
+            "pct": 324.8,
+            "index_pct": 424.8,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1876.19,
-            "pct": -33.43,
-            "index_pct": 66.57,
+            "diff": -927.38,
+            "pct": -16.52,
+            "index_pct": 83.48,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -0.22,
-            "pct": -11.99,
-            "index_pct": 88.01,
+            "diff": -0.14,
+            "pct": -7.41,
+            "index_pct": 92.59,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -1.74,
-            "pct": -51.29,
-            "index_pct": 48.71,
+            "diff": -1.65,
+            "pct": -48.76,
+            "index_pct": 51.24,
             "direction": "down"
           }
         }
@@ -574,29 +574,29 @@
       "GMEC-Tide": {
         "综合花费": {
           "vs_2h": {
-            "diff": 1095.24,
-            "pct": 303.42,
-            "index_pct": 403.42,
+            "diff": 1538.61,
+            "pct": 426.24,
+            "index_pct": 526.24,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -622.62,
-            "pct": -29.95,
-            "index_pct": 70.05,
+            "diff": -179.25,
+            "pct": -8.62,
+            "index_pct": 91.38,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -0.02,
-            "pct": -0.92,
-            "index_pct": 99.08,
-            "direction": "down"
+            "diff": 0.19,
+            "pct": 9.84,
+            "index_pct": 109.84,
+            "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.42,
-            "pct": -17.98,
-            "index_pct": 82.02,
+            "diff": -0.21,
+            "pct": -9.06,
+            "index_pct": 90.94,
             "direction": "down"
           }
         }
@@ -604,29 +604,29 @@
       "GMEC-Tide-L": {
         "综合花费": {
           "vs_2h": {
-            "diff": 2918.37,
-            "pct": 415.52,
-            "index_pct": 515.52,
+            "diff": 4021.7,
+            "pct": 572.61,
+            "index_pct": 672.61,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -535.96,
-            "pct": -12.89,
-            "index_pct": 87.11,
-            "direction": "down"
+            "diff": 567.37,
+            "pct": 13.65,
+            "index_pct": 113.65,
+            "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.32,
-            "pct": 13.98,
-            "index_pct": 113.98,
+            "diff": 0.17,
+            "pct": 7.51,
+            "index_pct": 107.51,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.59,
-            "pct": -18.6,
-            "index_pct": 81.4,
+            "diff": -0.74,
+            "pct": -23.22,
+            "index_pct": 76.78,
             "direction": "down"
           }
         }
@@ -638,85 +638,85 @@
         "SKU ID": "100161952438",
         "综合花费": {
           "vs_2h": {
-            "diff": 1036.29,
-            "pct": 451.88,
-            "index_pct": 551.88,
+            "diff": 1502.57,
+            "pct": 655.2,
+            "index_pct": 755.2,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -124.01,
-            "pct": -8.92,
-            "index_pct": 91.08,
-            "direction": "down"
+            "diff": 342.27,
+            "pct": 24.63,
+            "index_pct": 124.63,
+            "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.09,
-            "pct": 4.59,
-            "index_pct": 104.59,
+            "diff": 0.14,
+            "pct": 7.14,
+            "index_pct": 107.14,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.32,
-            "pct": -13.5,
-            "index_pct": 86.5,
+            "diff": -0.27,
+            "pct": -11.39,
+            "index_pct": 88.61,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 372.45,
-            "pct": 937.69,
-            "index_pct": 1037.69,
+            "diff": 444.14,
+            "pct": 1118.18,
+            "index_pct": 1218.18,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 267.75,
-            "pct": 185.4,
-            "index_pct": 285.4,
+            "diff": 339.44,
+            "pct": 235.04,
+            "index_pct": 335.04,
             "direction": "up"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": -0.34,
-            "pct": -13.49,
-            "index_pct": 86.51,
+            "diff": -0.29,
+            "pct": -11.51,
+            "index_pct": 88.49,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": 0.1,
-            "pct": 4.81,
-            "index_pct": 104.81,
+            "diff": 0.15,
+            "pct": 7.21,
+            "index_pct": 107.21,
             "direction": "up"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 663.84,
-            "pct": 350.11,
-            "index_pct": 450.11,
+            "diff": 1058.43,
+            "pct": 558.21,
+            "index_pct": 658.21,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -391.76,
-            "pct": -31.46,
-            "index_pct": 68.54,
-            "direction": "down"
+            "diff": 2.83,
+            "pct": 0.23,
+            "index_pct": 100.23,
+            "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0.15,
-            "pct": 8.15,
-            "index_pct": 108.15,
+            "diff": 0.21,
+            "pct": 11.41,
+            "index_pct": 111.41,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.41,
-            "pct": -17.08,
-            "index_pct": 82.92,
+            "diff": -0.35,
+            "pct": -14.58,
+            "index_pct": 85.42,
             "direction": "down"
           }
         }
@@ -726,29 +726,29 @@
         "SKU ID": "100162871390",
         "综合花费": {
           "vs_2h": {
-            "diff": 464.44,
-            "pct": 257.09,
-            "index_pct": 357.09,
+            "diff": 527.85,
+            "pct": 292.19,
+            "index_pct": 392.19,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 152.17,
-            "pct": 30.87,
-            "index_pct": 130.87,
+            "diff": 215.58,
+            "pct": 43.74,
+            "index_pct": 143.74,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 1.21,
-            "pct": 208.62,
-            "index_pct": 308.62,
+            "diff": 1.13,
+            "pct": 194.83,
+            "index_pct": 294.83,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.91,
-            "pct": -33.7,
-            "index_pct": 66.3,
+            "diff": -0.99,
+            "pct": -36.67,
+            "index_pct": 63.33,
             "direction": "down"
           }
         },
@@ -782,30 +782,30 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 52.04,
-            "pct": 79.4,
-            "index_pct": 179.4,
+            "diff": 115.45,
+            "pct": 176.15,
+            "index_pct": 276.15,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -101.59,
-            "pct": -46.35,
-            "index_pct": 53.65,
+            "diff": -38.18,
+            "pct": -17.42,
+            "index_pct": 82.58,
             "direction": "down"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 1.51,
-            "pct": 181.93,
-            "index_pct": 281.93,
+            "diff": 1.0,
+            "pct": 120.48,
+            "index_pct": 220.48,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 0.47,
-            "pct": 25.13,
-            "index_pct": 125.13,
-            "direction": "up"
+            "diff": -0.04,
+            "pct": -2.14,
+            "index_pct": 97.86,
+            "direction": "down"
           }
         }
       },
@@ -814,29 +814,29 @@
         "SKU ID": "100036714440",
         "综合花费": {
           "vs_2h": {
-            "diff": 266.4,
-            "pct": 298.02,
-            "index_pct": 398.02,
+            "diff": 308.96,
+            "pct": 345.63,
+            "index_pct": 445.63,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 99.21,
-            "pct": 38.67,
-            "index_pct": 138.67,
+            "diff": 141.77,
+            "pct": 55.25,
+            "index_pct": 155.25,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.15,
-            "pct": 6.38,
-            "index_pct": 106.38,
+            "diff": 0.17,
+            "pct": 7.23,
+            "index_pct": 107.23,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1.37,
-            "pct": -35.4,
-            "index_pct": 64.6,
+            "diff": -1.35,
+            "pct": -34.88,
+            "index_pct": 65.12,
             "direction": "down"
           }
         },
@@ -870,15 +870,15 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 235.18,
-            "pct": 354.35,
-            "index_pct": 454.35,
+            "diff": 277.74,
+            "pct": 418.47,
+            "index_pct": 518.47,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 99.97,
-            "pct": 49.59,
-            "index_pct": 149.59,
+            "diff": 142.53,
+            "pct": 70.71,
+            "index_pct": 170.71,
             "direction": "up"
           }
         },
@@ -890,9 +890,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.07,
-            "pct": -52.27,
-            "index_pct": 47.73,
+            "diff": -1.97,
+            "pct": -49.75,
+            "index_pct": 50.25,
             "direction": "down"
           }
         }
@@ -902,29 +902,29 @@
         "SKU ID": "4713934",
         "综合花费": {
           "vs_2h": {
-            "diff": 335.86,
-            "pct": 348.62,
-            "index_pct": 448.62,
+            "diff": 418.72,
+            "pct": 434.63,
+            "index_pct": 534.63,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1567.67,
-            "pct": -78.39,
-            "index_pct": 21.61,
+            "diff": -1484.81,
+            "pct": -74.25,
+            "index_pct": 25.75,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 2.4,
-            "pct": 100.42,
-            "index_pct": 200.42,
+            "diff": 2.39,
+            "pct": 100.0,
+            "index_pct": 200.0,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 1.81,
-            "pct": 60.74,
-            "index_pct": 160.74,
+            "diff": 1.8,
+            "pct": 60.4,
+            "index_pct": 160.4,
             "direction": "up"
           }
         },
@@ -944,29 +944,29 @@
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 0.1,
-            "pct": 1.29,
-            "index_pct": 101.29,
+            "diff": 1.24,
+            "pct": 16.02,
+            "index_pct": 116.02,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1.58,
-            "pct": -16.77,
-            "index_pct": 83.23,
+            "diff": -0.44,
+            "pct": -4.67,
+            "index_pct": 95.33,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 234.24,
-            "pct": 351.76,
-            "index_pct": 451.76,
+            "diff": 317.1,
+            "pct": 476.2,
+            "index_pct": 576.2,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1622.46,
-            "pct": -84.36,
-            "index_pct": 15.64,
+            "diff": -1539.6,
+            "pct": -80.05,
+            "index_pct": 19.95,
             "direction": "down"
           }
         },
@@ -978,9 +978,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.75,
-            "pct": 27.57,
-            "index_pct": 127.57,
+            "diff": 0.62,
+            "pct": 22.79,
+            "index_pct": 122.79,
             "direction": "up"
           }
         }
@@ -990,15 +990,15 @@
         "SKU ID": "100039735595",
         "综合花费": {
           "vs_2h": {
-            "diff": 60.1,
-            "pct": 126.18,
-            "index_pct": 226.18,
+            "diff": 60.26,
+            "pct": 126.52,
+            "index_pct": 226.52,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -143.86,
-            "pct": -57.18,
-            "index_pct": 42.82,
+            "diff": -143.7,
+            "pct": -57.12,
+            "index_pct": 42.88,
             "direction": "down"
           }
         },
@@ -1046,29 +1046,29 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 45.39,
-            "pct": 605.2,
-            "index_pct": 705.2,
+            "diff": 45.55,
+            "pct": 607.33,
+            "index_pct": 707.33,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -144.51,
-            "pct": -73.21,
-            "index_pct": 26.79,
+            "diff": -144.35,
+            "pct": -73.13,
+            "index_pct": 26.87,
             "direction": "down"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -10.79,
-            "pct": -71.93,
-            "index_pct": 28.07,
+            "diff": -10.81,
+            "pct": -72.07,
+            "index_pct": 27.93,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": 2.86,
-            "pct": 211.85,
-            "index_pct": 311.85,
+            "diff": 2.84,
+            "pct": 210.37,
+            "index_pct": 310.37,
             "direction": "up"
           }
         }
@@ -1078,86 +1078,86 @@
         "SKU ID": "1978117",
         "综合花费": {
           "vs_2h": {
-            "diff": 328.08,
-            "pct": 256.89,
-            "index_pct": 356.89,
+            "diff": 497.58,
+            "pct": 389.62,
+            "index_pct": 489.62,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 24.01,
-            "pct": 5.56,
-            "index_pct": 105.56,
+            "diff": 193.51,
+            "pct": 44.82,
+            "index_pct": 144.82,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 1.48,
-            "pct": 49.01,
-            "index_pct": 149.01,
+            "diff": 0.86,
+            "pct": 28.48,
+            "index_pct": 128.48,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 1.4,
-            "pct": 45.16,
-            "index_pct": 145.16,
+            "diff": 0.78,
+            "pct": 25.16,
+            "index_pct": 125.16,
             "direction": "up"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 87.33,
-            "pct": 365.86,
-            "index_pct": 465.86,
+            "diff": 98.47,
+            "pct": 412.53,
+            "index_pct": 512.53,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 72.14,
-            "pct": 184.69,
-            "index_pct": 284.69,
+            "diff": 83.28,
+            "pct": 213.21,
+            "index_pct": 313.21,
             "direction": "up"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 2.57,
-            "pct": 35.74,
-            "index_pct": 135.74,
+            "diff": 3.03,
+            "pct": 42.14,
+            "index_pct": 142.14,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 2.39,
-            "pct": 32.43,
-            "index_pct": 132.43,
+            "diff": 2.85,
+            "pct": 38.67,
+            "index_pct": 138.67,
             "direction": "up"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 240.75,
-            "pct": 231.85,
-            "index_pct": 331.85,
+            "diff": 399.11,
+            "pct": 384.35,
+            "index_pct": 484.35,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -48.13,
-            "pct": -12.26,
-            "index_pct": 87.74,
-            "direction": "down"
+            "diff": 110.23,
+            "pct": 28.07,
+            "index_pct": 128.07,
+            "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0.75,
-            "pct": 36.41,
-            "index_pct": 136.41,
+            "diff": 0.28,
+            "pct": 13.59,
+            "index_pct": 113.59,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 0.14,
-            "pct": 5.24,
-            "index_pct": 105.24,
-            "direction": "up"
+            "diff": -0.33,
+            "pct": -12.36,
+            "index_pct": 87.64,
+            "direction": "down"
           }
         }
       },
@@ -1166,29 +1166,29 @@
         "SKU ID": "100008766160",
         "综合花费": {
           "vs_2h": {
-            "diff": 721.96,
-            "pct": 218.09,
-            "index_pct": 318.09,
+            "diff": 937.06,
+            "pct": 283.07,
+            "index_pct": 383.07,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 634.82,
-            "pct": 151.81,
-            "index_pct": 251.81,
+            "diff": 849.92,
+            "pct": 203.24,
+            "index_pct": 303.24,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.2,
-            "pct": 8.97,
-            "index_pct": 108.97,
+            "diff": 0.28,
+            "pct": 12.56,
+            "index_pct": 112.56,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.51,
-            "pct": -17.35,
-            "index_pct": 82.65,
+            "diff": -0.43,
+            "pct": -14.63,
+            "index_pct": 85.37,
             "direction": "down"
           }
         },
@@ -1222,29 +1222,29 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 680.85,
-            "pct": 214.68,
-            "index_pct": 314.68,
+            "diff": 895.95,
+            "pct": 282.5,
+            "index_pct": 382.5,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 634.82,
-            "pct": 174.79,
-            "index_pct": 274.79,
+            "diff": 849.92,
+            "pct": 234.02,
+            "index_pct": 334.02,
             "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0.16,
-            "pct": 6.87,
-            "index_pct": 106.87,
+            "diff": 0.24,
+            "pct": 10.3,
+            "index_pct": 110.3,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.71,
-            "pct": -22.19,
-            "index_pct": 77.81,
+            "diff": -0.63,
+            "pct": -19.69,
+            "index_pct": 80.31,
             "direction": "down"
           }
         }
@@ -1254,71 +1254,71 @@
         "SKU ID": "100006804447",
         "综合花费": {
           "vs_2h": {
-            "diff": 54.94,
-            "pct": 135.25,
-            "index_pct": 235.25,
+            "diff": 84.81,
+            "pct": 208.79,
+            "index_pct": 308.79,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -32.73,
-            "pct": -25.51,
-            "index_pct": 74.49,
+            "diff": -2.86,
+            "pct": -2.23,
+            "index_pct": 97.77,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 1.14,
-            "pct": 33.14,
-            "index_pct": 133.14,
+            "diff": 0.05,
+            "pct": 1.45,
+            "index_pct": 101.45,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 0.88,
-            "pct": 23.78,
-            "index_pct": 123.78,
-            "direction": "up"
+            "diff": -0.21,
+            "pct": -5.68,
+            "index_pct": 94.32,
+            "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 53.77,
-            "pct": 135.99,
-            "index_pct": 235.99,
+            "diff": 81.46,
+            "pct": 206.02,
+            "index_pct": 306.02,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -6.58,
-            "pct": -6.59,
-            "index_pct": 93.41,
-            "direction": "down"
+            "diff": 21.11,
+            "pct": 21.13,
+            "index_pct": 121.13,
+            "direction": "up"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": -1.04,
-            "pct": -29.38,
-            "index_pct": 70.62,
+            "diff": -1.61,
+            "pct": -45.48,
+            "index_pct": 54.52,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -0.52,
-            "pct": -17.22,
-            "index_pct": 82.78,
+            "diff": -1.09,
+            "pct": -36.09,
+            "index_pct": 63.91,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 1.17,
-            "pct": 108.33,
-            "index_pct": 208.33,
+            "diff": 3.35,
+            "pct": 310.19,
+            "index_pct": 410.19,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -26.15,
-            "pct": -92.08,
-            "index_pct": 7.92,
+            "diff": -23.97,
+            "pct": -84.4,
+            "index_pct": 15.6,
             "direction": "down"
           }
         },
@@ -1330,9 +1330,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 84.46,
-            "pct": 1380.07,
-            "index_pct": 1480.07,
+            "diff": 39.88,
+            "pct": 651.63,
+            "index_pct": 751.63,
             "direction": "up"
           }
         }
@@ -1342,15 +1342,15 @@
         "SKU ID": "100268112394",
         "综合花费": {
           "vs_2h": {
-            "diff": 31.99,
-            "pct": 113.08,
-            "index_pct": 213.08,
+            "diff": 38.05,
+            "pct": 134.5,
+            "index_pct": 234.5,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 34.39,
-            "pct": 132.83,
-            "index_pct": 232.83,
+            "diff": 40.45,
+            "pct": 156.24,
+            "index_pct": 256.24,
             "direction": "up"
           }
         },
@@ -1370,15 +1370,15 @@
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 31.99,
-            "pct": 113.08,
-            "index_pct": 213.08,
+            "diff": 38.05,
+            "pct": 134.5,
+            "index_pct": 234.5,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 37.22,
-            "pct": 161.41,
-            "index_pct": 261.41,
+            "diff": 43.28,
+            "pct": 187.68,
+            "index_pct": 287.68,
             "direction": "up"
           }
         },
@@ -1430,43 +1430,43 @@
         "SKU ID": "100233530169",
         "综合花费": {
           "vs_2h": {
-            "diff": 155.78,
-            "pct": 281.55,
-            "index_pct": 381.55,
+            "diff": 214.32,
+            "pct": 387.35,
+            "index_pct": 487.35,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -132.47,
-            "pct": -38.56,
-            "index_pct": 61.44,
+            "diff": -73.93,
+            "pct": -21.52,
+            "index_pct": 78.48,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -1.73,
-            "pct": -73.62,
-            "index_pct": 26.38,
+            "diff": -1.43,
+            "pct": -60.85,
+            "index_pct": 39.15,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -3.84,
-            "pct": -86.1,
-            "index_pct": 13.9,
+            "diff": -3.54,
+            "pct": -79.37,
+            "index_pct": 20.63,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 95.53,
-            "pct": 616.32,
-            "index_pct": 716.32,
+            "diff": 144.62,
+            "pct": 933.03,
+            "index_pct": 1033.03,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -124.9,
-            "pct": -52.94,
-            "index_pct": 47.06,
+            "diff": -75.81,
+            "pct": -32.13,
+            "index_pct": 67.87,
             "direction": "down"
           }
         },
@@ -1486,29 +1486,29 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 60.25,
-            "pct": 151.27,
-            "index_pct": 251.27,
+            "diff": 69.7,
+            "pct": 174.99,
+            "index_pct": 274.99,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -7.57,
-            "pct": -7.03,
-            "index_pct": 92.97,
-            "direction": "down"
+            "diff": 1.88,
+            "pct": 1.75,
+            "index_pct": 101.75,
+            "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -1.96,
-            "pct": -60.12,
-            "index_pct": 39.88,
+            "diff": -1.0,
+            "pct": -30.67,
+            "index_pct": 69.33,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -3.32,
-            "pct": -71.86,
-            "index_pct": 28.14,
+            "diff": -2.36,
+            "pct": -51.08,
+            "index_pct": 48.92,
             "direction": "down"
           }
         }
@@ -1518,79 +1518,79 @@
         "SKU ID": "100094637928",
         "综合花费": {
           "vs_2h": {
-            "diff": 294.65,
-            "pct": 339.81,
-            "index_pct": 439.81,
+            "diff": 345.83,
+            "pct": 398.84,
+            "index_pct": 498.84,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 39.14,
-            "pct": 11.44,
-            "index_pct": 111.44,
+            "diff": 90.32,
+            "pct": 26.39,
+            "index_pct": 126.39,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -1.9,
-            "pct": -59.01,
-            "index_pct": 40.99,
+            "diff": -1.3,
+            "pct": -40.37,
+            "index_pct": 59.63,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -0.92,
-            "pct": -41.07,
-            "index_pct": 58.93,
+            "diff": -0.32,
+            "pct": -14.29,
+            "index_pct": 85.71,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 145.86,
-            "pct": 428.12,
-            "index_pct": 528.12,
+            "diff": 168.33,
+            "pct": 494.07,
+            "index_pct": 594.07,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -80.13,
-            "pct": -30.81,
-            "index_pct": 69.19,
+            "diff": -57.66,
+            "pct": -22.17,
+            "index_pct": 77.83,
             "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": -3.25,
-            "pct": -79.27,
-            "index_pct": 20.73,
+            "diff": -2.41,
+            "pct": -58.78,
+            "index_pct": 41.22,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -2.1,
-            "pct": -71.19,
-            "index_pct": 28.81,
+            "diff": -1.26,
+            "pct": -42.71,
+            "index_pct": 57.29,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 148.79,
-            "pct": 282.66,
-            "index_pct": 382.66,
+            "diff": 177.5,
+            "pct": 337.2,
+            "index_pct": 437.2,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 119.27,
-            "pct": 145.17,
-            "index_pct": 245.17,
+            "diff": 147.98,
+            "pct": 180.11,
+            "index_pct": 280.11,
             "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -0.92,
-            "pct": -34.59,
-            "index_pct": 65.41,
+            "diff": -0.53,
+            "pct": -19.92,
+            "index_pct": 80.08,
             "direction": "down"
           },
           "vs_yesterday": {
@@ -1606,43 +1606,43 @@
         "SKU ID": "100044243858",
         "综合花费": {
           "vs_2h": {
-            "diff": 326.93,
-            "pct": 231.37,
-            "index_pct": 331.37,
+            "diff": 486.66,
+            "pct": 344.42,
+            "index_pct": 444.42,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -438.74,
-            "pct": -48.37,
-            "index_pct": 51.63,
+            "diff": -279.01,
+            "pct": -30.76,
+            "index_pct": 69.24,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -0.95,
-            "pct": -38.46,
-            "index_pct": 61.54,
+            "diff": -0.57,
+            "pct": -23.08,
+            "index_pct": 76.92,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -2.07,
-            "pct": -57.66,
-            "index_pct": 42.34,
+            "diff": -1.69,
+            "pct": -47.08,
+            "index_pct": 52.92,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 141.41,
-            "pct": 1163.87,
-            "index_pct": 1263.87,
+            "diff": 181.35,
+            "pct": 1492.59,
+            "index_pct": 1592.59,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -92.93,
-            "pct": -37.7,
-            "index_pct": 62.3,
+            "diff": -52.99,
+            "pct": -21.5,
+            "index_pct": 78.5,
             "direction": "down"
           }
         },
@@ -1654,37 +1654,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.94,
-            "pct": -68.21,
-            "index_pct": 31.79,
+            "diff": -2.44,
+            "pct": -56.61,
+            "index_pct": 43.39,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 185.52,
-            "pct": 143.65,
-            "index_pct": 243.65,
+            "diff": 305.31,
+            "pct": 236.4,
+            "index_pct": 336.4,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -345.81,
-            "pct": -52.36,
-            "index_pct": 47.64,
+            "diff": -226.02,
+            "pct": -34.22,
+            "index_pct": 65.78,
             "direction": "down"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -1.11,
-            "pct": -40.96,
-            "index_pct": 59.04,
+            "diff": -0.8,
+            "pct": -29.52,
+            "index_pct": 70.48,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -1.72,
-            "pct": -51.81,
-            "index_pct": 48.19,
+            "diff": -1.41,
+            "pct": -42.47,
+            "index_pct": 57.53,
             "direction": "down"
           }
         }
@@ -1694,57 +1694,57 @@
         "SKU ID": "100111047759",
         "综合花费": {
           "vs_2h": {
-            "diff": 243.28,
-            "pct": 249.19,
-            "index_pct": 349.19,
+            "diff": 317.36,
+            "pct": 325.06,
+            "index_pct": 425.06,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -505.25,
-            "pct": -59.71,
-            "index_pct": 40.29,
+            "diff": -431.17,
+            "pct": -50.96,
+            "index_pct": 49.04,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -0.11,
-            "pct": -5.39,
-            "index_pct": 94.61,
+            "diff": -0.15,
+            "pct": -7.35,
+            "index_pct": 92.65,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": 0.22,
-            "pct": 12.87,
-            "index_pct": 112.87,
+            "diff": 0.18,
+            "pct": 10.53,
+            "index_pct": 110.53,
             "direction": "up"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 235.98,
-            "pct": 241.71,
-            "index_pct": 341.71,
+            "diff": 266.35,
+            "pct": 272.82,
+            "index_pct": 372.82,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -24.5,
-            "pct": -6.84,
-            "index_pct": 93.16,
-            "direction": "down"
+            "diff": 5.87,
+            "pct": 1.64,
+            "index_pct": 101.64,
+            "direction": "up"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": -0.07,
-            "pct": -3.43,
-            "index_pct": 96.57,
-            "direction": "down"
+            "diff": 0.12,
+            "pct": 5.88,
+            "index_pct": 105.88,
+            "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 1.59,
-            "pct": 418.42,
-            "index_pct": 518.42,
+            "diff": 1.78,
+            "pct": 468.42,
+            "index_pct": 568.42,
             "direction": "up"
           }
         },
@@ -1756,9 +1756,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -480.75,
-            "pct": -98.5,
-            "index_pct": 1.5,
+            "diff": -437.04,
+            "pct": -89.55,
+            "index_pct": 10.45,
             "direction": "down"
           }
         },
@@ -1782,85 +1782,85 @@
         "SKU ID": "100053319577",
         "综合花费": {
           "vs_2h": {
-            "diff": 219.6,
-            "pct": 109.18,
-            "index_pct": 209.18,
+            "diff": 232.92,
+            "pct": 115.8,
+            "index_pct": 215.8,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 43.74,
-            "pct": 11.6,
-            "index_pct": 111.6,
+            "diff": 57.06,
+            "pct": 15.14,
+            "index_pct": 115.14,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.2,
-            "pct": 11.11,
-            "index_pct": 111.11,
+            "diff": 0.14,
+            "pct": 7.78,
+            "index_pct": 107.78,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.6,
-            "pct": -23.08,
-            "index_pct": 76.92,
+            "diff": -0.66,
+            "pct": -25.38,
+            "index_pct": 74.62,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 13.41,
-            "pct": 14.19,
-            "index_pct": 114.19,
+            "diff": 24.73,
+            "pct": 26.16,
+            "index_pct": 126.16,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -184.87,
-            "pct": -63.14,
-            "index_pct": 36.86,
+            "diff": -173.55,
+            "pct": -59.27,
+            "index_pct": 40.73,
             "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 1.67,
-            "pct": 112.84,
-            "index_pct": 212.84,
+            "diff": 1.37,
+            "pct": 92.57,
+            "index_pct": 192.57,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 0.39,
-            "pct": 14.13,
-            "index_pct": 114.13,
+            "diff": 0.09,
+            "pct": 3.26,
+            "index_pct": 103.26,
             "direction": "up"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 206.19,
-            "pct": 193.41,
-            "index_pct": 293.41,
+            "diff": 208.19,
+            "pct": 195.28,
+            "index_pct": 295.28,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 228.61,
-            "pct": 271.54,
-            "index_pct": 371.54,
+            "diff": 230.61,
+            "pct": 273.92,
+            "index_pct": 373.92,
             "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -0.48,
-            "pct": -22.97,
-            "index_pct": 77.03,
+            "diff": -0.49,
+            "pct": -23.44,
+            "index_pct": 76.56,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -0.47,
-            "pct": -22.6,
-            "index_pct": 77.4,
+            "diff": -0.48,
+            "pct": -23.08,
+            "index_pct": 76.92,
             "direction": "down"
           }
         }
@@ -1870,43 +1870,43 @@
         "SKU ID": "100301903542",
         "综合花费": {
           "vs_2h": {
-            "diff": 170.71,
-            "pct": 90.3,
-            "index_pct": 190.3,
+            "diff": 318.12,
+            "pct": 168.27,
+            "index_pct": 268.27,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -738.05,
-            "pct": -67.23,
-            "index_pct": 32.77,
+            "diff": -590.64,
+            "pct": -53.8,
+            "index_pct": 46.2,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.9,
-            "pct": 321.43,
-            "index_pct": 421.43,
+            "diff": 0.69,
+            "pct": 246.43,
+            "index_pct": 346.43,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1.23,
-            "pct": -51.04,
-            "index_pct": 48.96,
+            "diff": -1.44,
+            "pct": -59.75,
+            "index_pct": 40.25,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 73.94,
-            "pct": 78.28,
-            "index_pct": 178.28,
+            "diff": 125.61,
+            "pct": 132.98,
+            "index_pct": 232.98,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -294.38,
-            "pct": -63.61,
-            "index_pct": 36.39,
+            "diff": -242.71,
+            "pct": -52.45,
+            "index_pct": 47.55,
             "direction": "down"
           }
         },
@@ -1918,37 +1918,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1.56,
-            "pct": -66.95,
-            "index_pct": 33.05,
+            "diff": -1.74,
+            "pct": -74.68,
+            "index_pct": 25.32,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 96.77,
-            "pct": 102.3,
-            "index_pct": 202.3,
+            "diff": 192.51,
+            "pct": 203.52,
+            "index_pct": 303.52,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -443.67,
-            "pct": -69.87,
-            "index_pct": 30.13,
+            "diff": -347.93,
+            "pct": -54.79,
+            "index_pct": 45.21,
             "direction": "down"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0.98,
-            "pct": 175.0,
-            "index_pct": 275.0,
+            "diff": 0.71,
+            "pct": 126.79,
+            "index_pct": 226.79,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.93,
-            "pct": -37.65,
-            "index_pct": 62.35,
+            "diff": -1.2,
+            "pct": -48.58,
+            "index_pct": 51.42,
             "direction": "down"
           }
         }
@@ -1958,85 +1958,85 @@
         "SKU ID": "100161974102",
         "综合花费": {
           "vs_2h": {
-            "diff": 327.87,
-            "pct": 310.54,
-            "index_pct": 410.54,
+            "diff": 674.74,
+            "pct": 639.08,
+            "index_pct": 739.08,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1237.84,
-            "pct": -74.06,
-            "index_pct": 25.94,
+            "diff": -890.97,
+            "pct": -53.31,
+            "index_pct": 46.69,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -0.58,
-            "pct": -20.42,
-            "index_pct": 79.58,
+            "diff": -0.39,
+            "pct": -13.73,
+            "index_pct": 86.27,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": 0.19,
-            "pct": 9.18,
-            "index_pct": 109.18,
+            "diff": 0.38,
+            "pct": 18.36,
+            "index_pct": 118.36,
             "direction": "up"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 15.8,
-            "pct": 41.12,
-            "index_pct": 141.12,
+            "diff": 54.51,
+            "pct": 141.88,
+            "index_pct": 241.88,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -115.86,
-            "pct": -68.12,
-            "index_pct": 31.88,
+            "diff": -77.15,
+            "pct": -45.36,
+            "index_pct": 54.64,
             "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 0.16,
-            "pct": 6.15,
-            "index_pct": 106.15,
+            "diff": 0.67,
+            "pct": 25.77,
+            "index_pct": 125.77,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.19,
-            "pct": -6.44,
-            "index_pct": 93.56,
-            "direction": "down"
+            "diff": 0.32,
+            "pct": 10.85,
+            "index_pct": 110.85,
+            "direction": "up"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 312.07,
-            "pct": 464.67,
-            "index_pct": 564.67,
+            "diff": 620.23,
+            "pct": 923.51,
+            "index_pct": 1023.51,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1121.98,
-            "pct": -74.74,
-            "index_pct": 25.26,
+            "diff": -813.82,
+            "pct": -54.21,
+            "index_pct": 45.79,
             "direction": "down"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -0.79,
-            "pct": -26.6,
-            "index_pct": 73.4,
+            "diff": -0.63,
+            "pct": -21.21,
+            "index_pct": 78.79,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": 0.21,
-            "pct": 10.66,
-            "index_pct": 110.66,
+            "diff": 0.37,
+            "pct": 18.78,
+            "index_pct": 118.78,
             "direction": "up"
           }
         }
@@ -2046,43 +2046,43 @@
         "SKU ID": "100131766577",
         "综合花费": {
           "vs_2h": {
-            "diff": 232.27,
-            "pct": 172.61,
-            "index_pct": 272.61,
+            "diff": 285.96,
+            "pct": 212.51,
+            "index_pct": 312.51,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 134.6,
-            "pct": 57.96,
-            "index_pct": 157.96,
+            "diff": 188.29,
+            "pct": 81.08,
+            "index_pct": 181.08,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 0.2,
-            "pct": 16.81,
-            "index_pct": 116.81,
+            "diff": 0.02,
+            "pct": 1.68,
+            "index_pct": 101.68,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -2.28,
-            "pct": -62.13,
-            "index_pct": 37.87,
+            "diff": -2.46,
+            "pct": -67.03,
+            "index_pct": 32.97,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 37.3,
-            "pct": 1480.16,
-            "index_pct": 1580.16,
+            "diff": 57.76,
+            "pct": 2292.06,
+            "index_pct": 2392.06,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -93.39,
-            "pct": -70.11,
-            "index_pct": 29.89,
+            "diff": -72.93,
+            "pct": -54.75,
+            "index_pct": 45.25,
             "direction": "down"
           }
         },
@@ -2094,37 +2094,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.49,
-            "pct": -16.33,
-            "index_pct": 83.67,
+            "diff": -1.34,
+            "pct": -44.67,
+            "index_pct": 55.33,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 194.97,
-            "pct": 147.66,
-            "index_pct": 247.66,
+            "diff": 228.2,
+            "pct": 172.83,
+            "index_pct": 272.83,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 227.99,
-            "pct": 230.25,
-            "index_pct": 330.25,
+            "diff": 261.22,
+            "pct": 263.81,
+            "index_pct": 363.81,
             "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0.04,
-            "pct": 3.31,
-            "index_pct": 103.31,
-            "direction": "up"
+            "diff": -0.07,
+            "pct": -5.79,
+            "index_pct": 94.21,
+            "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -3.32,
-            "pct": -72.65,
-            "index_pct": 27.35,
+            "diff": -3.43,
+            "pct": -75.05,
+            "index_pct": 24.95,
             "direction": "down"
           }
         }
@@ -2222,15 +2222,15 @@
         "SKU ID": "2795972",
         "综合花费": {
           "vs_2h": {
-            "diff": 52.04,
-            "pct": 740.26,
-            "index_pct": 840.26,
+            "diff": 89.09,
+            "pct": 1267.28,
+            "index_pct": 1367.28,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -260.73,
-            "pct": -81.53,
-            "index_pct": 18.47,
+            "diff": -223.68,
+            "pct": -69.94,
+            "index_pct": 30.06,
             "direction": "down"
           }
         },
@@ -2242,23 +2242,23 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.04,
-            "pct": 2.3,
-            "index_pct": 102.3,
-            "direction": "up"
+            "diff": -0.65,
+            "pct": -37.36,
+            "index_pct": 62.64,
+            "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 18.74,
-            "pct": 283.94,
-            "index_pct": 383.94,
+            "diff": 22.71,
+            "pct": 344.09,
+            "index_pct": 444.09,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 16.42,
-            "pct": 184.08,
-            "index_pct": 284.08,
+            "diff": 20.39,
+            "pct": 228.59,
+            "index_pct": 328.59,
             "direction": "up"
           }
         },
@@ -2278,15 +2278,15 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 33.3,
-            "pct": 7744.19,
-            "index_pct": 7844.19,
+            "diff": 66.38,
+            "pct": 15437.21,
+            "index_pct": 15537.21,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -277.15,
-            "pct": -89.15,
-            "index_pct": 10.85,
+            "diff": -244.07,
+            "pct": -78.51,
+            "index_pct": 21.49,
             "direction": "down"
           }
         },
@@ -2310,29 +2310,29 @@
         "SKU ID": "2646498",
         "综合花费": {
           "vs_2h": {
-            "diff": 794.68,
-            "pct": 411.35,
-            "index_pct": 511.35,
+            "diff": 1255.58,
+            "pct": 649.92,
+            "index_pct": 749.92,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 666.99,
-            "pct": 207.86,
-            "index_pct": 307.86,
+            "diff": 1127.89,
+            "pct": 351.5,
+            "index_pct": 451.5,
             "direction": "up"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": -0.79,
-            "pct": -21.82,
-            "index_pct": 78.18,
+            "diff": -1.02,
+            "pct": -28.18,
+            "index_pct": 71.82,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -2.42,
-            "pct": -46.1,
-            "index_pct": 53.9,
+            "diff": -2.65,
+            "pct": -50.48,
+            "index_pct": 49.52,
             "direction": "down"
           }
         },
@@ -2366,29 +2366,29 @@
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 789.27,
-            "pct": 538.79,
-            "index_pct": 638.79,
+            "diff": 1250.17,
+            "pct": 853.42,
+            "index_pct": 953.42,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 669.88,
-            "pct": 251.95,
-            "index_pct": 351.95,
+            "diff": 1130.78,
+            "pct": 425.3,
+            "index_pct": 525.3,
             "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": -1.8,
-            "pct": -37.66,
-            "index_pct": 62.34,
+            "diff": -2.08,
+            "pct": -43.51,
+            "index_pct": 56.49,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -2.83,
-            "pct": -48.71,
-            "index_pct": 51.29,
+            "diff": -3.11,
+            "pct": -53.53,
+            "index_pct": 46.47,
             "direction": "down"
           }
         }
@@ -2398,43 +2398,43 @@
         "SKU ID": "100063120723",
         "综合花费": {
           "vs_2h": {
-            "diff": 468.16,
-            "pct": 219.39,
-            "index_pct": 319.39,
+            "diff": 671.32,
+            "pct": 314.6,
+            "index_pct": 414.6,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -916.19,
-            "pct": -57.34,
-            "index_pct": 42.66,
+            "diff": -713.03,
+            "pct": -44.63,
+            "index_pct": 55.37,
             "direction": "down"
           }
         },
         "综合ROI": {
           "vs_2h": {
-            "diff": 1.81,
-            "pct": 95.26,
-            "index_pct": 195.26,
+            "diff": 1.45,
+            "pct": 76.32,
+            "index_pct": 176.32,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 1.41,
-            "pct": 61.3,
-            "index_pct": 161.3,
+            "diff": 1.05,
+            "pct": 45.65,
+            "index_pct": 145.65,
             "direction": "up"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 39.59,
-            "pct": 336.65,
-            "index_pct": 436.65,
+            "diff": 46.13,
+            "pct": 392.26,
+            "index_pct": 492.26,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -13.98,
-            "pct": -21.4,
-            "index_pct": 78.6,
+            "diff": -7.44,
+            "pct": -11.39,
+            "index_pct": 88.61,
             "direction": "down"
           }
         },
@@ -2446,37 +2446,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 7.32,
-            "pct": 110.08,
-            "index_pct": 210.08,
+            "diff": 5.86,
+            "pct": 88.12,
+            "index_pct": 188.12,
             "direction": "up"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 428.57,
-            "pct": 212.55,
-            "index_pct": 312.55,
+            "diff": 625.19,
+            "pct": 310.07,
+            "index_pct": 410.07,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -902.21,
-            "pct": -58.88,
-            "index_pct": 41.12,
+            "diff": -705.59,
+            "pct": -46.04,
+            "index_pct": 53.96,
             "direction": "down"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0.86,
-            "pct": 42.79,
-            "index_pct": 142.79,
+            "diff": 0.7,
+            "pct": 34.83,
+            "index_pct": 134.83,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 0.76,
-            "pct": 36.02,
-            "index_pct": 136.02,
+            "diff": 0.6,
+            "pct": 28.44,
+            "index_pct": 128.44,
             "direction": "up"
           }
         }
@@ -2486,16 +2486,16 @@
         "SKU ID": "100063120717",
         "综合花费": {
           "vs_2h": {
-            "diff": 148.85,
-            "pct": 7122.01,
-            "index_pct": 7222.01,
+            "diff": 166.99,
+            "pct": 7989.95,
+            "index_pct": 8089.95,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -10.64,
-            "pct": -6.58,
-            "index_pct": 93.42,
-            "direction": "down"
+            "diff": 7.5,
+            "pct": 4.64,
+            "index_pct": 104.64,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -2506,23 +2506,23 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.0,
-            "pct": -52.22,
-            "index_pct": 47.78,
+            "diff": -0.95,
+            "pct": -24.8,
+            "index_pct": 75.2,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 49.93,
-            "pct": 11611.63,
-            "index_pct": 11711.63,
+            "diff": 59.18,
+            "pct": 13762.79,
+            "index_pct": 13862.79,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 21.92,
-            "pct": 77.07,
-            "index_pct": 177.07,
+            "diff": 31.17,
+            "pct": 109.6,
+            "index_pct": 209.6,
             "direction": "up"
           }
         },
@@ -2534,23 +2534,23 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -8.97,
-            "pct": -100.0,
-            "index_pct": 0.0,
+            "diff": -5.42,
+            "pct": -60.42,
+            "index_pct": 39.58,
             "direction": "down"
           }
         },
         "SEM花费": {
           "vs_2h": {
-            "diff": 98.92,
-            "pct": 5959.04,
-            "index_pct": 6059.04,
+            "diff": 107.81,
+            "pct": 6494.58,
+            "index_pct": 6594.58,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -32.56,
-            "pct": -24.46,
-            "index_pct": 75.54,
+            "diff": -23.67,
+            "pct": -17.78,
+            "index_pct": 82.22,
             "direction": "down"
           }
         },
@@ -2562,10 +2562,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
-            "direction": "neutral"
+            "diff": -0.22,
+            "pct": -8.03,
+            "index_pct": 91.97,
+            "direction": "down"
           }
         }
       }
@@ -2574,29 +2574,29 @@
       "JST": {
         "花费": {
           "vs_2h": {
-            "diff": 2072.34,
-            "pct": 256.26,
-            "index_pct": 356.26,
+            "diff": 2472.71,
+            "pct": 305.77,
+            "index_pct": 405.77,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -311.89,
-            "pct": -9.77,
-            "index_pct": 90.23,
-            "direction": "down"
+            "diff": 88.48,
+            "pct": 2.77,
+            "index_pct": 102.77,
+            "direction": "up"
           }
         },
         "ROI": {
           "vs_2h": {
-            "diff": 0.88,
-            "pct": 48.1,
-            "index_pct": 148.1,
+            "diff": 0.96,
+            "pct": 52.31,
+            "index_pct": 152.31,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.34,
-            "pct": -11.21,
-            "index_pct": 88.79,
+            "diff": -0.27,
+            "pct": -8.68,
+            "index_pct": 91.32,
             "direction": "down"
           }
         }
@@ -2604,29 +2604,29 @@
       "SEM": {
         "花费": {
           "vs_2h": {
-            "diff": 4715.67,
-            "pct": 263.03,
-            "index_pct": 363.03,
+            "diff": 7015.17,
+            "pct": 391.29,
+            "index_pct": 491.29,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -4128.88,
-            "pct": -38.81,
-            "index_pct": 61.19,
+            "diff": -1829.38,
+            "pct": -17.2,
+            "index_pct": 82.8,
             "direction": "down"
           }
         },
         "ROI": {
           "vs_2h": {
-            "diff": 0.22,
-            "pct": 10.48,
-            "index_pct": 110.48,
+            "diff": 0.17,
+            "pct": 8.01,
+            "index_pct": 108.01,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -0.19,
-            "pct": -7.46,
-            "index_pct": 92.54,
+            "diff": -0.24,
+            "pct": -9.53,
+            "index_pct": 90.47,
             "direction": "down"
           }
         }
@@ -2634,29 +2634,29 @@
       "HT": {
         "花费": {
           "vs_2h": {
-            "diff": 5098.35,
-            "pct": 343.12,
-            "index_pct": 443.12,
+            "diff": 6329.87,
+            "pct": 426.0,
+            "index_pct": 526.0,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 898.34,
-            "pct": 15.8,
-            "index_pct": 115.8,
+            "diff": 2129.86,
+            "pct": 37.46,
+            "index_pct": 137.46,
             "direction": "up"
           }
         },
         "ROI": {
           "vs_2h": {
-            "diff": -0.45,
-            "pct": -18.94,
-            "index_pct": 81.06,
+            "diff": -0.35,
+            "pct": -14.72,
+            "index_pct": 85.28,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -2.23,
-            "pct": -53.54,
-            "index_pct": 46.46,
+            "diff": -2.13,
+            "pct": -51.13,
+            "index_pct": 48.87,
             "direction": "down"
           }
         }
@@ -2666,29 +2666,29 @@
       "GMEC-Ariel": {
         "HT花费": {
           "vs_2h": {
-            "diff": 512.79,
-            "pct": 259.21,
-            "index_pct": 359.21,
+            "diff": 581.76,
+            "pct": 294.07,
+            "index_pct": 394.07,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 431.64,
-            "pct": 154.72,
-            "index_pct": 254.72,
+            "diff": 500.61,
+            "pct": 179.44,
+            "index_pct": 279.44,
             "direction": "up"
           }
         },
         "HT ROI": {
           "vs_2h": {
-            "diff": -1.27,
-            "pct": -31.59,
-            "index_pct": 68.41,
+            "diff": -1.23,
+            "pct": -30.6,
+            "index_pct": 69.4,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -2.27,
-            "pct": -45.22,
-            "index_pct": 54.78,
+            "diff": -2.23,
+            "pct": -44.42,
+            "index_pct": 55.58,
             "direction": "down"
           }
         }
@@ -2696,29 +2696,29 @@
       "GMEC-Ariel-L": {
         "HT花费": {
           "vs_2h": {
-            "diff": 1458.59,
-            "pct": 251.18,
-            "index_pct": 351.18,
+            "diff": 1755.76,
+            "pct": 302.36,
+            "index_pct": 402.36,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 18.76,
-            "pct": 0.93,
-            "index_pct": 100.93,
+            "diff": 315.93,
+            "pct": 15.64,
+            "index_pct": 115.64,
             "direction": "up"
           }
         },
         "HT ROI": {
           "vs_2h": {
-            "diff": -0.55,
-            "pct": -24.02,
-            "index_pct": 75.98,
+            "diff": -0.24,
+            "pct": -10.48,
+            "index_pct": 89.52,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -1.66,
-            "pct": -48.82,
-            "index_pct": 51.18,
+            "diff": -1.35,
+            "pct": -39.71,
+            "index_pct": 60.29,
             "direction": "down"
           }
         }
@@ -2726,29 +2726,29 @@
       "GMEC-Downy": {
         "HT花费": {
           "vs_2h": {
-            "diff": 1190.36,
-            "pct": 392.3,
-            "index_pct": 492.3,
+            "diff": 1628.85,
+            "pct": 536.81,
+            "index_pct": 636.81,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -178.95,
-            "pct": -10.7,
-            "index_pct": 89.3,
-            "direction": "down"
+            "diff": 259.54,
+            "pct": 15.52,
+            "index_pct": 115.52,
+            "direction": "up"
           }
         },
         "HT ROI": {
           "vs_2h": {
-            "diff": -0.4,
-            "pct": -17.47,
-            "index_pct": 82.53,
+            "diff": -0.39,
+            "pct": -17.03,
+            "index_pct": 82.97,
             "direction": "down"
           },
           "vs_yesterday": {
-            "diff": -3.12,
-            "pct": -62.28,
-            "index_pct": 37.72,
+            "diff": -3.11,
+            "pct": -62.08,
+            "index_pct": 37.92,
             "direction": "down"
           }
         }
@@ -2756,29 +2756,29 @@
       "GMEC-Tide": {
         "HT花费": {
           "vs_2h": {
-            "diff": 535.1,
-            "pct": 442.85,
-            "index_pct": 542.85,
+            "diff": 577.91,
+            "pct": 478.28,
+            "index_pct": 578.28,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 480.62,
-            "pct": 274.15,
-            "index_pct": 374.15,
+            "diff": 523.43,
+            "pct": 298.57,
+            "index_pct": 398.57,
             "direction": "up"
           }
         },
         "HT ROI": {
           "vs_2h": {
-            "diff": 0.01,
-            "pct": 0.51,
-            "index_pct": 100.51,
+            "diff": 0.34,
+            "pct": 17.17,
+            "index_pct": 117.17,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -1.16,
-            "pct": -36.83,
-            "index_pct": 63.17,
+            "diff": -0.83,
+            "pct": -26.35,
+            "index_pct": 73.65,
             "direction": "down"
           }
         }
@@ -2786,29 +2786,29 @@
       "GMEC-Tide-L": {
         "HT花费": {
           "vs_2h": {
-            "diff": 1401.51,
-            "pct": 495.02,
-            "index_pct": 595.02,
+            "diff": 1785.59,
+            "pct": 630.68,
+            "index_pct": 730.68,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": 146.27,
-            "pct": 9.51,
-            "index_pct": 109.51,
+            "diff": 530.35,
+            "pct": 34.48,
+            "index_pct": 134.48,
             "direction": "up"
           }
         },
         "HT ROI": {
           "vs_2h": {
-            "diff": 0.12,
-            "pct": 6.94,
-            "index_pct": 106.94,
+            "diff": 0.04,
+            "pct": 2.31,
+            "index_pct": 102.31,
             "direction": "up"
           },
           "vs_yesterday": {
-            "diff": -2.37,
-            "pct": -56.16,
-            "index_pct": 43.84,
+            "diff": -2.45,
+            "pct": -58.06,
+            "index_pct": 41.94,
             "direction": "down"
           }
         }
