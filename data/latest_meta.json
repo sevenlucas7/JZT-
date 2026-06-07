@@ -1,10 +1,10 @@
 {
   "report_date": "2026-06-07",
-  "slot_label": "0802",
-  "generated_at": "2026-06-07 08:00:59",
+  "slot_label": "1002",
+  "generated_at": "2026-06-07 10:00:20",
   "source_file_name": "GMEC-Downy_全品牌数据Raw-当天_20260607_20260607.csv",
   "source_file_path": "/Users/sevenyip/Library/CloudStorage/OneDrive-insidemedia.net/LDY/rawdata/Fabric/GMEC-Downy_全品牌数据Raw-当天_20260607_20260607.csv",
-  "source_file_modified_at": "2026-06-07 06:00:28",
-  "discord_path": "/Users/sevenyip/.openclaw/runtime/jzt_reports/2026-06-07/0802_discord.md",
-  "full_path": "/Users/sevenyip/.openclaw/runtime/jzt_reports/2026-06-07/0802_full.md"
+  "source_file_modified_at": "2026-06-07 07:59:58",
+  "discord_path": "/Users/sevenyip/.openclaw/runtime/jzt_reports/2026-06-07/1002_discord.md",
+  "full_path": "/Users/sevenyip/.openclaw/runtime/jzt_reports/2026-06-07/1002_full.md"
 }
