@@ -178,3 +178,10 @@ slot：`2026-06-04 1802`
 
 - `4d12754 Auto-update JZT dashboard 2026-06-04 1802`
 - `1c6ea09 Fix JZT online dashboard suggestion data`
+
+## 2026-06-08 — Fix automatic online dashboard sync with text-report data
+
+- Root cause: JZT compute/text artifacts updated successfully, but the separate GitHub Pages sync job committed locally and skipped push because the cron/Hermes non-interactive environment did not inherit Boss' interactive zsh `GITHUB_TOKEN`.
+- Fix 1: `~/.hermes/scripts/jingzhuntong/jzt_sync_github_pages.sh` now sources `GITHUB_TOKEN` from `zsh -lic` when the non-interactive environment lacks it.
+- Fix 2: `~/.hermes/scripts/jingzhuntong/jzt_pipi_compute.sh` now runs the GitHub Pages sync wrapper best-effort immediately after generating the split artifact, so the online dashboard advances with the same freshly computed text-report data instead of relying only on the separate `:03` sync cron.
+- Verification: local, `origin/main`, and GitHub Pages `data/latest_meta.json` all report `2026-06-08 1202`, `source_file_modified_at=2026-06-08 11:56:43`, `generated_at=2026-06-08 12:03:25`.
