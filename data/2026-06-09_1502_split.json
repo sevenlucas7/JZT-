@@ -1,0 +1,1267 @@
+{
+  "generated_at": "2026-06-09 15:39:49",
+  "source_file": "GMEC-Downy_全品牌数据Raw-当天_20260609_20260609.csv",
+  "slot_label": "1502",
+  "report_date": "2026-06-09",
+  "sku_count": 22,
+  "skus": [
+    {
+      "账户": "GMEC-Ariel",
+      "SKU名称": "碧浪洗衣免搓粉 纯净清香6.2斤装 洗衣粉非爆炸盐皂粉  99%杀菌除螨",
+      "SKU简称": "碧浪免搓粉3.1kg",
+      "SKU ID": "100161952438",
+      "综合ROI(含JST+SEM)": 2.41,
+      "综合花费(SPD)": 2982.49,
+      "综合CPC": 5.22,
+      "综合CTR": 0.0778,
+      "综合CVR": 0.2277,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 1.5,
+      "JST花费(SPD)": 482.82,
+      "JST ROI": 2.89,
+      "JST CPC": 4.7335,
+      "SEM花费(SPD)": 2499.67,
+      "SEM ROI": 2.32,
+      "SEM CPC": 5.3298
+    },
+    {
+      "账户": "GMEC-Ariel",
+      "SKU名称": "碧浪洗衣免搓粉 阳光薰衣草6.2斤装 洗衣粉非爆炸盐皂粉  99%杀菌除螨",
+      "SKU简称": "碧浪薰衣草免搓粉3.1kg",
+      "SKU ID": "100162871390",
+      "综合ROI(含JST+SEM)": 3.57,
+      "综合花费(SPD)": 469.03,
+      "综合CPC": 3.01,
+      "综合CTR": 0.0581,
+      "综合CVR": 0.1731,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 1.5,
+      "JST花费(SPD)": 456.52,
+      "JST ROI": 3.56,
+      "JST CPC": 2.9838,
+      "SEM花费(SPD)": 12.51,
+      "SEM ROI": 3.98,
+      "SEM CPC": 4.17
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "SKU名称": "碧浪除菌洗衣液20斤装(3kg*3瓶自然清新+200g*5袋草本清新)家庭装",
+      "SKU简称": "碧浪NF10kg",
+      "SKU ID": "100036714440",
+      "综合ROI(含JST+SEM)": 3.4,
+      "综合花费(SPD)": 1921.69,
+      "综合CPC": 7.48,
+      "综合CTR": 0.0481,
+      "综合CVR": 0.1712,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 54.94,
+      "JST ROI": 9.3,
+      "JST CPC": 1.3735,
+      "SEM花费(SPD)": 1866.75,
+      "SEM ROI": 3.22,
+      "SEM CPC": 8.6025
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "SKU名称": "碧浪除菌洗衣液日晒般清新13.6斤装(3kg*2瓶+200g*4袋)家庭装",
+      "SKU简称": "碧浪Matic 6.8kg",
+      "SKU ID": "4713934",
+      "综合ROI(含JST+SEM)": 2.43,
+      "综合花费(SPD)": 2588.51,
+      "综合CPC": 6.69,
+      "综合CTR": 0.0559,
+      "综合CVR": 0.1938,
+      "状态": "正常",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 136.2,
+      "JST ROI": 10.33,
+      "JST CPC": 1.6214,
+      "SEM花费(SPD)": 2452.31,
+      "SEM ROI": 1.99,
+      "SEM CPC": 8.0934
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "SKU名称": "碧浪除菌洗衣液日晒般清新18斤装(3kg*2瓶+500g*6袋)家庭装 根源消臭",
+      "SKU简称": "碧浪Matic9kg",
+      "SKU ID": "100039735595",
+      "综合ROI(含JST+SEM)": 3.16,
+      "综合花费(SPD)": 62.64,
+      "综合CPC": 2.02,
+      "综合CTR": 0.0507,
+      "综合CVR": 0.0323,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 53.74,
+      "JST ROI": 3.68,
+      "JST CPC": 2.0669,
+      "SEM花费(SPD)": 8.9,
+      "SEM ROI": 0.0,
+      "SEM CPC": 1.78
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "SKU名称": "碧浪除菌洗衣液日晒般清新6斤瓶装 杀菌除螨 根源消臭去黄 支持快洗",
+      "SKU简称": "碧浪日晒清新6斤",
+      "SKU ID": "1978117",
+      "综合ROI(含JST+SEM)": 5.56,
+      "综合花费(SPD)": 906.19,
+      "综合CPC": 2.5,
+      "综合CTR": 0.0116,
+      "综合CVR": 0.146,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 124.31,
+      "JST ROI": 28.16,
+      "JST CPC": 1.2557,
+      "SEM花费(SPD)": 781.88,
+      "SEM ROI": 1.97,
+      "SEM CPC": 2.9617
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "SKU名称": "碧浪除菌洗衣液清雅茉莉12斤瓶装(3kg*2) 杀菌除螨 根源消臭去黄",
+      "SKU简称": "碧浪Jasmine6kg",
+      "SKU ID": "100008766160",
+      "综合ROI(含JST+SEM)": 3.05,
+      "综合花费(SPD)": 1343.24,
+      "综合CPC": 4.73,
+      "综合CTR": 0.0535,
+      "综合CVR": 0.1937,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 54.19,
+      "JST ROI": 12.29,
+      "JST CPC": 1.4261,
+      "SEM花费(SPD)": 1289.05,
+      "SEM ROI": 2.67,
+      "SEM CPC": 5.24
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "SKU名称": "碧浪除菌洗衣液自然清新16斤瓶装(2kg*4) 杀菌除螨 根源消臭去黄",
+      "SKU简称": "碧浪自然清香16斤",
+      "SKU ID": "100006804447",
+      "综合ROI(含JST+SEM)": 3.09,
+      "综合花费(SPD)": 144.09,
+      "综合CPC": 3.13,
+      "综合CTR": 0.025,
+      "综合CVR": 0.1304,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 121.0,
+      "JST ROI": 2.82,
+      "JST CPC": 3.2703,
+      "SEM花费(SPD)": 23.09,
+      "SEM ROI": 4.49,
+      "SEM CPC": 2.5656
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠清晨橘光450g 12周持久留香 防异味 99%除菌除螨 易溶",
+      "SKU简称": "当妮450g清晨橘光",
+      "SKU ID": "100268112394",
+      "综合ROI(含JST+SEM)": 2.92,
+      "综合花费(SPD)": 624.34,
+      "综合CPC": 7.52,
+      "综合CTR": 0.0704,
+      "综合CVR": 0.2892,
+      "状态": "正常",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 69.87,
+      "JST ROI": 2.93,
+      "JST CPC": 3.3271,
+      "SEM花费(SPD)": 554.47,
+      "SEM ROI": 2.92,
+      "SEM CPC": 8.9431
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠清晨橘光950g 12周持久留香 防异味 99%除菌除螨家庭装",
+      "SKU简称": "当妮950g清晨橘光",
+      "SKU ID": "100233530169",
+      "综合ROI(含JST+SEM)": 2.9,
+      "综合花费(SPD)": 44.75,
+      "综合CPC": 3.73,
+      "综合CTR": 0.0287,
+      "综合CVR": 0.0833,
+      "状态": "正常",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 24.18,
+      "JST ROI": 5.37,
+      "JST CPC": 3.4543,
+      "SEM花费(SPD)": 20.57,
+      "SEM ROI": 0.0,
+      "SEM CPC": 4.114
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠清雨山茶450g 12周持久留香 防异味 99%除菌除螨 易溶",
+      "SKU简称": "当妮450g清雨山茶",
+      "SKU ID": "100094637928",
+      "综合ROI(含JST+SEM)": 2.16,
+      "综合花费(SPD)": 438.5,
+      "综合CPC": 4.98,
+      "综合CTR": 0.0343,
+      "综合CVR": 0.1364,
+      "状态": "🔻 低于目标10%以上",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 367.93,
+      "JST ROI": 2.06,
+      "JST CPC": 4.8412,
+      "SEM花费(SPD)": 70.57,
+      "SEM ROI": 2.72,
+      "SEM CPC": 5.8808
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠玫瑰之巅450g 12周持久留香 防异味 99%除菌除螨 易溶",
+      "SKU简称": "当妮450g玫瑰之巅",
+      "SKU ID": "100044243858",
+      "综合ROI(含JST+SEM)": 3.17,
+      "综合花费(SPD)": 1402.62,
+      "综合CPC": 4.71,
+      "综合CTR": 0.1015,
+      "综合CVR": 0.2013,
+      "状态": "正常",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 471.37,
+      "JST ROI": 3.18,
+      "JST CPC": 3.2066,
+      "SEM花费(SPD)": 931.25,
+      "SEM ROI": 3.16,
+      "SEM CPC": 6.1672
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠组套200g*3瓶(自由之森+玫瑰之巅+清雨山茶)",
+      "SKU简称": "当妮留香珠200g*3",
+      "SKU ID": "100111047759",
+      "综合ROI(含JST+SEM)": 4.02,
+      "综合花费(SPD)": 91.69,
+      "综合CPC": 4.17,
+      "综合CTR": 0.0515,
+      "综合CVR": 0.3182,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 91.69,
+      "JST ROI": 4.02,
+      "JST CPC": 4.1677,
+      "SEM花费(SPD)": 0.0,
+      "SEM ROI": 0.0,
+      "SEM CPC": 0.0
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠自由之森450g 12周持久留香 防异味 99%除菌除螨 易溶",
+      "SKU简称": "当妮450g自由之森",
+      "SKU ID": "100053319577",
+      "综合ROI(含JST+SEM)": 3.25,
+      "综合花费(SPD)": 822.42,
+      "综合CPC": 4.52,
+      "综合CTR": 0.0751,
+      "综合CVR": 0.1978,
+      "状态": "正常",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 546.25,
+      "JST ROI": 3.1,
+      "JST CPC": 4.6688,
+      "SEM花费(SPD)": 276.17,
+      "SEM ROI": 3.54,
+      "SEM CPC": 4.2488
+    },
+    {
+      "账户": "GMEC-Downy",
+      "SKU名称": "当妮护衣留香珠自由之森950g 12周持久留香 防异味 99%除菌除螨家庭装",
+      "SKU简称": "当妮950g自由之森",
+      "SKU ID": "100301903542",
+      "综合ROI(含JST+SEM)": 2.43,
+      "综合花费(SPD)": 273.27,
+      "综合CPC": 3.14,
+      "综合CTR": 0.0673,
+      "综合CVR": 0.0805,
+      "状态": "🔻 低于目标10%以上",
+      "ROI目标": 3.0,
+      "JST花费(SPD)": 210.75,
+      "JST ROI": 2.65,
+      "JST CPC": 3.3452,
+      "SEM花费(SPD)": 62.52,
+      "SEM ROI": 1.69,
+      "SEM CPC": 2.605
+    },
+    {
+      "账户": "GMEC-Tide",
+      "SKU名称": "汰渍洗衣免搓粉 清雅山茶花6.8斤装 洗衣粉非爆炸盐皂粉 持久留香30天",
+      "SKU简称": "汰渍山茶花3.4kg",
+      "SKU ID": "100161974102",
+      "综合ROI(含JST+SEM)": 2.46,
+      "综合花费(SPD)": 2740.41,
+      "综合CPC": 7.03,
+      "综合CTR": 0.0437,
+      "综合CVR": 0.2667,
+      "状态": "🔺 高于目标10%以上",
+      "ROI目标": 1.5,
+      "JST花费(SPD)": 124.79,
+      "JST ROI": 2.0,
+      "JST CPC": 2.1151,
+      "SEM花费(SPD)": 2615.62,
+      "SEM ROI": 2.49,
+      "SEM CPC": 7.9022
+    },
+    {
+      "账户": "GMEC-Tide",
+      "SKU名称": "汰渍洗衣免搓粉 阳光薰衣草6.8斤装 洗衣粉非爆炸盐皂粉 持久留香30天",
+      "SKU简称": "汰渍薰衣草3.4kg",
+      "SKU ID": "100131766577",
+      "综合ROI(含JST+SEM)": 1.5,
+      "综合花费(SPD)": 332.51,
+      "综合CPC": 4.68,
+      "综合CTR": 0.0496,
+      "综合CVR": 0.1408,
+      "状态": "正常",
+      "ROI目标": 1.5,
+      "JST花费(SPD)": 288.87,
+      "JST ROI": 1.55,
+      "JST CPC": 4.6592,
+      "SEM花费(SPD)": 43.64,
+      "SEM ROI": 1.14,
+      "SEM CPC": 4.8489
+    },
+    {
+      "账户": "GMEC-Tide-L",
+      "SKU名称": "汰渍去渍洗衣液洁雅百合16斤瓶装(2kg*4)家庭装 无惧混洗  支持快洗",
+      "SKU简称": "汰渍百合16斤",
+      "SKU ID": "100008794192",
+      "综合ROI(含JST+SEM)": 2.39,
+      "综合花费(SPD)": 862.79,
+      "综合CPC": 7.07,
+      "综合CTR": 0.0107,
+      "综合CVR": 0.1721,
+      "状态": "正常",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 54.8,
+      "JST ROI": 8.56,
+      "JST CPC": 2.4909,
+      "SEM花费(SPD)": 807.99,
+      "SEM ROI": 1.98,
+      "SEM CPC": 8.0799
+    },
+    {
+      "账户": "GMEC-Tide-L",
+      "SKU名称": "汰渍去渍洗衣液洁雅百合18斤装(3kg*2瓶+500g*6袋)家庭装 无惧混洗",
+      "SKU简称": "汰渍9kg",
+      "SKU ID": "2795972",
+      "综合ROI(含JST+SEM)": 2.14,
+      "综合花费(SPD)": 538.29,
+      "综合CPC": 5.92,
+      "综合CTR": 0.0667,
+      "综合CVR": 0.1209,
+      "状态": "🔻 低于目标10%以上",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 49.74,
+      "JST ROI": 2.11,
+      "JST CPC": 2.2609,
+      "SEM花费(SPD)": 488.55,
+      "SEM ROI": 2.15,
+      "SEM CPC": 7.0804
+    },
+    {
+      "账户": "GMEC-Tide-L",
+      "SKU名称": "汰渍去渍洗衣液洁雅百合24斤瓶装(3kg*4)家庭装 无惧混洗  支持快洗",
+      "SKU简称": "汰渍百合24斤",
+      "SKU ID": "2646498",
+      "综合ROI(含JST+SEM)": 2.42,
+      "综合花费(SPD)": 1499.58,
+      "综合CPC": 8.15,
+      "综合CTR": 0.0121,
+      "综合CVR": 0.1413,
+      "状态": "正常",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 53.35,
+      "JST ROI": 5.24,
+      "JST CPC": 3.5567,
+      "SEM花费(SPD)": 1446.23,
+      "SEM ROI": 2.32,
+      "SEM CPC": 8.5576
+    },
+    {
+      "账户": "GMEC-Tide-L",
+      "SKU名称": "汰渍去渍洗衣液淡雅樱花11斤瓶装(2.75kg×2)家庭装 无惧混洗",
+      "SKU简称": "汰渍SAK5.5kg",
+      "SKU ID": "100063120723",
+      "综合ROI(含JST+SEM)": 2.59,
+      "综合花费(SPD)": 762.33,
+      "综合CPC": 5.48,
+      "综合CTR": 0.0421,
+      "综合CVR": 0.2014,
+      "状态": "正常",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 89.25,
+      "JST ROI": 6.18,
+      "JST CPC": 2.2885,
+      "SEM花费(SPD)": 673.08,
+      "SEM ROI": 2.11,
+      "SEM CPC": 6.7308
+    },
+    {
+      "账户": "GMEC-Tide-L",
+      "SKU名称": "汰渍去渍洗衣液淡雅薰香11斤装(2kg*2瓶+500g*3袋)家庭装 无惧混洗",
+      "SKU简称": "汰渍LAV5.5kg",
+      "SKU ID": "100063120717",
+      "综合ROI(含JST+SEM)": 2.35,
+      "综合花费(SPD)": 290.63,
+      "综合CPC": 4.76,
+      "综合CTR": 0.0417,
+      "综合CVR": 0.1639,
+      "状态": "正常",
+      "ROI目标": 2.5,
+      "JST花费(SPD)": 26.32,
+      "JST ROI": 9.56,
+      "JST CPC": 1.1964,
+      "SEM花费(SPD)": 264.31,
+      "SEM ROI": 1.63,
+      "SEM CPC": 6.7772
+    }
+  ],
+  "ht": [
+    {
+      "账户": "GMEC-Ariel",
+      "HT花费(SPD)": 1092.55,
+      "HT ROI": 3.77
+    },
+    {
+      "账户": "GMEC-Ariel-L",
+      "HT花费(SPD)": 2150.17,
+      "HT ROI": 4.47
+    },
+    {
+      "账户": "GMEC-Downy",
+      "HT花费(SPD)": 2979.35,
+      "HT ROI": 2.56
+    },
+    {
+      "账户": "GMEC-Tide",
+      "HT花费(SPD)": 957.23,
+      "HT ROI": 2.24
+    },
+    {
+      "账户": "GMEC-Tide-L",
+      "HT花费(SPD)": 2644.09,
+      "HT ROI": 2.37
+    }
+  ],
+  "account_totals": {
+    "GMEC-Ariel": {
+      "综合花费": 4544.07,
+      "综合ROI": 1.95,
+      "JST花费": 939.34,
+      "SEM花费": 2512.18,
+      "HT花费": 1092.55
+    },
+    "GMEC-Ariel-L": {
+      "综合花费": 9116.53,
+      "综合ROI": 2.48,
+      "JST花费": 544.38,
+      "SEM花费": 6421.98,
+      "HT花费": 2150.17
+    },
+    "GMEC-Downy": {
+      "综合花费": 6676.94,
+      "综合ROI": 1.66,
+      "JST花费": 1782.04,
+      "SEM花费": 1915.55,
+      "HT花费": 2979.35
+    },
+    "GMEC-Tide": {
+      "综合花费": 4030.15,
+      "综合ROI": 1.8,
+      "JST花费": 413.66,
+      "SEM花费": 2659.26,
+      "HT花费": 957.23
+    },
+    "GMEC-Tide-L": {
+      "综合花费": 6597.71,
+      "综合ROI": 1.44,
+      "JST花费": 273.46,
+      "SEM花费": 3680.16,
+      "HT花费": 2644.09
+    }
+  },
+  "deltas": {
+    "total_spend": {
+      "vs_2h": {
+        "diff": 0,
+        "pct": 0,
+        "direction": "neutral"
+      },
+      "vs_yesterday": {
+        "diff": 0,
+        "pct": 0,
+        "direction": "neutral"
+      }
+    },
+    "total_roi": {
+      "vs_2h": {
+        "diff": 0,
+        "pct": 0,
+        "direction": "neutral"
+      },
+      "vs_yesterday": {
+        "diff": 0,
+        "pct": 0,
+        "direction": "neutral"
+      }
+    },
+    "accounts": {
+      "GMEC-Ariel": {
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      "GMEC-Ariel-L": {
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      "GMEC-Downy": {
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      "GMEC-Tide": {
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      "GMEC-Tide-L": {
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      }
+    },
+    "skus": [
+      {
+        "账户": "GMEC-Ariel",
+        "SKU ID": "100161952438",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel",
+        "SKU ID": "100162871390",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel-L",
+        "SKU ID": "100036714440",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel-L",
+        "SKU ID": "4713934",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel-L",
+        "SKU ID": "100039735595",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel-L",
+        "SKU ID": "1978117",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel-L",
+        "SKU ID": "100008766160",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Ariel-L",
+        "SKU ID": "100006804447",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100268112394",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100233530169",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100094637928",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100044243858",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100111047759",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100053319577",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Downy",
+        "SKU ID": "100301903542",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide",
+        "SKU ID": "100161974102",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide",
+        "SKU ID": "100131766577",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide-L",
+        "SKU ID": "100008794192",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide-L",
+        "SKU ID": "2795972",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide-L",
+        "SKU ID": "2646498",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide-L",
+        "SKU ID": "100063120723",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      },
+      {
+        "账户": "GMEC-Tide-L",
+        "SKU ID": "100063120717",
+        "综合花费": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        },
+        "综合ROI": {
+          "vs_2h": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          },
+          "vs_yesterday": {
+            "diff": 0,
+            "pct": 0,
+            "direction": "neutral"
+          }
+        }
+      }
+    ]
+  }
+}
