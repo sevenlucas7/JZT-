@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-08 23:55:05",
-  "source_file": "GMEC-Downy_全品牌数据Raw-当天_20260608_20260608.csv",
-  "slot_label": "2357",
-  "report_date": "2026-06-08",
+  "generated_at": "2026-06-11 20:02:46",
+  "source_file": "GMEC-Downy_全品牌数据Raw-当天_20260611_20260611.csv",
+  "slot_label": "2002",
+  "report_date": "2026-06-11",
   "sku_count": 22,
   "skus": [
     {
@@ -10,445 +10,445 @@
       "SKU名称": "碧浪洗衣免搓粉 纯净清香6.2斤装 洗衣粉非爆炸盐皂粉  99%杀菌除螨",
       "SKU简称": "碧浪免搓粉3.1kg",
       "SKU ID": "100161952438",
-      "综合ROI(含JST+SEM)": 2.34,
-      "综合花费(SPD)": 5772.43,
-      "综合CPC": 6.24,
-      "综合CTR": 0.068,
-      "综合CVR": 0.2562,
+      "综合ROI(含JST+SEM)": 1.86,
+      "综合花费(SPD)": 5603.56,
+      "综合CPC": 6.82,
+      "综合CTR": 0.0814,
+      "综合CVR": 0.2299,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 482.53,
-      "JST ROI": 3.46,
-      "JST CPC": 4.6848,
-      "SEM花费(SPD)": 5289.9,
-      "SEM ROI": 2.24,
-      "SEM CPC": 6.4354
+      "JST花费(SPD)": 534.4,
+      "JST ROI": 3.91,
+      "JST CPC": 2.672,
+      "SEM花费(SPD)": 5069.16,
+      "SEM ROI": 1.65,
+      "SEM CPC": 8.1498
     },
     {
       "账户": "GMEC-Ariel",
       "SKU名称": "碧浪洗衣免搓粉 阳光薰衣草6.2斤装 洗衣粉非爆炸盐皂粉  99%杀菌除螨",
       "SKU简称": "碧浪薰衣草免搓粉3.1kg",
       "SKU ID": "100162871390",
-      "综合ROI(含JST+SEM)": 3.33,
-      "综合花费(SPD)": 627.55,
-      "综合CPC": 3.83,
-      "综合CTR": 0.0551,
-      "综合CVR": 0.2134,
+      "综合ROI(含JST+SEM)": 3.66,
+      "综合花费(SPD)": 337.49,
+      "综合CPC": 2.68,
+      "综合CTR": 0.0667,
+      "综合CVR": 0.1587,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 532.53,
-      "JST ROI": 3.72,
-      "JST CPC": 3.724,
-      "SEM花费(SPD)": 95.02,
-      "SEM ROI": 1.18,
-      "SEM CPC": 4.5248
+      "JST花费(SPD)": 107.94,
+      "JST ROI": 3.91,
+      "JST CPC": 1.8937,
+      "SEM花费(SPD)": 229.55,
+      "SEM ROI": 3.54,
+      "SEM CPC": 3.3268
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液20斤装(3kg*3瓶自然清新+200g*5袋草本清新)家庭装",
       "SKU简称": "碧浪NF10kg",
       "SKU ID": "100036714440",
-      "综合ROI(含JST+SEM)": 2.53,
-      "综合花费(SPD)": 2255.25,
-      "综合CPC": 6.88,
-      "综合CTR": 0.0391,
-      "综合CVR": 0.1616,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 1.95,
+      "综合花费(SPD)": 2061.02,
+      "综合CPC": 8.88,
+      "综合CTR": 0.0457,
+      "综合CVR": 0.1336,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 68.34,
-      "JST ROI": 16.75,
-      "JST CPC": 1.3947,
-      "SEM花费(SPD)": 2186.91,
-      "SEM ROI": 2.08,
-      "SEM CPC": 7.8384
+      "JST花费(SPD)": 54.08,
+      "JST ROI": 3.79,
+      "JST CPC": 3.8629,
+      "SEM花费(SPD)": 2006.94,
+      "SEM ROI": 1.9,
+      "SEM CPC": 9.2061
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液日晒般清新13.6斤装(3kg*2瓶+200g*4袋)家庭装",
       "SKU简称": "碧浪Matic 6.8kg",
       "SKU ID": "4713934",
-      "综合ROI(含JST+SEM)": 2.84,
-      "综合花费(SPD)": 3519.93,
-      "综合CPC": 6.05,
-      "综合CTR": 0.0561,
-      "综合CVR": 0.1804,
-      "状态": "🔺 高于目标10%以上",
+      "综合ROI(含JST+SEM)": 2.42,
+      "综合花费(SPD)": 4016.71,
+      "综合CPC": 7.42,
+      "综合CTR": 0.063,
+      "综合CVR": 0.1571,
+      "状态": "正常",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 136.32,
-      "JST ROI": 8.2,
-      "JST CPC": 1.9757,
-      "SEM花费(SPD)": 3383.61,
-      "SEM ROI": 2.63,
-      "SEM CPC": 6.5957
+      "JST花费(SPD)": 135.48,
+      "JST ROI": 6.82,
+      "JST CPC": 2.1852,
+      "SEM花费(SPD)": 3881.23,
+      "SEM ROI": 2.26,
+      "SEM CPC": 8.1028
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液日晒般清新18斤装(3kg*2瓶+500g*6袋)家庭装 根源消臭",
       "SKU简称": "碧浪Matic9kg",
       "SKU ID": "100039735595",
-      "综合ROI(含JST+SEM)": 0.77,
-      "综合花费(SPD)": 284.27,
-      "综合CPC": 4.0,
-      "综合CTR": 0.0683,
-      "综合CVR": 0.0282,
-      "状态": "🔻 低于目标10%以上",
+      "综合ROI(含JST+SEM)": 2.96,
+      "综合花费(SPD)": 672.6,
+      "综合CPC": 4.61,
+      "综合CTR": 0.0424,
+      "综合CVR": 0.1096,
+      "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
       "JST花费(SPD)": 55.0,
-      "JST ROI": 2.0,
-      "JST CPC": 2.75,
-      "SEM花费(SPD)": 229.27,
-      "SEM ROI": 0.48,
-      "SEM CPC": 4.4955
+      "JST ROI": 16.82,
+      "JST CPC": 1.6667,
+      "SEM花费(SPD)": 617.6,
+      "SEM ROI": 1.73,
+      "SEM CPC": 5.4655
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液日晒般清新6斤瓶装 杀菌除螨 根源消臭去黄 支持快洗",
       "SKU简称": "碧浪日晒清新6斤",
       "SKU ID": "1978117",
-      "综合ROI(含JST+SEM)": 2.84,
-      "综合花费(SPD)": 1382.35,
-      "综合CPC": 2.43,
-      "综合CTR": 0.0094,
-      "综合CVR": 0.1426,
+      "综合ROI(含JST+SEM)": 3.68,
+      "综合花费(SPD)": 642.85,
+      "综合CPC": 2.78,
+      "综合CTR": 0.018,
+      "综合CVR": 0.1775,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 123.12,
-      "JST ROI": 8.59,
-      "JST CPC": 1.9543,
-      "SEM花费(SPD)": 1259.23,
-      "SEM ROI": 2.28,
-      "SEM CPC": 2.4935
+      "JST花费(SPD)": 123.59,
+      "JST ROI": 9.9,
+      "JST CPC": 1.3732,
+      "SEM花费(SPD)": 519.26,
+      "SEM ROI": 2.2,
+      "SEM CPC": 3.6827
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液清雅茉莉12斤瓶装(3kg*2) 杀菌除螨 根源消臭去黄",
       "SKU简称": "碧浪Jasmine6kg",
       "SKU ID": "100008766160",
-      "综合ROI(含JST+SEM)": 2.61,
-      "综合花费(SPD)": 2259.32,
-      "综合CPC": 5.37,
-      "综合CTR": 0.0466,
-      "综合CVR": 0.1948,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 1.38,
+      "综合花费(SPD)": 1239.27,
+      "综合CPC": 5.63,
+      "综合CTR": 0.0096,
+      "综合CVR": 0.0909,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 69.71,
-      "JST ROI": 6.27,
-      "JST CPC": 1.9364,
-      "SEM花费(SPD)": 2189.61,
-      "SEM ROI": 2.49,
-      "SEM CPC": 5.6873
+      "JST花费(SPD)": 55.0,
+      "JST ROI": 3.17,
+      "JST CPC": 4.2308,
+      "SEM花费(SPD)": 1184.27,
+      "SEM ROI": 1.3,
+      "SEM CPC": 5.7211
     },
     {
       "账户": "GMEC-Ariel-L",
       "SKU名称": "碧浪除菌洗衣液自然清新16斤瓶装(2kg*4) 杀菌除螨 根源消臭去黄",
       "SKU简称": "碧浪自然清香16斤",
       "SKU ID": "100006804447",
-      "综合ROI(含JST+SEM)": 2.03,
-      "综合花费(SPD)": 547.25,
-      "综合CPC": 3.58,
-      "综合CTR": 0.0058,
-      "综合CVR": 0.0915,
-      "状态": "🔻 低于目标10%以上",
+      "综合ROI(含JST+SEM)": 6.77,
+      "综合花费(SPD)": 432.22,
+      "综合CPC": 3.93,
+      "综合CTR": 0.0167,
+      "综合CVR": 0.1273,
+      "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 118.17,
-      "JST ROI": 1.06,
-      "JST CPC": 4.9238,
-      "SEM花费(SPD)": 429.08,
-      "SEM ROI": 2.3,
-      "SEM CPC": 3.3262
+      "JST花费(SPD)": 117.61,
+      "JST ROI": 3.72,
+      "JST CPC": 3.2669,
+      "SEM花费(SPD)": 314.61,
+      "SEM ROI": 7.92,
+      "SEM CPC": 4.2515
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠清晨橘光450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g清晨橘光",
       "SKU ID": "100268112394",
-      "综合ROI(含JST+SEM)": 3.36,
-      "综合花费(SPD)": 615.97,
-      "综合CPC": 4.5,
-      "综合CTR": 0.0612,
-      "综合CVR": 0.2044,
-      "状态": "🔺 高于目标10%以上",
+      "综合ROI(含JST+SEM)": 2.3,
+      "综合花费(SPD)": 632.5,
+      "综合CPC": 3.79,
+      "综合CTR": 0.1239,
+      "综合CVR": 0.1138,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 263.28,
-      "JST ROI": 4.08,
-      "JST CPC": 2.7425,
-      "SEM花费(SPD)": 352.69,
-      "SEM ROI": 2.82,
-      "SEM CPC": 8.6022
+      "JST花费(SPD)": 320.89,
+      "JST ROI": 3.94,
+      "JST CPC": 3.0273,
+      "SEM花费(SPD)": 311.61,
+      "SEM ROI": 0.62,
+      "SEM CPC": 5.1084
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠清晨橘光950g 12周持久留香 防异味 99%除菌除螨家庭装",
       "SKU简称": "当妮950g清晨橘光",
       "SKU ID": "100233530169",
-      "综合ROI(含JST+SEM)": 1.36,
-      "综合花费(SPD)": 86.7,
-      "综合CPC": 4.82,
-      "综合CTR": 0.0341,
-      "综合CVR": 0.0556,
+      "综合ROI(含JST+SEM)": 1.34,
+      "综合花费(SPD)": 424.44,
+      "综合CPC": 11.47,
+      "综合CTR": 0.0474,
+      "综合CVR": 0.1351,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 23.23,
-      "JST ROI": 5.06,
-      "JST CPC": 2.323,
-      "SEM花费(SPD)": 63.47,
-      "SEM ROI": 0.0,
-      "SEM CPC": 7.9337
+      "JST花费(SPD)": 43.57,
+      "JST ROI": 0.0,
+      "JST CPC": 2.9047,
+      "SEM花费(SPD)": 380.87,
+      "SEM ROI": 1.5,
+      "SEM CPC": 17.3123
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠清雨山茶450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g清雨山茶",
       "SKU ID": "100094637928",
-      "综合ROI(含JST+SEM)": 2.03,
-      "综合花费(SPD)": 133.09,
-      "综合CPC": 3.5,
-      "综合CTR": 0.0214,
-      "综合CVR": 0.0789,
+      "综合ROI(含JST+SEM)": 1.63,
+      "综合花费(SPD)": 475.21,
+      "综合CPC": 7.66,
+      "综合CTR": 0.0653,
+      "综合CVR": 0.1452,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 69.26,
-      "JST ROI": 2.02,
-      "JST CPC": 3.2981,
-      "SEM花费(SPD)": 63.83,
-      "SEM ROI": 2.04,
-      "SEM CPC": 3.7547
+      "JST花费(SPD)": 0.0,
+      "JST ROI": 0.0,
+      "JST CPC": 0.0,
+      "SEM花费(SPD)": 475.21,
+      "SEM ROI": 1.49,
+      "SEM CPC": 7.6647
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠玫瑰之巅450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g玫瑰之巅",
       "SKU ID": "100044243858",
-      "综合ROI(含JST+SEM)": 2.66,
-      "综合花费(SPD)": 1402.13,
-      "综合CPC": 4.34,
-      "综合CTR": 0.0756,
-      "综合CVR": 0.1579,
+      "综合ROI(含JST+SEM)": 0.99,
+      "综合花费(SPD)": 947.86,
+      "综合CPC": 7.18,
+      "综合CTR": 0.1588,
+      "综合CVR": 0.0909,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 908.68,
-      "JST ROI": 2.4,
-      "JST CPC": 4.1683,
-      "SEM花费(SPD)": 493.45,
-      "SEM ROI": 3.14,
-      "SEM CPC": 4.6995
+      "JST花费(SPD)": 0.0,
+      "JST ROI": 0.0,
+      "JST CPC": 0.0,
+      "SEM花费(SPD)": 947.86,
+      "SEM ROI": 0.99,
+      "SEM CPC": 7.1808
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠组套200g*3瓶(自由之森+玫瑰之巅+清雨山茶)",
       "SKU简称": "当妮留香珠200g*3",
       "SKU ID": "100111047759",
-      "综合ROI(含JST+SEM)": 2.83,
-      "综合花费(SPD)": 467.24,
-      "综合CPC": 4.54,
-      "综合CTR": 0.0751,
-      "综合CVR": 0.1748,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 1.64,
+      "综合花费(SPD)": 689.45,
+      "综合CPC": 6.33,
+      "综合CTR": 0.0557,
+      "综合CVR": 0.156,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 329.29,
-      "JST ROI": 3.45,
-      "JST CPC": 3.7419,
-      "SEM花费(SPD)": 137.95,
-      "SEM ROI": 1.36,
-      "SEM CPC": 9.1967
+      "JST花费(SPD)": 103.51,
+      "JST ROI": 1.3,
+      "JST CPC": 2.7239,
+      "SEM花费(SPD)": 585.94,
+      "SEM ROI": 1.7,
+      "SEM CPC": 8.2527
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠自由之森450g 12周持久留香 防异味 99%除菌除螨 易溶",
       "SKU简称": "当妮450g自由之森",
       "SKU ID": "100053319577",
-      "综合ROI(含JST+SEM)": 2.33,
-      "综合花费(SPD)": 1979.05,
-      "综合CPC": 5.1,
-      "综合CTR": 0.0412,
-      "综合CVR": 0.1804,
+      "综合ROI(含JST+SEM)": 2.11,
+      "综合花费(SPD)": 303.19,
+      "综合CPC": 4.53,
+      "综合CTR": 0.0929,
+      "综合CVR": 0.1343,
       "状态": "🔻 低于目标10%以上",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 662.61,
-      "JST ROI": 2.83,
-      "JST CPC": 4.447,
-      "SEM花费(SPD)": 1316.44,
-      "SEM ROI": 2.08,
-      "SEM CPC": 5.5081
+      "JST花费(SPD)": 0.0,
+      "JST ROI": 0.0,
+      "JST CPC": 0.0,
+      "SEM花费(SPD)": 303.19,
+      "SEM ROI": 1.88,
+      "SEM CPC": 4.5252
     },
     {
       "账户": "GMEC-Downy",
       "SKU名称": "当妮护衣留香珠自由之森950g 12周持久留香 防异味 99%除菌除螨家庭装",
       "SKU简称": "当妮950g自由之森",
       "SKU ID": "100301903542",
-      "综合ROI(含JST+SEM)": 2.76,
-      "综合花费(SPD)": 759.07,
-      "综合CPC": 6.22,
-      "综合CTR": 0.0369,
-      "综合CVR": 0.1639,
+      "综合ROI(含JST+SEM)": 2.79,
+      "综合花费(SPD)": 1123.68,
+      "综合CPC": 6.35,
+      "综合CTR": 0.0405,
+      "综合CVR": 0.1412,
       "状态": "正常",
       "ROI目标": 3.0,
-      "JST花费(SPD)": 303.17,
-      "JST ROI": 3.47,
-      "JST CPC": 4.737,
-      "SEM花费(SPD)": 455.9,
-      "SEM ROI": 2.3,
-      "SEM CPC": 7.8603
+      "JST花费(SPD)": 455.92,
+      "JST ROI": 3.0,
+      "JST CPC": 4.2215,
+      "SEM花费(SPD)": 667.76,
+      "SEM ROI": 2.65,
+      "SEM CPC": 9.6777
     },
     {
       "账户": "GMEC-Tide",
       "SKU名称": "汰渍洗衣免搓粉 清雅山茶花6.8斤装 洗衣粉非爆炸盐皂粉 持久留香30天",
       "SKU简称": "汰渍山茶花3.4kg",
       "SKU ID": "100161974102",
-      "综合ROI(含JST+SEM)": 2.32,
-      "综合花费(SPD)": 4657.39,
-      "综合CPC": 6.83,
-      "综合CTR": 0.0346,
-      "综合CVR": 0.2874,
+      "综合ROI(含JST+SEM)": 1.99,
+      "综合花费(SPD)": 3511.48,
+      "综合CPC": 6.61,
+      "综合CTR": 0.047,
+      "综合CVR": 0.258,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 410.32,
-      "JST ROI": 4.04,
-      "JST CPC": 3.1808,
-      "SEM花费(SPD)": 4247.07,
-      "SEM ROI": 2.15,
-      "SEM CPC": 7.6801
+      "JST花费(SPD)": 198.21,
+      "JST ROI": 4.31,
+      "JST CPC": 1.7697,
+      "SEM花费(SPD)": 3313.27,
+      "SEM ROI": 1.85,
+      "SEM CPC": 7.9076
     },
     {
       "账户": "GMEC-Tide",
       "SKU名称": "汰渍洗衣免搓粉 阳光薰衣草6.8斤装 洗衣粉非爆炸盐皂粉 持久留香30天",
       "SKU简称": "汰渍薰衣草3.4kg",
       "SKU ID": "100131766577",
-      "综合ROI(含JST+SEM)": 3.5,
-      "综合花费(SPD)": 537.1,
-      "综合CPC": 5.78,
-      "综合CTR": 0.0492,
-      "综合CVR": 0.1935,
+      "综合ROI(含JST+SEM)": 1.85,
+      "综合花费(SPD)": 329.43,
+      "综合CPC": 5.4,
+      "综合CTR": 0.0327,
+      "综合CVR": 0.1803,
       "状态": "🔺 高于目标10%以上",
       "ROI目标": 1.5,
-      "JST花费(SPD)": 509.62,
-      "JST ROI": 3.6,
-      "JST CPC": 5.7261,
-      "SEM花费(SPD)": 27.48,
-      "SEM ROI": 1.82,
-      "SEM CPC": 6.87
+      "JST花费(SPD)": 30.42,
+      "JST ROI": 3.61,
+      "JST CPC": 1.17,
+      "SEM花费(SPD)": 299.01,
+      "SEM ROI": 1.67,
+      "SEM CPC": 8.5431
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液洁雅百合16斤瓶装(2kg*4)家庭装 无惧混洗  支持快洗",
       "SKU简称": "汰渍百合16斤",
       "SKU ID": "100008794192",
-      "综合ROI(含JST+SEM)": 2.89,
-      "综合花费(SPD)": 715.94,
-      "综合CPC": 5.51,
-      "综合CTR": 0.0253,
-      "综合CVR": 0.1615,
-      "状态": "🔺 高于目标10%以上",
+      "综合ROI(含JST+SEM)": 1.7,
+      "综合花费(SPD)": 804.99,
+      "综合CPC": 6.1,
+      "综合CTR": 0.0185,
+      "综合CVR": 0.1136,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 53.6,
-      "JST ROI": 13.45,
-      "JST CPC": 1.9143,
-      "SEM花费(SPD)": 662.34,
-      "SEM ROI": 2.03,
-      "SEM CPC": 6.4935
+      "JST花费(SPD)": 55.0,
+      "JST ROI": 3.41,
+      "JST CPC": 1.9643,
+      "SEM花费(SPD)": 749.99,
+      "SEM ROI": 1.58,
+      "SEM CPC": 7.2114
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液洁雅百合18斤装(3kg*2瓶+500g*6袋)家庭装 无惧混洗",
       "SKU简称": "汰渍9kg",
       "SKU ID": "2795972",
-      "综合ROI(含JST+SEM)": 2.36,
-      "综合花费(SPD)": 856.39,
-      "综合CPC": 5.39,
-      "综合CTR": 0.067,
-      "综合CVR": 0.1258,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 4.06,
+      "综合花费(SPD)": 376.77,
+      "综合CPC": 4.05,
+      "综合CTR": 0.0897,
+      "综合CVR": 0.1398,
+      "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 64.08,
-      "JST ROI": 2.67,
-      "JST CPC": 1.5629,
-      "SEM花费(SPD)": 792.31,
-      "SEM ROI": 2.33,
-      "SEM CPC": 6.7145
+      "JST花费(SPD)": 49.96,
+      "JST ROI": 12.64,
+      "JST CPC": 1.6653,
+      "SEM花费(SPD)": 326.81,
+      "SEM ROI": 2.75,
+      "SEM CPC": 5.1875
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液洁雅百合24斤瓶装(3kg*4)家庭装 无惧混洗  支持快洗",
       "SKU简称": "汰渍百合24斤",
       "SKU ID": "2646498",
-      "综合ROI(含JST+SEM)": 2.56,
-      "综合花费(SPD)": 2633.13,
-      "综合CPC": 8.25,
-      "综合CTR": 0.0191,
-      "综合CVR": 0.1536,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 2.92,
+      "综合花费(SPD)": 1856.72,
+      "综合CPC": 9.33,
+      "综合CTR": 0.0416,
+      "综合CVR": 0.1759,
+      "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 53.83,
-      "JST ROI": 10.44,
-      "JST CPC": 2.5633,
-      "SEM花费(SPD)": 2579.3,
-      "SEM ROI": 2.4,
-      "SEM CPC": 8.6554
+      "JST花费(SPD)": 55.0,
+      "JST ROI": 2.54,
+      "JST CPC": 5.5,
+      "SEM花费(SPD)": 1801.72,
+      "SEM ROI": 2.94,
+      "SEM CPC": 9.5329
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液淡雅樱花11斤瓶装(2.75kg×2)家庭装 无惧混洗",
       "SKU简称": "汰渍SAK5.5kg",
       "SKU ID": "100063120723",
-      "综合ROI(含JST+SEM)": 2.13,
-      "综合花费(SPD)": 1772.72,
-      "综合CPC": 7.21,
-      "综合CTR": 0.0534,
-      "综合CVR": 0.1748,
-      "状态": "🔻 低于目标10%以上",
+      "综合ROI(含JST+SEM)": 3.14,
+      "综合花费(SPD)": 1307.7,
+      "综合CPC": 7.56,
+      "综合CTR": 0.0389,
+      "综合CVR": 0.1618,
+      "状态": "🔺 高于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 73.19,
-      "JST ROI": 7.7,
-      "JST CPC": 1.2619,
-      "SEM花费(SPD)": 1699.53,
-      "SEM ROI": 1.89,
-      "SEM CPC": 9.0401
+      "JST花费(SPD)": 210.78,
+      "JST ROI": 11.97,
+      "JST CPC": 4.2156,
+      "SEM花费(SPD)": 1096.92,
+      "SEM ROI": 1.44,
+      "SEM CPC": 8.918
     },
     {
       "账户": "GMEC-Tide-L",
       "SKU名称": "汰渍去渍洗衣液淡雅薰香11斤装(2kg*2瓶+500g*3袋)家庭装 无惧混洗",
       "SKU简称": "汰渍LAV5.5kg",
       "SKU ID": "100063120717",
-      "综合ROI(含JST+SEM)": 2.67,
-      "综合花费(SPD)": 322.22,
-      "综合CPC": 3.84,
-      "综合CTR": 0.0418,
-      "综合CVR": 0.1429,
-      "状态": "正常",
+      "综合ROI(含JST+SEM)": 2.16,
+      "综合花费(SPD)": 427.06,
+      "综合CPC": 6.1,
+      "综合CTR": 0.0443,
+      "综合CVR": 0.1857,
+      "状态": "🔻 低于目标10%以上",
       "ROI目标": 2.5,
-      "JST花费(SPD)": 46.76,
-      "JST ROI": 2.69,
-      "JST CPC": 1.336,
-      "SEM花费(SPD)": 275.46,
-      "SEM ROI": 2.67,
-      "SEM CPC": 5.6216
+      "JST花费(SPD)": 30.26,
+      "JST ROI": 11.68,
+      "JST CPC": 1.3755,
+      "SEM花费(SPD)": 396.8,
+      "SEM ROI": 1.43,
+      "SEM CPC": 8.2667
     }
   ],
   "ht": [
     {
       "账户": "GMEC-Ariel",
-      "HT花费(SPD)": 1989.7,
-      "HT ROI": 3.45
+      "HT花费(SPD)": 825.3,
+      "HT ROI": 3.9
     },
     {
       "账户": "GMEC-Ariel-L",
-      "HT花费(SPD)": 3309.71,
-      "HT ROI": 3.25
+      "HT花费(SPD)": 4960.13,
+      "HT ROI": 3.46
     },
     {
       "账户": "GMEC-Downy",
-      "HT花费(SPD)": 5757.11,
-      "HT ROI": 2.83
+      "HT花费(SPD)": 3404.36,
+      "HT ROI": 2.93
     },
     {
       "账户": "GMEC-Tide",
-      "HT花费(SPD)": 1988.62,
-      "HT ROI": 2.02
+      "HT花费(SPD)": 805.65,
+      "HT ROI": 1.94
     },
     {
       "账户": "GMEC-Tide-L",
-      "HT花费(SPD)": 4913.15,
-      "HT ROI": 2.4
+      "HT花费(SPD)": 3365.76,
+      "HT ROI": 2.51
     }
   ],
   "deltas": {
@@ -460,9 +460,9 @@
         "direction": "neutral"
       },
       "vs_yesterday": {
-        "diff": -1823.75,
-        "pct": -3.42,
-        "index_pct": 96.58,
+        "diff": -3604.79,
+        "pct": -7.98,
+        "index_pct": 92.02,
         "direction": "down"
       }
     },
@@ -474,10 +474,10 @@
         "direction": "neutral"
       },
       "vs_yesterday": {
-        "diff": 0.06,
-        "pct": 2.5,
-        "index_pct": 102.5,
-        "direction": "up"
+        "diff": -0.64,
+        "pct": -20.28,
+        "index_pct": 79.72,
+        "direction": "down"
       }
     },
     "accounts": {
@@ -490,9 +490,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1218.89,
-            "pct": 17.0,
-            "index_pct": 117.0,
+            "diff": 177.52,
+            "pct": 2.69,
+            "index_pct": 102.69,
             "direction": "up"
           }
         },
@@ -504,10 +504,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.13,
-            "pct": 5.14,
-            "index_pct": 105.14,
-            "direction": "up"
+            "diff": -0.36,
+            "pct": -14.06,
+            "index_pct": 85.94,
+            "direction": "down"
           }
         }
       },
@@ -520,10 +520,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -543.74,
-            "pct": -3.86,
-            "index_pct": 96.14,
-            "direction": "down"
+            "diff": 221.95,
+            "pct": 1.61,
+            "index_pct": 101.61,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -534,10 +534,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.06,
-            "pct": 2.36,
-            "index_pct": 102.36,
-            "direction": "up"
+            "diff": -0.44,
+            "pct": -13.48,
+            "index_pct": 86.52,
+            "direction": "down"
           }
         }
       },
@@ -550,9 +550,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -254.74,
-            "pct": -2.22,
-            "index_pct": 97.78,
+            "diff": -1134.68,
+            "pct": -12.42,
+            "index_pct": 87.58,
             "direction": "down"
           }
         },
@@ -564,10 +564,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.03,
-            "pct": -0.96,
-            "index_pct": 99.04,
-            "direction": "down"
+            "diff": 0.08,
+            "pct": 3.49,
+            "index_pct": 103.49,
+            "direction": "up"
           }
         }
       },
@@ -580,9 +580,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1837.93,
-            "pct": -20.37,
-            "index_pct": 79.63,
+            "diff": -1421.37,
+            "pct": -23.42,
+            "index_pct": 76.58,
             "direction": "down"
           }
         },
@@ -594,9 +594,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.22,
-            "pct": 10.2,
-            "index_pct": 110.2,
+            "diff": 0.0,
+            "pct": 0.12,
+            "index_pct": 100.12,
             "direction": "up"
           }
         }
@@ -610,9 +610,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -406.23,
-            "pct": -3.5,
-            "index_pct": 96.5,
+            "diff": -1448.21,
+            "pct": -15.11,
+            "index_pct": 84.89,
             "direction": "down"
           }
         },
@@ -624,9 +624,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.06,
-            "pct": -2.23,
-            "index_pct": 97.77,
+            "diff": -2.28,
+            "pct": -45.96,
+            "index_pct": 54.04,
             "direction": "down"
           }
         }
@@ -644,9 +644,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 2319.04,
-            "pct": 67.15,
-            "index_pct": 167.15,
+            "diff": 973.68,
+            "pct": 21.03,
+            "index_pct": 121.03,
             "direction": "up"
           }
         },
@@ -658,9 +658,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.16,
-            "pct": -6.4,
-            "index_pct": 93.6,
+            "diff": -0.45,
+            "pct": -19.48,
+            "index_pct": 80.52,
             "direction": "down"
           }
         },
@@ -672,10 +672,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.33,
-            "pct": -0.48,
-            "index_pct": 99.52,
-            "direction": "down"
+            "diff": 51.29,
+            "pct": 10.62,
+            "index_pct": 110.62,
+            "direction": "up"
           }
         },
         "JST ROI": {
@@ -686,9 +686,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.56,
-            "pct": 19.31,
-            "index_pct": 119.31,
+            "diff": 0.67,
+            "pct": 20.68,
+            "index_pct": 120.68,
             "direction": "up"
           }
         },
@@ -700,9 +700,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 2321.37,
-            "pct": 78.2,
-            "index_pct": 178.2,
+            "diff": 922.39,
+            "pct": 22.24,
+            "index_pct": 122.24,
             "direction": "up"
           }
         },
@@ -714,9 +714,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.19,
-            "pct": -7.82,
-            "index_pct": 92.18,
+            "diff": -0.55,
+            "pct": -25.0,
+            "index_pct": 75.0,
             "direction": "down"
           }
         }
@@ -732,9 +732,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1122.09,
-            "pct": -64.13,
-            "index_pct": 35.87,
+            "diff": -210.18,
+            "pct": -38.38,
+            "index_pct": 61.62,
             "direction": "down"
           }
         },
@@ -746,9 +746,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1.36,
-            "pct": 69.04,
-            "index_pct": 169.04,
+            "diff": 1.97,
+            "pct": 116.57,
+            "index_pct": 216.57,
             "direction": "up"
           }
         },
@@ -760,9 +760,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.24,
-            "pct": -0.42,
-            "index_pct": 99.58,
+            "diff": -333.9,
+            "pct": -75.57,
+            "index_pct": 24.43,
             "direction": "down"
           }
         },
@@ -774,9 +774,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1.29,
-            "pct": 53.09,
-            "index_pct": 153.09,
+            "diff": 2.26,
+            "pct": 136.97,
+            "index_pct": 236.97,
             "direction": "up"
           }
         },
@@ -788,10 +788,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1119.85,
-            "pct": -92.18,
-            "index_pct": 7.82,
-            "direction": "down"
+            "diff": 123.72,
+            "pct": 116.9,
+            "index_pct": 216.9,
+            "direction": "up"
           }
         },
         "SEM ROI": {
@@ -802,10 +802,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.59,
-            "pct": -33.33,
-            "index_pct": 66.67,
-            "direction": "down"
+            "diff": 1.65,
+            "pct": 87.3,
+            "index_pct": 187.3,
+            "direction": "up"
           }
         }
       },
@@ -820,10 +820,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 767.6,
-            "pct": 51.6,
-            "index_pct": 151.6,
-            "direction": "up"
+            "diff": -1042.62,
+            "pct": -33.59,
+            "index_pct": 66.41,
+            "direction": "down"
           }
         },
         "综合ROI": {
@@ -834,9 +834,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.69,
-            "pct": -21.43,
-            "index_pct": 78.57,
+            "diff": -0.62,
+            "pct": -24.12,
+            "index_pct": 75.88,
             "direction": "down"
           }
         },
@@ -848,10 +848,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 13.34,
-            "pct": 24.25,
-            "index_pct": 124.25,
-            "direction": "up"
+            "diff": -11.92,
+            "pct": -18.06,
+            "index_pct": 81.94,
+            "direction": "down"
           }
         },
         "JST ROI": {
@@ -862,10 +862,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 2.25,
-            "pct": 15.52,
-            "index_pct": 115.52,
-            "direction": "up"
+            "diff": -13.03,
+            "pct": -77.47,
+            "index_pct": 22.53,
+            "direction": "down"
           }
         },
         "SEM花费": {
@@ -876,10 +876,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 754.26,
-            "pct": 52.65,
-            "index_pct": 152.65,
-            "direction": "up"
+            "diff": -1030.7,
+            "pct": -33.93,
+            "index_pct": 66.07,
+            "direction": "down"
           }
         },
         "SEM ROI": {
@@ -890,9 +890,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.71,
-            "pct": -25.45,
-            "index_pct": 74.55,
+            "diff": -0.36,
+            "pct": -15.93,
+            "index_pct": 84.07,
             "direction": "down"
           }
         }
@@ -908,9 +908,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 259.87,
-            "pct": 7.97,
-            "index_pct": 107.97,
+            "diff": 837.31,
+            "pct": 26.34,
+            "index_pct": 126.34,
             "direction": "up"
           }
         },
@@ -922,10 +922,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.13,
-            "pct": 4.8,
-            "index_pct": 104.8,
-            "direction": "up"
+            "diff": -0.79,
+            "pct": -24.61,
+            "index_pct": 75.39,
+            "direction": "down"
           }
         },
         "JST花费": {
@@ -936,10 +936,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.39,
-            "pct": 0.29,
-            "index_pct": 100.29,
-            "direction": "up"
+            "diff": -2.02,
+            "pct": -1.47,
+            "index_pct": 98.53,
+            "direction": "down"
           }
         },
         "JST ROI": {
@@ -950,9 +950,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.54,
-            "pct": -6.18,
-            "index_pct": 93.82,
+            "diff": -6.27,
+            "pct": -47.9,
+            "index_pct": 52.1,
             "direction": "down"
           }
         },
@@ -964,9 +964,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 259.48,
-            "pct": 8.31,
-            "index_pct": 108.31,
+            "diff": 839.33,
+            "pct": 27.59,
+            "index_pct": 127.59,
             "direction": "up"
           }
         },
@@ -978,10 +978,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.18,
-            "pct": 7.35,
-            "index_pct": 107.35,
-            "direction": "up"
+            "diff": -0.5,
+            "pct": -18.12,
+            "index_pct": 81.88,
+            "direction": "down"
           }
         }
       },
@@ -996,9 +996,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 81.97,
-            "pct": 40.52,
-            "index_pct": 140.52,
+            "diff": 594.05,
+            "pct": 756.27,
+            "index_pct": 856.27,
             "direction": "up"
           }
         },
@@ -1010,10 +1010,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.23,
-            "pct": 42.59,
-            "index_pct": 142.59,
-            "direction": "up"
+            "diff": -5.27,
+            "pct": -64.03,
+            "index_pct": 35.97,
+            "direction": "down"
           }
         },
         "JST花费": {
@@ -1024,9 +1024,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.24,
-            "pct": 0.44,
-            "index_pct": 100.44,
+            "diff": 1.31,
+            "pct": 2.44,
+            "index_pct": 102.44,
             "direction": "up"
           }
         },
@@ -1038,10 +1038,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0,
-            "pct": 0,
-            "index_pct": 0,
-            "direction": "neutral"
+            "diff": 4.77,
+            "pct": 39.59,
+            "index_pct": 139.59,
+            "direction": "up"
           }
         },
         "SEM花费": {
@@ -1052,9 +1052,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 81.73,
-            "pct": 55.4,
-            "index_pct": 155.4,
+            "diff": 592.74,
+            "pct": 2384.31,
+            "index_pct": 2484.31,
             "direction": "up"
           }
         },
@@ -1066,10 +1066,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.26,
-            "pct": -35.14,
-            "index_pct": 64.86,
-            "direction": "down"
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
+            "direction": "neutral"
           }
         }
       },
@@ -1084,9 +1084,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -329.31,
-            "pct": -19.24,
-            "index_pct": 80.76,
+            "diff": -505.25,
+            "pct": -44.01,
+            "index_pct": 55.99,
             "direction": "down"
           }
         },
@@ -1098,9 +1098,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.02,
-            "pct": 0.71,
-            "index_pct": 100.71,
+            "diff": 0.59,
+            "pct": 19.09,
+            "index_pct": 119.09,
             "direction": "up"
           }
         },
@@ -1112,10 +1112,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.76,
-            "pct": -0.61,
-            "index_pct": 99.39,
-            "direction": "down"
+            "diff": 0.49,
+            "pct": 0.4,
+            "index_pct": 100.4,
+            "direction": "up"
           }
         },
         "JST ROI": {
@@ -1126,9 +1126,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.12,
-            "pct": -1.38,
-            "index_pct": 98.62,
+            "diff": -0.39,
+            "pct": -3.79,
+            "index_pct": 96.21,
             "direction": "down"
           }
         },
@@ -1140,9 +1140,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -328.55,
-            "pct": -20.69,
-            "index_pct": 79.31,
+            "diff": -505.74,
+            "pct": -49.34,
+            "index_pct": 50.66,
             "direction": "down"
           }
         },
@@ -1154,9 +1154,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.08,
-            "pct": -3.39,
-            "index_pct": 96.61,
+            "diff": -0.02,
+            "pct": -0.9,
+            "index_pct": 99.1,
             "direction": "down"
           }
         }
@@ -1172,9 +1172,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -621.26,
-            "pct": -21.57,
-            "index_pct": 78.43,
+            "diff": -164.54,
+            "pct": -11.72,
+            "index_pct": 88.28,
             "direction": "down"
           }
         },
@@ -1186,9 +1186,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.05,
-            "pct": -1.88,
-            "index_pct": 98.12,
+            "diff": -1.68,
+            "pct": -54.9,
+            "index_pct": 45.1,
             "direction": "down"
           }
         },
@@ -1200,10 +1200,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 15.84,
-            "pct": 29.4,
-            "index_pct": 129.4,
-            "direction": "up"
+            "diff": 0.0,
+            "pct": 0.0,
+            "index_pct": 100.0,
+            "direction": "neutral"
           }
         },
         "JST ROI": {
@@ -1214,9 +1214,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -8.41,
-            "pct": -57.29,
-            "index_pct": 42.71,
+            "diff": -9.46,
+            "pct": -74.9,
+            "index_pct": 25.1,
             "direction": "down"
           }
         },
@@ -1228,9 +1228,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -637.1,
-            "pct": -22.54,
-            "index_pct": 77.46,
+            "diff": -164.54,
+            "pct": -12.2,
+            "index_pct": 87.8,
             "direction": "down"
           }
         },
@@ -1242,10 +1242,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.06,
-            "pct": 2.47,
-            "index_pct": 102.47,
-            "direction": "up"
+            "diff": -1.37,
+            "pct": -51.31,
+            "index_pct": 48.69,
+            "direction": "down"
           }
         }
       },
@@ -1260,9 +1260,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -20.21,
-            "pct": -3.56,
-            "index_pct": 96.44,
+            "diff": -163.94,
+            "pct": -27.5,
+            "index_pct": 72.5,
             "direction": "down"
           }
         },
@@ -1274,9 +1274,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.31,
-            "pct": 18.02,
-            "index_pct": 118.02,
+            "diff": 5.92,
+            "pct": 696.47,
+            "index_pct": 796.47,
             "direction": "up"
           }
         },
@@ -1288,9 +1288,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.83,
-            "pct": -2.34,
-            "index_pct": 97.66,
+            "diff": -0.91,
+            "pct": -0.77,
+            "index_pct": 99.23,
             "direction": "down"
           }
         },
@@ -1302,10 +1302,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.29,
-            "pct": -21.48,
-            "index_pct": 78.52,
-            "direction": "down"
+            "diff": 2.59,
+            "pct": 229.2,
+            "index_pct": 329.2,
+            "direction": "up"
           }
         },
         "SEM花费": {
@@ -1316,9 +1316,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -17.38,
-            "pct": -3.89,
-            "index_pct": 96.11,
+            "diff": -163.03,
+            "pct": -34.13,
+            "index_pct": 65.87,
             "direction": "down"
           }
         },
@@ -1330,9 +1330,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.48,
-            "pct": 26.37,
-            "index_pct": 126.37,
+            "diff": 7.13,
+            "pct": 902.53,
+            "index_pct": 1002.53,
             "direction": "up"
           }
         }
@@ -1348,10 +1348,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 202.5,
-            "pct": 48.98,
-            "index_pct": 148.98,
-            "direction": "up"
+            "diff": -243.55,
+            "pct": -27.8,
+            "index_pct": 72.2,
+            "direction": "down"
           }
         },
         "综合ROI": {
@@ -1362,10 +1362,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.08,
-            "pct": -2.33,
-            "index_pct": 97.67,
-            "direction": "down"
+            "diff": 0.84,
+            "pct": 57.53,
+            "index_pct": 157.53,
+            "direction": "up"
           }
         },
         "JST花费": {
@@ -1376,10 +1376,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -74.06,
-            "pct": -21.95,
-            "index_pct": 78.05,
-            "direction": "down"
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
+            "direction": "neutral"
           }
         },
         "JST ROI": {
@@ -1390,10 +1390,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.07,
-            "pct": 1.75,
-            "index_pct": 101.75,
-            "direction": "up"
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
+            "direction": "neutral"
           }
         },
         "SEM花费": {
@@ -1404,10 +1404,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 276.56,
-            "pct": 363.27,
-            "index_pct": 463.27,
-            "direction": "up"
+            "diff": -564.44,
+            "pct": -64.43,
+            "index_pct": 35.57,
+            "direction": "down"
           }
         },
         "SEM ROI": {
@@ -1418,10 +1418,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1.9,
-            "pct": 206.52,
-            "index_pct": 306.52,
-            "direction": "up"
+            "diff": -0.84,
+            "pct": -57.53,
+            "index_pct": 42.47,
+            "direction": "down"
           }
         }
       },
@@ -1436,10 +1436,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -186.48,
-            "pct": -68.26,
-            "index_pct": 31.74,
-            "direction": "down"
+            "diff": 295.36,
+            "pct": 228.82,
+            "index_pct": 328.82,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -1450,9 +1450,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.41,
-            "pct": 43.16,
-            "index_pct": 143.16,
+            "diff": 0.8,
+            "pct": 148.15,
+            "index_pct": 248.15,
             "direction": "up"
           }
         },
@@ -1464,24 +1464,24 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -139.95,
-            "pct": -85.76,
-            "index_pct": 14.24,
+            "diff": -18.57,
+            "pct": -29.88,
+            "index_pct": 70.12,
             "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 4.26,
-            "pct": 532.5,
-            "index_pct": 632.5,
-            "direction": "up"
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
+            "direction": "neutral"
           }
         },
         "SEM花费": {
@@ -1492,24 +1492,24 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -46.53,
-            "pct": -42.3,
-            "index_pct": 57.7,
-            "direction": "down"
+            "diff": 313.93,
+            "pct": 468.97,
+            "index_pct": 568.97,
+            "direction": "up"
           }
         },
         "SEM ROI": {
           "vs_2h": {
-            "diff": 0,
-            "pct": 0,
-            "index_pct": 0,
+            "diff": 0.0,
+            "pct": 0.0,
+            "index_pct": 100.0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1.18,
-            "pct": -100.0,
-            "index_pct": 0.0,
-            "direction": "down"
+            "diff": 0.46,
+            "pct": 44.23,
+            "index_pct": 144.23,
+            "direction": "up"
           }
         }
       },
@@ -1524,10 +1524,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -384.72,
-            "pct": -74.3,
-            "index_pct": 25.7,
-            "direction": "down"
+            "diff": 48.78,
+            "pct": 11.44,
+            "index_pct": 111.44,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -1538,37 +1538,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.25,
-            "pct": 14.04,
-            "index_pct": 114.04,
-            "direction": "up"
+            "diff": -0.13,
+            "pct": -7.39,
+            "index_pct": 92.61,
+            "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 36.13,
-            "pct": 109.06,
-            "index_pct": 209.06,
-            "direction": "up"
+            "diff": -392.31,
+            "pct": -100.0,
+            "index_pct": 0.0,
+            "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2.2,
-            "pct": -52.13,
-            "index_pct": 47.87,
+            "diff": -1.91,
+            "pct": -100.0,
+            "index_pct": 0.0,
             "direction": "down"
           }
         },
@@ -1580,10 +1580,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -420.85,
-            "pct": -86.83,
-            "index_pct": 13.17,
-            "direction": "down"
+            "diff": 441.09,
+            "pct": 1292.76,
+            "index_pct": 1392.76,
+            "direction": "up"
           }
         },
         "SEM ROI": {
@@ -1594,10 +1594,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.43,
-            "pct": 26.71,
-            "index_pct": 126.71,
-            "direction": "up"
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
+            "direction": "neutral"
           }
         }
       },
@@ -1612,9 +1612,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -747.6,
-            "pct": -34.78,
-            "index_pct": 65.22,
+            "diff": -1207.19,
+            "pct": -56.02,
+            "index_pct": 43.98,
             "direction": "down"
           }
         },
@@ -1626,37 +1626,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.67,
-            "pct": -20.12,
-            "index_pct": 79.88,
+            "diff": -1.74,
+            "pct": -63.74,
+            "index_pct": 36.26,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 646.05,
-            "pct": 245.99,
-            "index_pct": 345.99,
-            "direction": "up"
+            "diff": -491.41,
+            "pct": -100.0,
+            "index_pct": 0.0,
+            "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -3.44,
-            "pct": -58.9,
-            "index_pct": 41.1,
+            "diff": -4.33,
+            "pct": -100.0,
+            "index_pct": 0.0,
             "direction": "down"
           }
         },
@@ -1668,9 +1668,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1393.65,
-            "pct": -73.85,
-            "index_pct": 26.15,
+            "diff": -715.78,
+            "pct": -43.02,
+            "index_pct": 56.98,
             "direction": "down"
           }
         },
@@ -1682,10 +1682,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.16,
-            "pct": 5.37,
-            "index_pct": 105.37,
-            "direction": "up"
+            "diff": -1.27,
+            "pct": -56.19,
+            "index_pct": 43.81,
+            "direction": "down"
           }
         }
       },
@@ -1700,10 +1700,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -115.69,
-            "pct": -19.85,
-            "index_pct": 80.15,
-            "direction": "down"
+            "diff": 512.15,
+            "pct": 288.86,
+            "index_pct": 388.86,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -1714,9 +1714,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.13,
-            "pct": -4.39,
-            "index_pct": 95.61,
+            "diff": -0.86,
+            "pct": -34.4,
+            "index_pct": 65.6,
             "direction": "down"
           }
         },
@@ -1728,10 +1728,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -39.88,
-            "pct": -10.8,
-            "index_pct": 89.2,
-            "direction": "down"
+            "diff": 65.75,
+            "pct": 174.13,
+            "index_pct": 274.13,
+            "direction": "up"
           }
         },
         "JST ROI": {
@@ -1742,10 +1742,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.61,
-            "pct": 21.48,
-            "index_pct": 121.48,
-            "direction": "up"
+            "diff": -3.7,
+            "pct": -74.0,
+            "index_pct": 26.0,
+            "direction": "down"
           }
         },
         "SEM花费": {
@@ -1756,10 +1756,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -75.81,
-            "pct": -35.47,
-            "index_pct": 64.53,
-            "direction": "down"
+            "diff": 446.4,
+            "pct": 319.91,
+            "index_pct": 419.91,
+            "direction": "up"
           }
         },
         "SEM ROI": {
@@ -1770,9 +1770,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1.8,
-            "pct": -56.96,
-            "index_pct": 43.04,
+            "diff": -0.13,
+            "pct": -7.1,
+            "index_pct": 92.9,
             "direction": "down"
           }
         }
@@ -1788,10 +1788,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1244.43,
-            "pct": 169.4,
-            "index_pct": 269.4,
-            "direction": "up"
+            "diff": -462.41,
+            "pct": -60.4,
+            "index_pct": 39.6,
+            "direction": "down"
           }
         },
         "综合ROI": {
@@ -1802,37 +1802,37 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.59,
-            "pct": -20.21,
-            "index_pct": 79.79,
+            "diff": -0.68,
+            "pct": -24.37,
+            "index_pct": 75.63,
             "direction": "down"
           }
         },
         "JST花费": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -3.07,
-            "pct": -0.46,
-            "index_pct": 99.54,
+            "diff": -654.28,
+            "pct": -100.0,
+            "index_pct": 0.0,
             "direction": "down"
           }
         },
         "JST ROI": {
           "vs_2h": {
-            "diff": 0.0,
-            "pct": 0.0,
-            "index_pct": 100.0,
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.16,
-            "pct": -5.35,
-            "index_pct": 94.65,
+            "diff": -3.16,
+            "pct": -100.0,
+            "index_pct": 0.0,
             "direction": "down"
           }
         },
@@ -1844,9 +1844,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1247.5,
-            "pct": 1809.54,
-            "index_pct": 1909.54,
+            "diff": 191.87,
+            "pct": 172.36,
+            "index_pct": 272.36,
             "direction": "up"
           }
         },
@@ -1858,10 +1858,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.13,
-            "pct": -5.88,
-            "index_pct": 94.12,
-            "direction": "down"
+            "diff": 1.25,
+            "pct": 198.41,
+            "index_pct": 298.41,
+            "direction": "up"
           }
         }
       },
@@ -1876,10 +1876,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -286.44,
-            "pct": -27.4,
-            "index_pct": 72.6,
-            "direction": "down"
+            "diff": 501.01,
+            "pct": 80.46,
+            "index_pct": 180.46,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -1890,9 +1890,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.01,
-            "pct": -0.36,
-            "index_pct": 99.64,
+            "diff": -2.49,
+            "pct": -47.16,
+            "index_pct": 52.84,
             "direction": "down"
           }
         },
@@ -1904,10 +1904,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 241.91,
-            "pct": 394.89,
-            "index_pct": 494.89,
-            "direction": "up"
+            "diff": -93.21,
+            "pct": -16.97,
+            "index_pct": 83.03,
+            "direction": "down"
           }
         },
         "JST ROI": {
@@ -1918,9 +1918,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -5.01,
-            "pct": -59.08,
-            "index_pct": 40.92,
+            "diff": -2.2,
+            "pct": -42.31,
+            "index_pct": 57.69,
             "direction": "down"
           }
         },
@@ -1932,10 +1932,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -528.35,
-            "pct": -53.68,
-            "index_pct": 46.32,
-            "direction": "down"
+            "diff": 594.22,
+            "pct": 808.02,
+            "index_pct": 908.02,
+            "direction": "up"
           }
         },
         "SEM ROI": {
@@ -1946,9 +1946,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.11,
-            "pct": -4.56,
-            "index_pct": 95.44,
+            "diff": -3.24,
+            "pct": -55.01,
+            "index_pct": 44.99,
             "direction": "down"
           }
         }
@@ -1964,9 +1964,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1164.02,
-            "pct": -20.0,
-            "index_pct": 80.0,
+            "diff": -925.47,
+            "pct": -20.86,
+            "index_pct": 79.14,
             "direction": "down"
           }
         },
@@ -1978,9 +1978,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.24,
-            "pct": 11.54,
-            "index_pct": 111.54,
+            "diff": 0.05,
+            "pct": 2.58,
+            "index_pct": 102.58,
             "direction": "up"
           }
         },
@@ -1992,9 +1992,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -19.01,
-            "pct": -4.43,
-            "index_pct": 95.57,
+            "diff": -5.84,
+            "pct": -2.86,
+            "index_pct": 97.14,
             "direction": "down"
           }
         },
@@ -2006,9 +2006,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 2.41,
-            "pct": 147.85,
-            "index_pct": 247.85,
+            "diff": 2.63,
+            "pct": 156.55,
+            "index_pct": 256.55,
             "direction": "up"
           }
         },
@@ -2020,9 +2020,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1145.01,
-            "pct": -21.24,
-            "index_pct": 78.76,
+            "diff": -919.63,
+            "pct": -21.73,
+            "index_pct": 78.27,
             "direction": "down"
           }
         },
@@ -2034,10 +2034,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.04,
-            "pct": 1.9,
-            "index_pct": 101.9,
-            "direction": "up"
+            "diff": -0.1,
+            "pct": -5.13,
+            "index_pct": 94.87,
+            "direction": "down"
           }
         }
       },
@@ -2052,10 +2052,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -649.73,
-            "pct": -54.74,
-            "index_pct": 45.26,
-            "direction": "down"
+            "diff": 152.91,
+            "pct": 86.62,
+            "index_pct": 186.62,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -2066,9 +2066,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 1.26,
-            "pct": 56.25,
-            "index_pct": 156.25,
+            "diff": 0.15,
+            "pct": 8.82,
+            "index_pct": 108.82,
             "direction": "up"
           }
         },
@@ -2080,10 +2080,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 4.95,
-            "pct": 0.98,
-            "index_pct": 100.98,
-            "direction": "up"
+            "diff": -76.39,
+            "pct": -71.52,
+            "index_pct": 28.48,
+            "direction": "down"
           }
         },
         "JST ROI": {
@@ -2094,9 +2094,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.63,
-            "pct": 21.21,
-            "index_pct": 121.21,
+            "diff": 1.27,
+            "pct": 54.27,
+            "index_pct": 154.27,
             "direction": "up"
           }
         },
@@ -2108,10 +2108,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -654.68,
-            "pct": -95.97,
-            "index_pct": 4.03,
-            "direction": "down"
+            "diff": 229.3,
+            "pct": 328.93,
+            "index_pct": 428.93,
+            "direction": "up"
           }
         },
         "SEM ROI": {
@@ -2122,9 +2122,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.11,
-            "pct": 6.43,
-            "index_pct": 106.43,
+            "diff": 0.95,
+            "pct": 131.94,
+            "index_pct": 231.94,
             "direction": "up"
           }
         }
@@ -2140,9 +2140,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -298.32,
-            "pct": -29.41,
-            "index_pct": 70.59,
+            "diff": -1.6,
+            "pct": -0.2,
+            "index_pct": 99.8,
             "direction": "down"
           }
         },
@@ -2154,10 +2154,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.76,
-            "pct": 35.68,
-            "index_pct": 135.68,
-            "direction": "up"
+            "diff": -1.26,
+            "pct": -42.57,
+            "index_pct": 57.43,
+            "direction": "down"
           }
         },
         "JST花费": {
@@ -2168,9 +2168,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -1.4,
-            "pct": -2.55,
-            "index_pct": 97.45,
+            "diff": -1.2,
+            "pct": -2.14,
+            "index_pct": 97.86,
             "direction": "down"
           }
         },
@@ -2182,10 +2182,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 4.26,
-            "pct": 46.35,
-            "index_pct": 146.35,
-            "direction": "up"
+            "diff": -3.84,
+            "pct": -52.97,
+            "index_pct": 47.03,
+            "direction": "down"
           }
         },
         "SEM花费": {
@@ -2196,9 +2196,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -296.92,
-            "pct": -30.95,
-            "index_pct": 69.05,
+            "diff": -0.4,
+            "pct": -0.05,
+            "index_pct": 99.95,
             "direction": "down"
           }
         },
@@ -2210,10 +2210,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.31,
-            "pct": 18.02,
-            "index_pct": 118.02,
-            "direction": "up"
+            "diff": -1.06,
+            "pct": -40.15,
+            "index_pct": 59.85,
+            "direction": "down"
           }
         }
       },
@@ -2228,10 +2228,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 16.62,
-            "pct": 1.98,
-            "index_pct": 101.98,
-            "direction": "up"
+            "diff": -77.63,
+            "pct": -17.08,
+            "index_pct": 82.92,
+            "direction": "down"
           }
         },
         "综合ROI": {
@@ -2242,9 +2242,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.46,
-            "pct": 24.21,
-            "index_pct": 124.21,
+            "diff": 0.98,
+            "pct": 31.82,
+            "index_pct": 131.82,
             "direction": "up"
           }
         },
@@ -2256,10 +2256,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.25,
-            "pct": -0.39,
-            "index_pct": 99.61,
-            "direction": "down"
+            "diff": 0.9,
+            "pct": 1.83,
+            "index_pct": 101.83,
+            "direction": "up"
           }
         },
         "JST ROI": {
@@ -2270,9 +2270,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.11,
-            "pct": 4.3,
-            "index_pct": 104.3,
+            "diff": 9.79,
+            "pct": 343.51,
+            "index_pct": 443.51,
             "direction": "up"
           }
         },
@@ -2284,10 +2284,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 16.87,
-            "pct": 2.18,
-            "index_pct": 102.18,
-            "direction": "up"
+            "diff": -78.53,
+            "pct": -19.37,
+            "index_pct": 80.63,
+            "direction": "down"
           }
         },
         "SEM ROI": {
@@ -2298,10 +2298,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.48,
-            "pct": 25.95,
-            "index_pct": 125.95,
-            "direction": "up"
+            "diff": -0.36,
+            "pct": -11.58,
+            "index_pct": 88.42,
+            "direction": "down"
           }
         }
       },
@@ -2316,9 +2316,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -869.49,
-            "pct": -24.82,
-            "index_pct": 75.18,
+            "diff": -1161.11,
+            "pct": -38.47,
+            "index_pct": 61.53,
             "direction": "down"
           }
         },
@@ -2330,10 +2330,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.1,
-            "pct": 4.07,
-            "index_pct": 104.07,
-            "direction": "up"
+            "diff": -0.84,
+            "pct": -22.34,
+            "index_pct": 77.66,
+            "direction": "down"
           }
         },
         "JST花费": {
@@ -2344,9 +2344,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.5,
-            "pct": 0.94,
-            "index_pct": 100.94,
+            "diff": 1.47,
+            "pct": 2.75,
+            "index_pct": 102.75,
             "direction": "up"
           }
         },
@@ -2358,10 +2358,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 2.57,
-            "pct": 32.66,
-            "index_pct": 132.66,
-            "direction": "up"
+            "diff": -9.7,
+            "pct": -79.25,
+            "index_pct": 20.75,
+            "direction": "down"
           }
         },
         "SEM花费": {
@@ -2372,9 +2372,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -869.99,
-            "pct": -25.22,
-            "index_pct": 74.78,
+            "diff": -1162.58,
+            "pct": -39.22,
+            "index_pct": 60.78,
             "direction": "down"
           }
         },
@@ -2386,10 +2386,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.03,
-            "pct": 1.27,
-            "index_pct": 101.27,
-            "direction": "up"
+            "diff": -0.66,
+            "pct": -18.33,
+            "index_pct": 81.67,
+            "direction": "down"
           }
         }
       },
@@ -2404,9 +2404,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 743.17,
-            "pct": 72.18,
-            "index_pct": 172.18,
+            "diff": 571.75,
+            "pct": 77.69,
+            "index_pct": 177.69,
             "direction": "up"
           }
         },
@@ -2418,10 +2418,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.84,
-            "pct": -28.28,
-            "index_pct": 71.72,
-            "direction": "down"
+            "diff": 0.3,
+            "pct": 10.56,
+            "index_pct": 110.56,
+            "direction": "up"
           }
         },
         "JST花费": {
@@ -2432,10 +2432,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -53.92,
-            "pct": -42.42,
-            "index_pct": 57.58,
-            "direction": "down"
+            "diff": 97.42,
+            "pct": 85.94,
+            "index_pct": 185.94,
+            "direction": "up"
           }
         },
         "JST ROI": {
@@ -2446,9 +2446,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 2.96,
-            "pct": 62.45,
-            "index_pct": 162.45,
+            "diff": 5.8,
+            "pct": 94.0,
+            "index_pct": 194.0,
             "direction": "up"
           }
         },
@@ -2460,9 +2460,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 797.09,
-            "pct": 88.33,
-            "index_pct": 188.33,
+            "diff": 474.33,
+            "pct": 76.19,
+            "index_pct": 176.19,
             "direction": "up"
           }
         },
@@ -2474,9 +2474,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.83,
-            "pct": -30.51,
-            "index_pct": 69.49,
+            "diff": -0.79,
+            "pct": -35.43,
+            "index_pct": 64.57,
             "direction": "down"
           }
         }
@@ -2492,10 +2492,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -826.58,
-            "pct": -71.95,
-            "index_pct": 28.05,
-            "direction": "down"
+            "diff": 150.58,
+            "pct": 54.46,
+            "index_pct": 154.46,
+            "direction": "up"
           }
         },
         "综合ROI": {
@@ -2506,9 +2506,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.34,
-            "pct": 14.59,
-            "index_pct": 114.59,
+            "diff": 0.14,
+            "pct": 6.93,
+            "index_pct": 106.93,
             "direction": "up"
           }
         },
@@ -2520,9 +2520,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -56.72,
-            "pct": -54.81,
-            "index_pct": 45.19,
+            "diff": -14.05,
+            "pct": -31.71,
+            "index_pct": 68.29,
             "direction": "down"
           }
         },
@@ -2534,10 +2534,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -3.49,
-            "pct": -56.47,
-            "index_pct": 43.53,
-            "direction": "down"
+            "diff": 0,
+            "pct": 0,
+            "index_pct": 0,
+            "direction": "neutral"
           }
         },
         "SEM花费": {
@@ -2548,10 +2548,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -769.86,
-            "pct": -73.65,
-            "index_pct": 26.35,
-            "direction": "down"
+            "diff": 164.63,
+            "pct": 70.91,
+            "index_pct": 170.91,
+            "direction": "up"
           }
         },
         "SEM ROI": {
@@ -2562,10 +2562,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.72,
-            "pct": 36.92,
-            "index_pct": 136.92,
-            "direction": "up"
+            "diff": -0.97,
+            "pct": -40.42,
+            "index_pct": 59.58,
+            "direction": "down"
           }
         }
       }
@@ -2580,10 +2580,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 562.93,
-            "pct": 11.74,
-            "index_pct": 111.74,
-            "direction": "up"
+            "diff": -1556.49,
+            "pct": -36.26,
+            "index_pct": 63.74,
+            "direction": "down"
           }
         },
         "ROI": {
@@ -2594,9 +2594,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.14,
-            "pct": 3.86,
-            "index_pct": 103.86,
+            "diff": 0.81,
+            "pct": 18.89,
+            "index_pct": 118.89,
             "direction": "up"
           }
         }
@@ -2610,10 +2610,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -2549.67,
-            "pct": -8.28,
-            "index_pct": 91.72,
-            "direction": "down"
+            "diff": 28.58,
+            "pct": 0.11,
+            "index_pct": 100.11,
+            "direction": "up"
           }
         },
         "ROI": {
@@ -2624,9 +2624,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.03,
-            "pct": -1.25,
-            "index_pct": 98.75,
+            "diff": -0.43,
+            "pct": -18.1,
+            "index_pct": 81.9,
             "direction": "down"
           }
         }
@@ -2640,10 +2640,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 162.99,
-            "pct": 0.92,
-            "index_pct": 100.92,
-            "direction": "up"
+            "diff": -2076.88,
+            "pct": -13.45,
+            "index_pct": 86.55,
+            "direction": "down"
           }
         },
         "ROI": {
@@ -2654,10 +2654,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.12,
-            "pct": 4.34,
-            "index_pct": 104.34,
-            "direction": "up"
+            "diff": -1.05,
+            "pct": -25.85,
+            "index_pct": 74.15,
+            "direction": "down"
           }
         }
       }
@@ -2672,10 +2672,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 21.94,
-            "pct": 1.11,
-            "index_pct": 101.11,
-            "direction": "up"
+            "diff": -585.98,
+            "pct": -41.52,
+            "index_pct": 58.48,
+            "direction": "down"
           }
         },
         "HT ROI": {
@@ -2686,9 +2686,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.31,
-            "pct": 9.87,
-            "index_pct": 109.87,
+            "diff": 0.19,
+            "pct": 5.12,
+            "index_pct": 105.12,
             "direction": "up"
           }
         }
@@ -2702,10 +2702,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -682.4,
-            "pct": -17.09,
-            "index_pct": 82.91,
-            "direction": "down"
+            "diff": 666.94,
+            "pct": 15.53,
+            "index_pct": 115.53,
+            "direction": "up"
           }
         },
         "HT ROI": {
@@ -2716,10 +2716,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.49,
-            "pct": 17.75,
-            "index_pct": 117.75,
-            "direction": "up"
+            "diff": -0.78,
+            "pct": -18.4,
+            "index_pct": 81.6,
+            "direction": "down"
           }
         }
       },
@@ -2732,10 +2732,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 19.26,
-            "pct": 0.34,
-            "index_pct": 100.34,
-            "direction": "up"
+            "diff": -578.83,
+            "pct": -14.53,
+            "index_pct": 85.47,
+            "direction": "down"
           }
         },
         "HT ROI": {
@@ -2746,9 +2746,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 0.22,
-            "pct": 8.43,
-            "index_pct": 108.43,
+            "diff": 1.25,
+            "pct": 74.4,
+            "index_pct": 174.4,
             "direction": "up"
           }
         }
@@ -2762,9 +2762,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -24.18,
-            "pct": -1.2,
-            "index_pct": 98.8,
+            "diff": -648.81,
+            "pct": -44.61,
+            "index_pct": 55.39,
             "direction": "down"
           }
         },
@@ -2776,9 +2776,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.1,
-            "pct": -4.72,
-            "index_pct": 95.28,
+            "diff": -0.15,
+            "pct": -7.18,
+            "index_pct": 92.82,
             "direction": "down"
           }
         }
@@ -2792,10 +2792,10 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": 828.37,
-            "pct": 20.28,
-            "index_pct": 120.28,
-            "direction": "up"
+            "diff": -930.2,
+            "pct": -21.65,
+            "index_pct": 78.35,
+            "direction": "down"
           }
         },
         "HT ROI": {
@@ -2806,9 +2806,9 @@
             "direction": "neutral"
           },
           "vs_yesterday": {
-            "diff": -0.24,
-            "pct": -9.09,
-            "index_pct": 90.91,
+            "diff": -4.41,
+            "pct": -63.73,
+            "index_pct": 36.27,
             "direction": "down"
           }
         }
